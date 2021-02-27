@@ -1,0 +1,17 @@
+[
+  {
+    "id": 2021,
+    "name": "Premier League",
+    "logo": "https://media.api-football.com/leagues/2.png"
+  },
+  {
+    "id": 2016,
+    "name": "Championship",
+    "logo": "https://media.api-football.com/leagues/3.png"
+  },
+  {
+    "id": 2030,
+    "name": "League One",
+    "logo": "https://media.api-football.com/leagues/164.png"
+  }
+]
