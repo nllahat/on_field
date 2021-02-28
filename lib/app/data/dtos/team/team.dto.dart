@@ -12,6 +12,7 @@ abstract class TeamDto implements _$TeamDto {
   const factory TeamDto({
     @required int id,
     @required String name,
+    @required String shortName,
     @required String crestUrl,
   }) = _TeamDto;
 
@@ -19,12 +20,14 @@ abstract class TeamDto implements _$TeamDto {
     return TeamDto(
       id: int.parse(team.id),
       name: team.name,
+      shortName: team.shortName,
       crestUrl: team.logo,
     );
   }
 
   Team toDomain() {
-    return Team(id: id.toString(), name: name, logo: crestUrl);
+    return Team(
+        id: id.toString(), name: name, shortName: shortName, logo: crestUrl);
   }
 
   factory TeamDto.fromJson(Map<String, dynamic> json) =>

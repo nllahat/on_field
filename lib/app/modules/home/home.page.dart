@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:on_field/app/data/entities/team/team.entity.dart';
 import 'package:on_field/app/global_widgets/app_title.dart';
+import 'package:on_field/app/global_widgets/match.card.dart';
 import 'package:on_field/app/global_widgets/page_title.dart';
 import '../auth/auth.controller.dart';
 
@@ -23,6 +25,24 @@ class HomePage extends StatelessWidget {
             children: [
               PageTitle('Top today\'s matches for you'),
             ],
+          ),
+          MatchCard(
+            homeTeam: Team(
+                id: '65',
+                name: 'Manchester City FC',
+                shortName: 'Man City',
+                logo: 'https://crests.football-data.org/65.svg'),
+            awayTeam: Team(
+                id: '65',
+                name: 'Manchester City FC',
+                shortName: 'Man City',
+                logo: 'https://crests.football-data.org/65.svg'),
+            match: {
+              'homeTeamScore': 1,
+              'awayTeamScore': 0,
+              'isLive': true,
+              'minute': 83
+            },
           ),
           RaisedButton(
               onPressed: () {

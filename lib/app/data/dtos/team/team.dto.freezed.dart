@@ -18,10 +18,14 @@ class _$TeamDtoTearOff {
 
 // ignore: unused_element
   _TeamDto call(
-      {@required int id, @required String name, @required String crestUrl}) {
+      {@required int id,
+      @required String name,
+      @required String shortName,
+      @required String crestUrl}) {
     return _TeamDto(
       id: id,
       name: name,
+      shortName: shortName,
       crestUrl: crestUrl,
     );
   }
@@ -40,6 +44,7 @@ const $TeamDto = _$TeamDtoTearOff();
 mixin _$TeamDto {
   int get id;
   String get name;
+  String get shortName;
   String get crestUrl;
 
   Map<String, dynamic> toJson();
@@ -51,7 +56,7 @@ mixin _$TeamDto {
 abstract class $TeamDtoCopyWith<$Res> {
   factory $TeamDtoCopyWith(TeamDto value, $Res Function(TeamDto) then) =
       _$TeamDtoCopyWithImpl<$Res>;
-  $Res call({int id, String name, String crestUrl});
+  $Res call({int id, String name, String shortName, String crestUrl});
 }
 
 /// @nodoc
@@ -66,11 +71,13 @@ class _$TeamDtoCopyWithImpl<$Res> implements $TeamDtoCopyWith<$Res> {
   $Res call({
     Object id = freezed,
     Object name = freezed,
+    Object shortName = freezed,
     Object crestUrl = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as int,
       name: name == freezed ? _value.name : name as String,
+      shortName: shortName == freezed ? _value.shortName : shortName as String,
       crestUrl: crestUrl == freezed ? _value.crestUrl : crestUrl as String,
     ));
   }
@@ -81,7 +88,7 @@ abstract class _$TeamDtoCopyWith<$Res> implements $TeamDtoCopyWith<$Res> {
   factory _$TeamDtoCopyWith(_TeamDto value, $Res Function(_TeamDto) then) =
       __$TeamDtoCopyWithImpl<$Res>;
   @override
-  $Res call({int id, String name, String crestUrl});
+  $Res call({int id, String name, String shortName, String crestUrl});
 }
 
 /// @nodoc
@@ -97,11 +104,13 @@ class __$TeamDtoCopyWithImpl<$Res> extends _$TeamDtoCopyWithImpl<$Res>
   $Res call({
     Object id = freezed,
     Object name = freezed,
+    Object shortName = freezed,
     Object crestUrl = freezed,
   }) {
     return _then(_TeamDto(
       id: id == freezed ? _value.id : id as int,
       name: name == freezed ? _value.name : name as String,
+      shortName: shortName == freezed ? _value.shortName : shortName as String,
       crestUrl: crestUrl == freezed ? _value.crestUrl : crestUrl as String,
     ));
   }
@@ -112,9 +121,13 @@ class __$TeamDtoCopyWithImpl<$Res> extends _$TeamDtoCopyWithImpl<$Res>
 /// @nodoc
 class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
   const _$_TeamDto(
-      {@required this.id, @required this.name, @required this.crestUrl})
+      {@required this.id,
+      @required this.name,
+      @required this.shortName,
+      @required this.crestUrl})
       : assert(id != null),
         assert(name != null),
+        assert(shortName != null),
         assert(crestUrl != null),
         super._();
 
@@ -126,11 +139,13 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
   @override
   final String name;
   @override
+  final String shortName;
+  @override
   final String crestUrl;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'TeamDto(id: $id, name: $name, crestUrl: $crestUrl)';
+    return 'TeamDto(id: $id, name: $name, shortName: $shortName, crestUrl: $crestUrl)';
   }
 
   @override
@@ -140,6 +155,7 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
       ..add(DiagnosticsProperty('type', 'TeamDto'))
       ..add(DiagnosticsProperty('id', id))
       ..add(DiagnosticsProperty('name', name))
+      ..add(DiagnosticsProperty('shortName', shortName))
       ..add(DiagnosticsProperty('crestUrl', crestUrl));
   }
 
@@ -151,6 +167,9 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
                 const DeepCollectionEquality().equals(other.id, id)) &&
             (identical(other.name, name) ||
                 const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.shortName, shortName) ||
+                const DeepCollectionEquality()
+                    .equals(other.shortName, shortName)) &&
             (identical(other.crestUrl, crestUrl) ||
                 const DeepCollectionEquality()
                     .equals(other.crestUrl, crestUrl)));
@@ -161,6 +180,7 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(id) ^
       const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(shortName) ^
       const DeepCollectionEquality().hash(crestUrl);
 
   @JsonKey(ignore: true)
@@ -179,6 +199,7 @@ abstract class _TeamDto extends TeamDto {
   const factory _TeamDto(
       {@required int id,
       @required String name,
+      @required String shortName,
       @required String crestUrl}) = _$_TeamDto;
 
   factory _TeamDto.fromJson(Map<String, dynamic> json) = _$_TeamDto.fromJson;
@@ -187,6 +208,8 @@ abstract class _TeamDto extends TeamDto {
   int get id;
   @override
   String get name;
+  @override
+  String get shortName;
   @override
   String get crestUrl;
   @override

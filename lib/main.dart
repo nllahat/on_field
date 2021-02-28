@@ -22,9 +22,11 @@ void main() async {
     getPages: AppPages.pages,
     theme: ThemeData(
         textTheme: TextTheme(
+      headline4: smallTitleTextStyle,
       headline5: titleTextStyle,
       headline6: pageTitleStyle,
       bodyText1: body1TextStyle,
+      bodyText2: body2TextStyle,
     )),
   ));
 }
