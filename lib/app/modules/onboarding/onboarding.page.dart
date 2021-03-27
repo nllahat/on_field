@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/modules/onboarding_leagues/onboarding_leagues.page.dart';
-import 'package:on_field/app/modules/onboarding_teams/onboarding_teams.page.dart';
+import '../onboarding_leagues/onboarding_leagues.page.dart';
+import '../onboarding_teams/onboarding_teams.page.dart';
 import '../user/user.controller.dart';
 
 import 'onboarding.controller.dart';

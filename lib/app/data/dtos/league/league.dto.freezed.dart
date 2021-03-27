@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'league.dto.dart';
 
@@ -8,6 +8,10 @@ part of 'league.dto.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 LeagueDto _$LeagueDtoFromJson(Map<String, dynamic> json) {
   return _LeagueDto.fromJson(json);
 }
@@ -16,9 +20,8 @@ LeagueDto _$LeagueDtoFromJson(Map<String, dynamic> json) {
 class _$LeagueDtoTearOff {
   const _$LeagueDtoTearOff();
 
-// ignore: unused_element
   _LeagueDto call(
-      {@required int id, @required String name, @required String logo}) {
+      {required int id, required String name, required String logo}) {
     return _LeagueDto(
       id: id,
       name: name,
@@ -26,25 +29,24 @@ class _$LeagueDtoTearOff {
     );
   }
 
-// ignore: unused_element
   LeagueDto fromJson(Map<String, Object> json) {
     return LeagueDto.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $LeagueDto = _$LeagueDtoTearOff();
 
 /// @nodoc
 mixin _$LeagueDto {
-  int get id;
-  String get name;
-  String get logo;
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  String get logo => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $LeagueDtoCopyWith<LeagueDto> get copyWith;
+  $LeagueDtoCopyWith<LeagueDto> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,9 +66,9 @@ class _$LeagueDtoCopyWithImpl<$Res> implements $LeagueDtoCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object logo = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? logo = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as int,
@@ -96,9 +98,9 @@ class __$LeagueDtoCopyWithImpl<$Res> extends _$LeagueDtoCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object logo = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? logo = freezed,
   }) {
     return _then(_LeagueDto(
       id: id == freezed ? _value.id : id as int,
@@ -112,12 +114,8 @@ class __$LeagueDtoCopyWithImpl<$Res> extends _$LeagueDtoCopyWithImpl<$Res>
 
 /// @nodoc
 class _$_LeagueDto extends _LeagueDto with DiagnosticableTreeMixin {
-  const _$_LeagueDto(
-      {@required this.id, @required this.name, @required this.logo})
-      : assert(id != null),
-        assert(name != null),
-        assert(logo != null),
-        super._();
+  const _$_LeagueDto({required this.id, required this.name, required this.logo})
+      : super._();
 
   factory _$_LeagueDto.fromJson(Map<String, dynamic> json) =>
       _$_$_LeagueDtoFromJson(json);
@@ -177,20 +175,21 @@ class _$_LeagueDto extends _LeagueDto with DiagnosticableTreeMixin {
 abstract class _LeagueDto extends LeagueDto {
   const _LeagueDto._() : super._();
   const factory _LeagueDto(
-      {@required int id,
-      @required String name,
-      @required String logo}) = _$_LeagueDto;
+      {required int id,
+      required String name,
+      required String logo}) = _$_LeagueDto;
 
   factory _LeagueDto.fromJson(Map<String, dynamic> json) =
       _$_LeagueDto.fromJson;
 
   @override
-  int get id;
+  int get id => throw _privateConstructorUsedError;
   @override
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
-  String get logo;
+  String get logo => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$LeagueDtoCopyWith<_LeagueDto> get copyWith;
+  _$LeagueDtoCopyWith<_LeagueDto> get copyWith =>
+      throw _privateConstructorUsedError;
 }

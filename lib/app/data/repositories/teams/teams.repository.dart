@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
-import 'package:on_field/app/data/entities/team/team.entity.dart';
-import 'package:on_field/app/data/providers/teams/i_teams.provider.dart';
+import '../../entities/team/team.entity.dart';
+import '../../providers/teams/i_teams.provider.dart';
 import '../../entities/failure/failure.entity.dart';
 
 import 'i_teams.repository.dart';
@@ -9,7 +9,7 @@ import 'i_teams.repository.dart';
 class TeamsRepository implements ITeamsRepository {
   ITeamsProvider teamsProvider;
 
-  TeamsRepository({@required this.teamsProvider});
+  TeamsRepository({required this.teamsProvider});
 
   @override
   Future<Either<Failure, List<Team>>> getByLeagueId(String leagueId) {

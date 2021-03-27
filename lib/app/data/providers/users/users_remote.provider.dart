@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
-import 'package:on_field/app/data/providers/users/i_users.provider.dart';
+import 'i_users.provider.dart';
 import '../../entities/failure/failure.entity.dart';
 
 import '../../dtos/user/user.dto.dart';
@@ -31,11 +31,11 @@ class UsersRemoteProvider implements IUsersProvider {
     } on FormatException {
       throw Failure.formatException();
     } on FirebaseException catch (e) {
-      if (e.message.contains('PERMISSION_DENIED')) {
+      if (e.message!.contains('PERMISSION_DENIED')) {
         throw Failure.insufficientPermission();
       }
 
-      if (e.message.contains('NOT_FOUND')) {
+      if (e.message!.contains('NOT_FOUND')) {
         throw Failure.notFound();
       }
 
@@ -50,11 +50,11 @@ class UsersRemoteProvider implements IUsersProvider {
 
       return unit;
     } on FirebaseException catch (e) {
-      if (e.message.contains('PERMISSION_DENIED')) {
+      if (e.message!.contains('PERMISSION_DENIED')) {
         throw Failure.insufficientPermission();
       }
 
-      if (e.message.contains('NOT_FOUND')) {
+      if (e.message!.contains('NOT_FOUND')) {
         throw Failure.notFound();
       }
 

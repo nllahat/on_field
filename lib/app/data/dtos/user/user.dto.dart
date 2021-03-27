@@ -6,14 +6,14 @@ part 'user.dto.freezed.dart';
 part 'user.dto.g.dart';
 
 @freezed
-abstract class UserDto implements _$UserDto {
+class UserDto with _$UserDto {
   const UserDto._();
 
   const factory UserDto({
-    @JsonKey(ignore: true) String id,
-    @required String emailAddress,
-    @required String fullName,
-    bool finishedOnboarding,
+    required String id,
+    required String emailAddress,
+    required String fullName,
+    bool? finishedOnboarding,
   }) = _UserDto;
 
   factory UserDto.fromDomain(User user) {
@@ -37,6 +37,9 @@ abstract class UserDto implements _$UserDto {
       _$UserDtoFromJson(json);
 
   factory UserDto.fromFirestore(DocumentSnapshot doc) {
-    return UserDto.fromJson(doc.data()).copyWith(id: doc.id);
+    Map<String, dynamic>? docData = doc.data();
+    docData!.putIfAbsent('id', () => doc.id);
+
+    return UserDto.fromJson(docData);
   }
 }

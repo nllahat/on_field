@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 abstract class ConfigReader {
-  static Map<String, dynamic> _config;
+  static Map<String, dynamic>? _config;
 
   static Future<void> initialize() async {
     final configString = await rootBundle.loadString('config/app_config.json');
@@ -10,10 +10,10 @@ abstract class ConfigReader {
   }
 
   static String getFootballDataOrgAPIToken() {
-    return _config['FOOTBALL_DATA_ORG_API'] as String;
+    return _config?['FOOTBALL_DATA_ORG_API'] as String;
   }
 
   static String getFootballDataOrgAPIHost() {
-    return _config['FOOTBALL_DATA_ORG_HOST'] as String;
+    return _config?['FOOTBALL_DATA_ORG_HOST'] as String;
   }
 }

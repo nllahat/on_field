@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/modules/onboarding/onboarding.controller.dart';
+import '../onboarding/onboarding.controller.dart';
 
 import 'onboarding_leagues.controller.dart';
 

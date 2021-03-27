@@ -94,7 +94,7 @@ class __SignInFormState extends State<_SignInForm> {
                 Text(
                   'Login Error',
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Get.theme.errorColor),
+                  style: TextStyle(color: Get.theme!.errorColor),
                 ),
               if (_controller.state == LoginState.loading())
                 Center(
@@ -108,7 +108,7 @@ class __SignInFormState extends State<_SignInForm> {
   }
 
   _onLoginButtonPressed() {
-    if (_key.currentState.validate()) {
+    if (_key.currentState!.validate()) {
       _controller.login(_emailController.text, _passwordController.text);
     } else {
       setState(() {

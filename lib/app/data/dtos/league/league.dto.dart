@@ -6,13 +6,13 @@ part 'league.dto.freezed.dart';
 part 'league.dto.g.dart';
 
 @freezed
-abstract class LeagueDto implements _$LeagueDto {
+class LeagueDto with _$LeagueDto {
   const LeagueDto._();
 
   const factory LeagueDto({
-    @required int id,
-    @required String name,
-    @required String logo,
+    required int id,
+    required String name,
+    required String logo,
   }) = _LeagueDto;
 
   factory LeagueDto.fromDomain(League league) {

@@ -9,7 +9,7 @@ import 'i_leagues.repository.dart';
 class LeaguesRepository implements ILeaguesRepository {
   ILeaguesProvider leaguesProvider;
 
-  LeaguesRepository({@required this.leaguesProvider});
+  LeaguesRepository({required this.leaguesProvider});
 
   @override
   Future<Either<Failure, List<League>>> getAll() async {

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'league.entity.dart';
 
@@ -9,13 +9,15 @@ part of 'league.entity.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$LeagueTearOff {
   const _$LeagueTearOff();
 
-// ignore: unused_element
   _League call(
-      {@required String id, @required String name, @required String logo}) {
+      {required String id, required String name, required String logo}) {
     return _League(
       id: id,
       name: name,
@@ -25,17 +27,16 @@ class _$LeagueTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $League = _$LeagueTearOff();
 
 /// @nodoc
 mixin _$League {
-  String get id;
-  String get name;
-  String get logo;
+  String get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  String get logo => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $LeagueCopyWith<League> get copyWith;
+  $LeagueCopyWith<League> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -55,9 +56,9 @@ class _$LeagueCopyWithImpl<$Res> implements $LeagueCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object logo = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? logo = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as String,
@@ -86,9 +87,9 @@ class __$LeagueCopyWithImpl<$Res> extends _$LeagueCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object logo = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? logo = freezed,
   }) {
     return _then(_League(
       id: id == freezed ? _value.id : id as String,
@@ -99,11 +100,8 @@ class __$LeagueCopyWithImpl<$Res> extends _$LeagueCopyWithImpl<$Res>
 }
 
 /// @nodoc
-class _$_League with DiagnosticableTreeMixin implements _League {
-  const _$_League({@required this.id, @required this.name, @required this.logo})
-      : assert(id != null),
-        assert(name != null),
-        assert(logo != null);
+class _$_League implements _League {
+  const _$_League({required this.id, required this.name, required this.logo});
 
   @override
   final String id;
@@ -113,18 +111,8 @@ class _$_League with DiagnosticableTreeMixin implements _League {
   final String logo;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'League(id: $id, name: $name, logo: $logo)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'League'))
-      ..add(DiagnosticsProperty('id', id))
-      ..add(DiagnosticsProperty('name', name))
-      ..add(DiagnosticsProperty('logo', logo));
   }
 
   @override
@@ -154,17 +142,17 @@ class _$_League with DiagnosticableTreeMixin implements _League {
 
 abstract class _League implements League {
   const factory _League(
-      {@required String id,
-      @required String name,
-      @required String logo}) = _$_League;
+      {required String id,
+      required String name,
+      required String logo}) = _$_League;
 
   @override
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
-  String get logo;
+  String get logo => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$LeagueCopyWith<_League> get copyWith;
+  _$LeagueCopyWith<_League> get copyWith => throw _privateConstructorUsedError;
 }

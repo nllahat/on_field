@@ -10,8 +10,7 @@ import 'i_users.repository.dart';
 class UsersRepository implements IUsersRepository {
   final IUsersProvider usersProvider;
 
-  UsersRepository({@required this.usersProvider})
-      : assert(usersProvider != null);
+  UsersRepository({required this.usersProvider});
 
   @override
   Future<Either<Failure, User>> getById(String id) async {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/data/entities/page_data/page_data.entity.dart';
-import 'package:on_field/app/modules/home/home.page.dart';
-import 'package:on_field/app/modules/navigator/tab_navigator.dart';
-import 'package:on_field/app/modules/stats/stats.page.dart';
+import '../../data/entities/page_data/page_data.entity.dart';
+import '../home/home.page.dart';
+import '../navigator/tab_navigator.dart';
+import '../stats/stats.page.dart';
 
 class RootController extends GetxController {
   final pagesData = <PageData>[
@@ -25,12 +25,10 @@ class RootController extends GetxController {
   PageData get currentScreenModel => pagesData[navMenuIndex()];
   int get getCurrentNavKey => currentScreenModel.navKey;
 
-  // store the pages stack.
-  List<Widget> _pages;
-
   // get navigators.
-  List<Widget> get menuPages =>
-      _pages ??= pagesData.map((pageData) => TabNavigator(pageData)).toList();
+  List<Widget> get menuPages {
+    return pagesData.map((pageData) => TabNavigator(pageData)).toList();
+  }
 
   // widget stuffs.
   List<BottomNavigationBarItem> get navMenuItems => pagesData
@@ -40,12 +38,12 @@ class RootController extends GetxController {
 
   void openDetails(int shade) {
     final model = currentScreenModel;
-    Get.to(
+    /*Get.to(
       PageColorDetails(
         title: model.name,
       ),
       transition: Transition.fade,
       id: model.navKey,
-    );
+    );*/
   }
 }

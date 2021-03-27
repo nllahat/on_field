@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/data/entities/league/league.entity.dart';
-import 'package:on_field/app/data/entities/team/team.entity.dart';
+import '../../data/entities/league/league.entity.dart';
+import '../../data/entities/team/team.entity.dart';
 import '../../routes/app_pages.dart';
 
 class SelectedTeams {
@@ -53,10 +53,12 @@ class OnboardingController extends GetxController {
       _selectedTeams[league] = SelectedTeams();
     }
 
-    if (_selectedTeams[league].value[team] == true) {
-      _selectedTeams[league].value[team] = false;
-    } else {
-      _selectedTeams[league].value[team] = true;
+    if (_selectedTeams[league] != null) {
+      if (_selectedTeams[league]!.value[team] == true) {
+        _selectedTeams[league]!.value[team] = false;
+      } else {
+        _selectedTeams[league]!.value[team] = true;
+      }
     }
   }
 }

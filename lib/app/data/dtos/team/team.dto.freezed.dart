@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'team.dto.dart';
 
@@ -8,6 +8,10 @@ part of 'team.dto.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TeamDto _$TeamDtoFromJson(Map<String, dynamic> json) {
   return _TeamDto.fromJson(json);
 }
@@ -16,12 +20,11 @@ TeamDto _$TeamDtoFromJson(Map<String, dynamic> json) {
 class _$TeamDtoTearOff {
   const _$TeamDtoTearOff();
 
-// ignore: unused_element
   _TeamDto call(
-      {@required int id,
-      @required String name,
-      @required String shortName,
-      @required String crestUrl}) {
+      {required int id,
+      required String name,
+      required String shortName,
+      required String crestUrl}) {
     return _TeamDto(
       id: id,
       name: name,
@@ -30,26 +33,24 @@ class _$TeamDtoTearOff {
     );
   }
 
-// ignore: unused_element
   TeamDto fromJson(Map<String, Object> json) {
     return TeamDto.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TeamDto = _$TeamDtoTearOff();
 
 /// @nodoc
 mixin _$TeamDto {
-  int get id;
-  String get name;
-  String get shortName;
-  String get crestUrl;
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  String get shortName => throw _privateConstructorUsedError;
+  String get crestUrl => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TeamDtoCopyWith<TeamDto> get copyWith;
+  $TeamDtoCopyWith<TeamDto> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -69,10 +70,10 @@ class _$TeamDtoCopyWithImpl<$Res> implements $TeamDtoCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object shortName = freezed,
-    Object crestUrl = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? shortName = freezed,
+    Object? crestUrl = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as int,
@@ -102,10 +103,10 @@ class __$TeamDtoCopyWithImpl<$Res> extends _$TeamDtoCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object shortName = freezed,
-    Object crestUrl = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? shortName = freezed,
+    Object? crestUrl = freezed,
   }) {
     return _then(_TeamDto(
       id: id == freezed ? _value.id : id as int,
@@ -121,15 +122,11 @@ class __$TeamDtoCopyWithImpl<$Res> extends _$TeamDtoCopyWithImpl<$Res>
 /// @nodoc
 class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
   const _$_TeamDto(
-      {@required this.id,
-      @required this.name,
-      @required this.shortName,
-      @required this.crestUrl})
-      : assert(id != null),
-        assert(name != null),
-        assert(shortName != null),
-        assert(crestUrl != null),
-        super._();
+      {required this.id,
+      required this.name,
+      required this.shortName,
+      required this.crestUrl})
+      : super._();
 
   factory _$_TeamDto.fromJson(Map<String, dynamic> json) =>
       _$_$_TeamDtoFromJson(json);
@@ -197,22 +194,23 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
 abstract class _TeamDto extends TeamDto {
   const _TeamDto._() : super._();
   const factory _TeamDto(
-      {@required int id,
-      @required String name,
-      @required String shortName,
-      @required String crestUrl}) = _$_TeamDto;
+      {required int id,
+      required String name,
+      required String shortName,
+      required String crestUrl}) = _$_TeamDto;
 
   factory _TeamDto.fromJson(Map<String, dynamic> json) = _$_TeamDto.fromJson;
 
   @override
-  int get id;
+  int get id => throw _privateConstructorUsedError;
   @override
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
-  String get shortName;
+  String get shortName => throw _privateConstructorUsedError;
   @override
-  String get crestUrl;
+  String get crestUrl => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TeamDtoCopyWith<_TeamDto> get copyWith;
+  _$TeamDtoCopyWith<_TeamDto> get copyWith =>
+      throw _privateConstructorUsedError;
 }

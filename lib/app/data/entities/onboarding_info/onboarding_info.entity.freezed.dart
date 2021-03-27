@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'onboarding_info.entity.dart';
 
@@ -9,18 +9,20 @@ part of 'onboarding_info.entity.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$OnboardingInfoTearOff {
   const _$OnboardingInfoTearOff();
 
-// ignore: unused_element
   _OnboardingInfo call(
-      {@required String imageAsset,
-      @required String title,
-      @required String description,
-      bool showList,
-      EnumListType listType,
-      List<dynamic> list}) {
+      {required String imageAsset,
+      required String title,
+      required String description,
+      bool? showList,
+      EnumListType? listType,
+      List<dynamic>? list}) {
     return _OnboardingInfo(
       imageAsset: imageAsset,
       title: title,
@@ -33,20 +35,20 @@ class _$OnboardingInfoTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $OnboardingInfo = _$OnboardingInfoTearOff();
 
 /// @nodoc
 mixin _$OnboardingInfo {
-  String get imageAsset;
-  String get title;
-  String get description;
-  bool get showList;
-  EnumListType get listType;
-  List<dynamic> get list;
+  String get imageAsset => throw _privateConstructorUsedError;
+  String get title => throw _privateConstructorUsedError;
+  String get description => throw _privateConstructorUsedError;
+  bool? get showList => throw _privateConstructorUsedError;
+  EnumListType? get listType => throw _privateConstructorUsedError;
+  List<dynamic>? get list => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $OnboardingInfoCopyWith<OnboardingInfo> get copyWith;
+  $OnboardingInfoCopyWith<OnboardingInfo> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -58,9 +60,9 @@ abstract class $OnboardingInfoCopyWith<$Res> {
       {String imageAsset,
       String title,
       String description,
-      bool showList,
-      EnumListType listType,
-      List<dynamic> list});
+      bool? showList,
+      EnumListType? listType,
+      List<dynamic>? list});
 }
 
 /// @nodoc
@@ -74,12 +76,12 @@ class _$OnboardingInfoCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object imageAsset = freezed,
-    Object title = freezed,
-    Object description = freezed,
-    Object showList = freezed,
-    Object listType = freezed,
-    Object list = freezed,
+    Object? imageAsset = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
+    Object? showList = freezed,
+    Object? listType = freezed,
+    Object? list = freezed,
   }) {
     return _then(_value.copyWith(
       imageAsset:
@@ -87,10 +89,10 @@ class _$OnboardingInfoCopyWithImpl<$Res>
       title: title == freezed ? _value.title : title as String,
       description:
           description == freezed ? _value.description : description as String,
-      showList: showList == freezed ? _value.showList : showList as bool,
+      showList: showList == freezed ? _value.showList : showList as bool?,
       listType:
-          listType == freezed ? _value.listType : listType as EnumListType,
-      list: list == freezed ? _value.list : list as List<dynamic>,
+          listType == freezed ? _value.listType : listType as EnumListType?,
+      list: list == freezed ? _value.list : list as List<dynamic>?,
     ));
   }
 }
@@ -106,9 +108,9 @@ abstract class _$OnboardingInfoCopyWith<$Res>
       {String imageAsset,
       String title,
       String description,
-      bool showList,
-      EnumListType listType,
-      List<dynamic> list});
+      bool? showList,
+      EnumListType? listType,
+      List<dynamic>? list});
 }
 
 /// @nodoc
@@ -124,12 +126,12 @@ class __$OnboardingInfoCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object imageAsset = freezed,
-    Object title = freezed,
-    Object description = freezed,
-    Object showList = freezed,
-    Object listType = freezed,
-    Object list = freezed,
+    Object? imageAsset = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
+    Object? showList = freezed,
+    Object? listType = freezed,
+    Object? list = freezed,
   }) {
     return _then(_OnboardingInfo(
       imageAsset:
@@ -137,28 +139,23 @@ class __$OnboardingInfoCopyWithImpl<$Res>
       title: title == freezed ? _value.title : title as String,
       description:
           description == freezed ? _value.description : description as String,
-      showList: showList == freezed ? _value.showList : showList as bool,
+      showList: showList == freezed ? _value.showList : showList as bool?,
       listType:
-          listType == freezed ? _value.listType : listType as EnumListType,
-      list: list == freezed ? _value.list : list as List<dynamic>,
+          listType == freezed ? _value.listType : listType as EnumListType?,
+      list: list == freezed ? _value.list : list as List<dynamic>?,
     ));
   }
 }
 
 /// @nodoc
-class _$_OnboardingInfo
-    with DiagnosticableTreeMixin
-    implements _OnboardingInfo {
+class _$_OnboardingInfo implements _OnboardingInfo {
   const _$_OnboardingInfo(
-      {@required this.imageAsset,
-      @required this.title,
-      @required this.description,
+      {required this.imageAsset,
+      required this.title,
+      required this.description,
       this.showList,
       this.listType,
-      this.list})
-      : assert(imageAsset != null),
-        assert(title != null),
-        assert(description != null);
+      this.list});
 
   @override
   final String imageAsset;
@@ -167,28 +164,15 @@ class _$_OnboardingInfo
   @override
   final String description;
   @override
-  final bool showList;
+  final bool? showList;
   @override
-  final EnumListType listType;
+  final EnumListType? listType;
   @override
-  final List<dynamic> list;
+  final List<dynamic>? list;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'OnboardingInfo(imageAsset: $imageAsset, title: $title, description: $description, showList: $showList, listType: $listType, list: $list)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'OnboardingInfo'))
-      ..add(DiagnosticsProperty('imageAsset', imageAsset))
-      ..add(DiagnosticsProperty('title', title))
-      ..add(DiagnosticsProperty('description', description))
-      ..add(DiagnosticsProperty('showList', showList))
-      ..add(DiagnosticsProperty('listType', listType))
-      ..add(DiagnosticsProperty('list', list));
   }
 
   @override
@@ -231,26 +215,27 @@ class _$_OnboardingInfo
 
 abstract class _OnboardingInfo implements OnboardingInfo {
   const factory _OnboardingInfo(
-      {@required String imageAsset,
-      @required String title,
-      @required String description,
-      bool showList,
-      EnumListType listType,
-      List<dynamic> list}) = _$_OnboardingInfo;
+      {required String imageAsset,
+      required String title,
+      required String description,
+      bool? showList,
+      EnumListType? listType,
+      List<dynamic>? list}) = _$_OnboardingInfo;
 
   @override
-  String get imageAsset;
+  String get imageAsset => throw _privateConstructorUsedError;
   @override
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
-  String get description;
+  String get description => throw _privateConstructorUsedError;
   @override
-  bool get showList;
+  bool? get showList => throw _privateConstructorUsedError;
   @override
-  EnumListType get listType;
+  EnumListType? get listType => throw _privateConstructorUsedError;
   @override
-  List<dynamic> get list;
+  List<dynamic>? get list => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$OnboardingInfoCopyWith<_OnboardingInfo> get copyWith;
+  _$OnboardingInfoCopyWith<_OnboardingInfo> get copyWith =>
+      throw _privateConstructorUsedError;
 }

@@ -1,19 +1,19 @@
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:on_field/app/data/entities/team/team.entity.dart';
+import '../../entities/team/team.entity.dart';
 
 part 'team.dto.freezed.dart';
 part 'team.dto.g.dart';
 
 @freezed
-abstract class TeamDto implements _$TeamDto {
+class TeamDto with _$TeamDto {
   const TeamDto._();
 
   const factory TeamDto({
-    @required int id,
-    @required String name,
-    @required String shortName,
-    @required String crestUrl,
+    required int id,
+    required String name,
+    required String shortName,
+    required String crestUrl,
   }) = _TeamDto;
 
   factory TeamDto.fromDomain(Team team) {

@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 
-import 'package:on_field/app/data/dtos/team/team.dto.dart';
-import 'package:on_field/app/data/entities/failure/failure.entity.dart';
-import 'package:on_field/config_reader.dart';
+import '../../dtos/team/team.dto.dart';
+import '../../entities/failure/failure.entity.dart';
+import '../../../../config_reader.dart';
 
 import 'i_teams.provider.dart';
 
@@ -15,8 +15,8 @@ class TeamsRemoteProvider implements ITeamsProvider {
   Future<List<TeamDto>> getByLeagueId(String leagueId) async {
     try {
       final response = await http.get(
-        ConfigReader.getFootballDataOrgAPIHost() +
-            '/competitions/$leagueId/teams',
+        Uri.https(ConfigReader.getFootballDataOrgAPIHost(),
+            '/competitions/$leagueId/teams'),
         headers: {'X-Auth-Token': ConfigReader.getFootballDataOrgAPIToken()},
       );
 

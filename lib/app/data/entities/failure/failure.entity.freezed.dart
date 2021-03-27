@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'failure.entity.dart';
 
@@ -9,87 +9,88 @@ part of 'failure.entity.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$FailureTearOff {
   const _$FailureTearOff();
 
-// ignore: unused_element
-  Unexpected unexpected({Exception originalException}) {
+  Unexpected unexpected({Exception? originalException}) {
     return Unexpected(
       originalException: originalException,
     );
   }
 
-// ignore: unused_element
   NotFound notFound() {
     return const NotFound();
   }
 
-// ignore: unused_element
   NoInternetConnection noInternetConnection() {
     return const NoInternetConnection();
   }
 
-// ignore: unused_element
   HttpExeption httpException() {
     return const HttpExeption();
   }
 
-// ignore: unused_element
   FormatException formatException() {
     return const FormatException();
   }
 
-// ignore: unused_element
   InsufficientPermission insufficientPermission() {
     return const InsufficientPermission();
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Failure = _$FailureTearOff();
 
 /// @nodoc
 mixin _$Failure {
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult unexpected(Exception originalException),
-    @required TResult notFound(),
-    @required TResult noInternetConnection(),
-    @required TResult httpException(),
-    @required TResult formatException(),
-    @required TResult insufficientPermission(),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(Exception? originalException) unexpected,
+    required TResult Function() notFound,
+    required TResult Function() noInternetConnection,
+    required TResult Function() httpException,
+    required TResult Function() formatException,
+    required TResult Function() insufficientPermission,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult unexpected(Exception originalException),
-    TResult notFound(),
-    TResult noInternetConnection(),
-    TResult httpException(),
-    TResult formatException(),
-    TResult insufficientPermission(),
-    @required TResult orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Exception? originalException)? unexpected,
+    TResult Function()? notFound,
+    TResult Function()? noInternetConnection,
+    TResult Function()? httpException,
+    TResult Function()? formatException,
+    TResult Function()? insufficientPermission,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult unexpected(Unexpected value),
-    @required TResult notFound(NotFound value),
-    @required TResult noInternetConnection(NoInternetConnection value),
-    @required TResult httpException(HttpExeption value),
-    @required TResult formatException(FormatException value),
-    @required TResult insufficientPermission(InsufficientPermission value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(Unexpected value) unexpected,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(HttpExeption value) httpException,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(InsufficientPermission value)
+        insufficientPermission,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult unexpected(Unexpected value),
-    TResult notFound(NotFound value),
-    TResult noInternetConnection(NoInternetConnection value),
-    TResult httpException(HttpExeption value),
-    TResult formatException(FormatException value),
-    TResult insufficientPermission(InsufficientPermission value),
-    @required TResult orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Unexpected value)? unexpected,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(HttpExeption value)? httpException,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(InsufficientPermission value)? insufficientPermission,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -112,7 +113,7 @@ abstract class $UnexpectedCopyWith<$Res> {
   factory $UnexpectedCopyWith(
           Unexpected value, $Res Function(Unexpected) then) =
       _$UnexpectedCopyWithImpl<$Res>;
-  $Res call({Exception originalException});
+  $Res call({Exception? originalException});
 }
 
 /// @nodoc
@@ -126,12 +127,12 @@ class _$UnexpectedCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object originalException = freezed,
+    Object? originalException = freezed,
   }) {
     return _then(Unexpected(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception,
+          : originalException as Exception?,
     ));
   }
 }
@@ -141,7 +142,7 @@ class _$Unexpected implements Unexpected {
   const _$Unexpected({this.originalException});
 
   @override
-  final Exception originalException;
+  final Exception? originalException;
 
   @override
   String toString() {
@@ -169,35 +170,28 @@ class _$Unexpected implements Unexpected {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult unexpected(Exception originalException),
-    @required TResult notFound(),
-    @required TResult noInternetConnection(),
-    @required TResult httpException(),
-    @required TResult formatException(),
-    @required TResult insufficientPermission(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Exception? originalException) unexpected,
+    required TResult Function() notFound,
+    required TResult Function() noInternetConnection,
+    required TResult Function() httpException,
+    required TResult Function() formatException,
+    required TResult Function() insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return unexpected(originalException);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult unexpected(Exception originalException),
-    TResult notFound(),
-    TResult noInternetConnection(),
-    TResult httpException(),
-    TResult formatException(),
-    TResult insufficientPermission(),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Exception? originalException)? unexpected,
+    TResult Function()? notFound,
+    TResult Function()? noInternetConnection,
+    TResult Function()? httpException,
+    TResult Function()? formatException,
+    TResult Function()? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (unexpected != null) {
       return unexpected(originalException);
     }
@@ -206,35 +200,29 @@ class _$Unexpected implements Unexpected {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult unexpected(Unexpected value),
-    @required TResult notFound(NotFound value),
-    @required TResult noInternetConnection(NoInternetConnection value),
-    @required TResult httpException(HttpExeption value),
-    @required TResult formatException(FormatException value),
-    @required TResult insufficientPermission(InsufficientPermission value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(Unexpected value) unexpected,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(HttpExeption value) httpException,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(InsufficientPermission value)
+        insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return unexpected(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult unexpected(Unexpected value),
-    TResult notFound(NotFound value),
-    TResult noInternetConnection(NoInternetConnection value),
-    TResult httpException(HttpExeption value),
-    TResult formatException(FormatException value),
-    TResult insufficientPermission(InsufficientPermission value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Unexpected value)? unexpected,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(HttpExeption value)? httpException,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(InsufficientPermission value)? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (unexpected != null) {
       return unexpected(this);
     }
@@ -243,11 +231,12 @@ class _$Unexpected implements Unexpected {
 }
 
 abstract class Unexpected implements Failure {
-  const factory Unexpected({Exception originalException}) = _$Unexpected;
+  const factory Unexpected({Exception? originalException}) = _$Unexpected;
 
-  Exception get originalException;
+  Exception? get originalException => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UnexpectedCopyWith<Unexpected> get copyWith;
+  $UnexpectedCopyWith<Unexpected> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -285,35 +274,28 @@ class _$NotFound implements NotFound {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult unexpected(Exception originalException),
-    @required TResult notFound(),
-    @required TResult noInternetConnection(),
-    @required TResult httpException(),
-    @required TResult formatException(),
-    @required TResult insufficientPermission(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Exception? originalException) unexpected,
+    required TResult Function() notFound,
+    required TResult Function() noInternetConnection,
+    required TResult Function() httpException,
+    required TResult Function() formatException,
+    required TResult Function() insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return notFound();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult unexpected(Exception originalException),
-    TResult notFound(),
-    TResult noInternetConnection(),
-    TResult httpException(),
-    TResult formatException(),
-    TResult insufficientPermission(),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Exception? originalException)? unexpected,
+    TResult Function()? notFound,
+    TResult Function()? noInternetConnection,
+    TResult Function()? httpException,
+    TResult Function()? formatException,
+    TResult Function()? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (notFound != null) {
       return notFound();
     }
@@ -322,35 +304,29 @@ class _$NotFound implements NotFound {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult unexpected(Unexpected value),
-    @required TResult notFound(NotFound value),
-    @required TResult noInternetConnection(NoInternetConnection value),
-    @required TResult httpException(HttpExeption value),
-    @required TResult formatException(FormatException value),
-    @required TResult insufficientPermission(InsufficientPermission value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(Unexpected value) unexpected,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(HttpExeption value) httpException,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(InsufficientPermission value)
+        insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return notFound(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult unexpected(Unexpected value),
-    TResult notFound(NotFound value),
-    TResult noInternetConnection(NoInternetConnection value),
-    TResult httpException(HttpExeption value),
-    TResult formatException(FormatException value),
-    TResult insufficientPermission(InsufficientPermission value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Unexpected value)? unexpected,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(HttpExeption value)? httpException,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(InsufficientPermission value)? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (notFound != null) {
       return notFound(this);
     }
@@ -400,35 +376,28 @@ class _$NoInternetConnection implements NoInternetConnection {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult unexpected(Exception originalException),
-    @required TResult notFound(),
-    @required TResult noInternetConnection(),
-    @required TResult httpException(),
-    @required TResult formatException(),
-    @required TResult insufficientPermission(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Exception? originalException) unexpected,
+    required TResult Function() notFound,
+    required TResult Function() noInternetConnection,
+    required TResult Function() httpException,
+    required TResult Function() formatException,
+    required TResult Function() insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return noInternetConnection();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult unexpected(Exception originalException),
-    TResult notFound(),
-    TResult noInternetConnection(),
-    TResult httpException(),
-    TResult formatException(),
-    TResult insufficientPermission(),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Exception? originalException)? unexpected,
+    TResult Function()? notFound,
+    TResult Function()? noInternetConnection,
+    TResult Function()? httpException,
+    TResult Function()? formatException,
+    TResult Function()? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (noInternetConnection != null) {
       return noInternetConnection();
     }
@@ -437,35 +406,29 @@ class _$NoInternetConnection implements NoInternetConnection {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult unexpected(Unexpected value),
-    @required TResult notFound(NotFound value),
-    @required TResult noInternetConnection(NoInternetConnection value),
-    @required TResult httpException(HttpExeption value),
-    @required TResult formatException(FormatException value),
-    @required TResult insufficientPermission(InsufficientPermission value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(Unexpected value) unexpected,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(HttpExeption value) httpException,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(InsufficientPermission value)
+        insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return noInternetConnection(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult unexpected(Unexpected value),
-    TResult notFound(NotFound value),
-    TResult noInternetConnection(NoInternetConnection value),
-    TResult httpException(HttpExeption value),
-    TResult formatException(FormatException value),
-    TResult insufficientPermission(InsufficientPermission value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Unexpected value)? unexpected,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(HttpExeption value)? httpException,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(InsufficientPermission value)? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (noInternetConnection != null) {
       return noInternetConnection(this);
     }
@@ -514,35 +477,28 @@ class _$HttpExeption implements HttpExeption {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult unexpected(Exception originalException),
-    @required TResult notFound(),
-    @required TResult noInternetConnection(),
-    @required TResult httpException(),
-    @required TResult formatException(),
-    @required TResult insufficientPermission(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Exception? originalException) unexpected,
+    required TResult Function() notFound,
+    required TResult Function() noInternetConnection,
+    required TResult Function() httpException,
+    required TResult Function() formatException,
+    required TResult Function() insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return httpException();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult unexpected(Exception originalException),
-    TResult notFound(),
-    TResult noInternetConnection(),
-    TResult httpException(),
-    TResult formatException(),
-    TResult insufficientPermission(),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Exception? originalException)? unexpected,
+    TResult Function()? notFound,
+    TResult Function()? noInternetConnection,
+    TResult Function()? httpException,
+    TResult Function()? formatException,
+    TResult Function()? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (httpException != null) {
       return httpException();
     }
@@ -551,35 +507,29 @@ class _$HttpExeption implements HttpExeption {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult unexpected(Unexpected value),
-    @required TResult notFound(NotFound value),
-    @required TResult noInternetConnection(NoInternetConnection value),
-    @required TResult httpException(HttpExeption value),
-    @required TResult formatException(FormatException value),
-    @required TResult insufficientPermission(InsufficientPermission value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(Unexpected value) unexpected,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(HttpExeption value) httpException,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(InsufficientPermission value)
+        insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return httpException(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult unexpected(Unexpected value),
-    TResult notFound(NotFound value),
-    TResult noInternetConnection(NoInternetConnection value),
-    TResult httpException(HttpExeption value),
-    TResult formatException(FormatException value),
-    TResult insufficientPermission(InsufficientPermission value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Unexpected value)? unexpected,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(HttpExeption value)? httpException,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(InsufficientPermission value)? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (httpException != null) {
       return httpException(this);
     }
@@ -628,35 +578,28 @@ class _$FormatException implements FormatException {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult unexpected(Exception originalException),
-    @required TResult notFound(),
-    @required TResult noInternetConnection(),
-    @required TResult httpException(),
-    @required TResult formatException(),
-    @required TResult insufficientPermission(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Exception? originalException) unexpected,
+    required TResult Function() notFound,
+    required TResult Function() noInternetConnection,
+    required TResult Function() httpException,
+    required TResult Function() formatException,
+    required TResult Function() insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return formatException();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult unexpected(Exception originalException),
-    TResult notFound(),
-    TResult noInternetConnection(),
-    TResult httpException(),
-    TResult formatException(),
-    TResult insufficientPermission(),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Exception? originalException)? unexpected,
+    TResult Function()? notFound,
+    TResult Function()? noInternetConnection,
+    TResult Function()? httpException,
+    TResult Function()? formatException,
+    TResult Function()? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (formatException != null) {
       return formatException();
     }
@@ -665,35 +608,29 @@ class _$FormatException implements FormatException {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult unexpected(Unexpected value),
-    @required TResult notFound(NotFound value),
-    @required TResult noInternetConnection(NoInternetConnection value),
-    @required TResult httpException(HttpExeption value),
-    @required TResult formatException(FormatException value),
-    @required TResult insufficientPermission(InsufficientPermission value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(Unexpected value) unexpected,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(HttpExeption value) httpException,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(InsufficientPermission value)
+        insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return formatException(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult unexpected(Unexpected value),
-    TResult notFound(NotFound value),
-    TResult noInternetConnection(NoInternetConnection value),
-    TResult httpException(HttpExeption value),
-    TResult formatException(FormatException value),
-    TResult insufficientPermission(InsufficientPermission value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Unexpected value)? unexpected,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(HttpExeption value)? httpException,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(InsufficientPermission value)? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (formatException != null) {
       return formatException(this);
     }
@@ -743,35 +680,28 @@ class _$InsufficientPermission implements InsufficientPermission {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult unexpected(Exception originalException),
-    @required TResult notFound(),
-    @required TResult noInternetConnection(),
-    @required TResult httpException(),
-    @required TResult formatException(),
-    @required TResult insufficientPermission(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Exception? originalException) unexpected,
+    required TResult Function() notFound,
+    required TResult Function() noInternetConnection,
+    required TResult Function() httpException,
+    required TResult Function() formatException,
+    required TResult Function() insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return insufficientPermission();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult unexpected(Exception originalException),
-    TResult notFound(),
-    TResult noInternetConnection(),
-    TResult httpException(),
-    TResult formatException(),
-    TResult insufficientPermission(),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Exception? originalException)? unexpected,
+    TResult Function()? notFound,
+    TResult Function()? noInternetConnection,
+    TResult Function()? httpException,
+    TResult Function()? formatException,
+    TResult Function()? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (insufficientPermission != null) {
       return insufficientPermission();
     }
@@ -780,35 +710,29 @@ class _$InsufficientPermission implements InsufficientPermission {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult unexpected(Unexpected value),
-    @required TResult notFound(NotFound value),
-    @required TResult noInternetConnection(NoInternetConnection value),
-    @required TResult httpException(HttpExeption value),
-    @required TResult formatException(FormatException value),
-    @required TResult insufficientPermission(InsufficientPermission value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(Unexpected value) unexpected,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(HttpExeption value) httpException,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(InsufficientPermission value)
+        insufficientPermission,
   }) {
-    assert(unexpected != null);
-    assert(notFound != null);
-    assert(noInternetConnection != null);
-    assert(httpException != null);
-    assert(formatException != null);
-    assert(insufficientPermission != null);
     return insufficientPermission(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult unexpected(Unexpected value),
-    TResult notFound(NotFound value),
-    TResult noInternetConnection(NoInternetConnection value),
-    TResult httpException(HttpExeption value),
-    TResult formatException(FormatException value),
-    TResult insufficientPermission(InsufficientPermission value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Unexpected value)? unexpected,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(HttpExeption value)? httpException,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(InsufficientPermission value)? insufficientPermission,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (insufficientPermission != null) {
       return insufficientPermission(this);
     }

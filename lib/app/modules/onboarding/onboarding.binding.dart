@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:on_field/app/data/providers/teams/teams_remote.provider.dart';
-import 'package:on_field/app/data/repositories/teams/teams.repository.dart';
-import 'package:on_field/app/modules/onboarding_leagues/onboarding_leagues.controller.dart';
-import 'package:on_field/app/modules/onboarding_teams/onboarding_teams.controller.dart';
+import '../../data/providers/teams/teams_remote.provider.dart';
+import '../../data/repositories/teams/teams.repository.dart';
+import '../onboarding_leagues/onboarding_leagues.controller.dart';
+import '../onboarding_teams/onboarding_teams.controller.dart';
 import '../../data/providers/leagues/leagues_local.provider.dart';
 import '../../data/repositories/leagues/leagues.repository.dart';
 import 'onboarding.controller.dart';

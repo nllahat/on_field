@@ -6,7 +6,7 @@ const MediumTextSize = 29.0;
 const BodyText1Size = 16.0;
 const BodyText2Size = 14.0;
 
-String fontNameDefault = GoogleFonts.nunito().fontFamily;
+String? fontNameDefault = GoogleFonts.nunito().fontFamily;
 
 final pageTitleStyle = TextStyle(
   fontFamily: fontNameDefault,

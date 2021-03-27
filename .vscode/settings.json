@@ -15,5 +15,10 @@
     "titleBar.inactiveBackground": "#d3494099",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.color": "#d34940"
+  "peacock.color": "#d34940",
+  "cSpell.words": [
+    "dartz",
+    "firestore",
+    "nullsafety"
+  ]
 }

@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:on_field/app/data/providers/users/users_remote.provider.dart';
-import 'package:on_field/app/data/repositories/users/users.repository.dart';
+import '../../data/providers/users/users_remote.provider.dart';
+import '../../data/repositories/users/users.repository.dart';
 import '../../data/services/auth/auth.service.dart';
 import 'auth.controller.dart';
 

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'team.entity.dart';
 
@@ -9,16 +9,18 @@ part of 'team.entity.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$TeamTearOff {
   const _$TeamTearOff();
 
-// ignore: unused_element
   _Team call(
-      {@required String id,
-      @required String name,
-      @required String shortName,
-      @required String logo}) {
+      {required String id,
+      required String name,
+      required String shortName,
+      required String logo}) {
     return _Team(
       id: id,
       name: name,
@@ -29,18 +31,17 @@ class _$TeamTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Team = _$TeamTearOff();
 
 /// @nodoc
 mixin _$Team {
-  String get id;
-  String get name;
-  String get shortName;
-  String get logo;
+  String get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  String get shortName => throw _privateConstructorUsedError;
+  String get logo => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $TeamCopyWith<Team> get copyWith;
+  $TeamCopyWith<Team> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -60,10 +61,10 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object shortName = freezed,
-    Object logo = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? shortName = freezed,
+    Object? logo = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as String,
@@ -93,10 +94,10 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object shortName = freezed,
-    Object logo = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? shortName = freezed,
+    Object? logo = freezed,
   }) {
     return _then(_Team(
       id: id == freezed ? _value.id : id as String,
@@ -110,14 +111,10 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
 /// @nodoc
 class _$_Team with DiagnosticableTreeMixin implements _Team {
   const _$_Team(
-      {@required this.id,
-      @required this.name,
-      @required this.shortName,
-      @required this.logo})
-      : assert(id != null),
-        assert(name != null),
-        assert(shortName != null),
-        assert(logo != null);
+      {required this.id,
+      required this.name,
+      required this.shortName,
+      required this.logo});
 
   @override
   final String id;
@@ -175,20 +172,20 @@ class _$_Team with DiagnosticableTreeMixin implements _Team {
 
 abstract class _Team implements Team {
   const factory _Team(
-      {@required String id,
-      @required String name,
-      @required String shortName,
-      @required String logo}) = _$_Team;
+      {required String id,
+      required String name,
+      required String shortName,
+      required String logo}) = _$_Team;
 
   @override
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
-  String get shortName;
+  String get shortName => throw _privateConstructorUsedError;
   @override
-  String get logo;
+  String get logo => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TeamCopyWith<_Team> get copyWith;
+  _$TeamCopyWith<_Team> get copyWith => throw _privateConstructorUsedError;
 }

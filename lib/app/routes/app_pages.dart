@@ -1,6 +1,6 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
-import 'package:on_field/app/modules/root/root.binding.dart';
-import 'package:on_field/app/modules/root/root.page.dart';
+import '../modules/root/root.binding.dart';
+import '../modules/root/root.page.dart';
 import '../modules/home/home.binding.dart';
 import '../modules/login/login.binding.dart';
 import '../modules/onboarding/onboarding.binding.dart';

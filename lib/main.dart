@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/styles.dart';
+import 'styles.dart';
 import 'app/modules/auth/auth.binding.dart';
 
 import 'app/routes/app_pages.dart';

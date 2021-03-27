@@ -4,11 +4,11 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'page_data.entity.freezed.dart';
 
 @freezed
-abstract class PageData with _$PageData {
+class PageData with _$PageData {
   const factory PageData({
-    @required String name,
-    @required int navKey,
-    @required Icon icon,
-    @required Widget page,
+    required String name,
+    required int navKey,
+    required Icon icon,
+    required Widget page,
   }) = _PageData;
 }

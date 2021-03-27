@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/modules/stats/stats.controller.dart';
+import 'stats.controller.dart';
 
 class StatsPage extends GetView<StatsController> {
   @override

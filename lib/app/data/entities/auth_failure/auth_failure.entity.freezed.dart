@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'auth_failure.entity.dart';
 
@@ -9,55 +9,51 @@ part of 'auth_failure.entity.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$AuthFailureTearOff {
   const _$AuthFailureTearOff();
 
-// ignore: unused_element
-  _AuthFailure call({Exception originalException}) {
+  _AuthFailure call({Exception? originalException}) {
     return _AuthFailure(
       originalException: originalException,
     );
   }
 
-// ignore: unused_element
-  ServerError serverError({Exception originalError}) {
+  ServerError serverError({Exception? originalError}) {
     return ServerError(
       originalError: originalError,
     );
   }
 
-// ignore: unused_element
-  ProviderException providerException({Exception originalError}) {
+  ProviderException providerException({Exception? originalError}) {
     return ProviderException(
       originalError: originalError,
     );
   }
 
-// ignore: unused_element
-  UserException userException({Exception originalError}) {
+  UserException userException({Exception? originalError}) {
     return UserException(
       originalError: originalError,
     );
   }
 
-// ignore: unused_element
-  CancelledByUser cancelledByUser({Exception originalError}) {
+  CancelledByUser cancelledByUser({Exception? originalError}) {
     return CancelledByUser(
       originalError: originalError,
     );
   }
 
-// ignore: unused_element
-  EmailAlreadyInUse emailAlreadyInUse({Exception originalError}) {
+  EmailAlreadyInUse emailAlreadyInUse({Exception? originalError}) {
     return EmailAlreadyInUse(
       originalError: originalError,
     );
   }
 
-// ignore: unused_element
   InvalidEmailAndPasswordCombination invalidEmailAndPasswordCombination(
-      {Exception originalError}) {
+      {Exception? originalError}) {
     return InvalidEmailAndPasswordCombination(
       originalError: originalError,
     );
@@ -65,57 +61,60 @@ class _$AuthFailureTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $AuthFailure = _$AuthFailureTearOff();
 
 /// @nodoc
 mixin _$AuthFailure {
   @optionalTypeArgs
-  TResult when<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    @required TResult serverError(Exception originalError),
-    @required TResult providerException(Exception originalError),
-    @required TResult userException(Exception originalError),
-    @required TResult cancelledByUser(Exception originalError),
-    @required TResult emailAlreadyInUse(Exception originalError),
-    @required
-        TResult invalidEmailAndPasswordCombination(Exception originalError),
-  });
+  TResult when<TResult extends Object?>(
+    TResult Function(Exception? originalException) $default, {
+    required TResult Function(Exception? originalError) serverError,
+    required TResult Function(Exception? originalError) providerException,
+    required TResult Function(Exception? originalError) userException,
+    required TResult Function(Exception? originalError) cancelledByUser,
+    required TResult Function(Exception? originalError) emailAlreadyInUse,
+    required TResult Function(Exception? originalError)
+        invalidEmailAndPasswordCombination,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    TResult serverError(Exception originalError),
-    TResult providerException(Exception originalError),
-    TResult userException(Exception originalError),
-    TResult cancelledByUser(Exception originalError),
-    TResult emailAlreadyInUse(Exception originalError),
-    TResult invalidEmailAndPasswordCombination(Exception originalError),
-    @required TResult orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Exception? originalException)? $default, {
+    TResult Function(Exception? originalError)? serverError,
+    TResult Function(Exception? originalError)? providerException,
+    TResult Function(Exception? originalError)? userException,
+    TResult Function(Exception? originalError)? cancelledByUser,
+    TResult Function(Exception? originalError)? emailAlreadyInUse,
+    TResult Function(Exception? originalError)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult map<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    @required TResult serverError(ServerError value),
-    @required TResult providerException(ProviderException value),
-    @required TResult userException(UserException value),
-    @required TResult cancelledByUser(CancelledByUser value),
-    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    @required
-        TResult invalidEmailAndPasswordCombination(
-            InvalidEmailAndPasswordCombination value),
-  });
+  TResult map<TResult extends Object?>(
+    TResult Function(_AuthFailure value) $default, {
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(ProviderException value) providerException,
+    required TResult Function(UserException value) userException,
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidEmailAndPasswordCombination value)
+        invalidEmailAndPasswordCombination,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    TResult serverError(ServerError value),
-    TResult providerException(ProviderException value),
-    TResult userException(UserException value),
-    TResult cancelledByUser(CancelledByUser value),
-    TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    TResult invalidEmailAndPasswordCombination(
-        InvalidEmailAndPasswordCombination value),
-    @required TResult orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AuthFailure value)? $default, {
+    TResult Function(ServerError value)? serverError,
+    TResult Function(ProviderException value)? providerException,
+    TResult Function(UserException value)? userException,
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidEmailAndPasswordCombination value)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -139,7 +138,7 @@ abstract class _$AuthFailureCopyWith<$Res> {
   factory _$AuthFailureCopyWith(
           _AuthFailure value, $Res Function(_AuthFailure) then) =
       __$AuthFailureCopyWithImpl<$Res>;
-  $Res call({Exception originalException});
+  $Res call({Exception? originalException});
 }
 
 /// @nodoc
@@ -154,12 +153,12 @@ class __$AuthFailureCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object originalException = freezed,
+    Object? originalException = freezed,
   }) {
     return _then(_AuthFailure(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception,
+          : originalException as Exception?,
     ));
   }
 }
@@ -169,7 +168,7 @@ class _$_AuthFailure implements _AuthFailure {
   const _$_AuthFailure({this.originalException});
 
   @override
-  final Exception originalException;
+  final Exception? originalException;
 
   @override
   String toString() {
@@ -197,39 +196,32 @@ class _$_AuthFailure implements _AuthFailure {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    @required TResult serverError(Exception originalError),
-    @required TResult providerException(Exception originalError),
-    @required TResult userException(Exception originalError),
-    @required TResult cancelledByUser(Exception originalError),
-    @required TResult emailAlreadyInUse(Exception originalError),
-    @required
-        TResult invalidEmailAndPasswordCombination(Exception originalError),
+  TResult when<TResult extends Object?>(
+    TResult Function(Exception? originalException) $default, {
+    required TResult Function(Exception? originalError) serverError,
+    required TResult Function(Exception? originalError) providerException,
+    required TResult Function(Exception? originalError) userException,
+    required TResult Function(Exception? originalError) cancelledByUser,
+    required TResult Function(Exception? originalError) emailAlreadyInUse,
+    required TResult Function(Exception? originalError)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return $default(originalException);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    TResult serverError(Exception originalError),
-    TResult providerException(Exception originalError),
-    TResult userException(Exception originalError),
-    TResult cancelledByUser(Exception originalError),
-    TResult emailAlreadyInUse(Exception originalError),
-    TResult invalidEmailAndPasswordCombination(Exception originalError),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Exception? originalException)? $default, {
+    TResult Function(Exception? originalError)? serverError,
+    TResult Function(Exception? originalError)? providerException,
+    TResult Function(Exception? originalError)? userException,
+    TResult Function(Exception? originalError)? cancelledByUser,
+    TResult Function(Exception? originalError)? emailAlreadyInUse,
+    TResult Function(Exception? originalError)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if ($default != null) {
       return $default(originalException);
     }
@@ -238,41 +230,32 @@ class _$_AuthFailure implements _AuthFailure {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    @required TResult serverError(ServerError value),
-    @required TResult providerException(ProviderException value),
-    @required TResult userException(UserException value),
-    @required TResult cancelledByUser(CancelledByUser value),
-    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    @required
-        TResult invalidEmailAndPasswordCombination(
-            InvalidEmailAndPasswordCombination value),
+  TResult map<TResult extends Object?>(
+    TResult Function(_AuthFailure value) $default, {
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(ProviderException value) providerException,
+    required TResult Function(UserException value) userException,
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidEmailAndPasswordCombination value)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return $default(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    TResult serverError(ServerError value),
-    TResult providerException(ProviderException value),
-    TResult userException(UserException value),
-    TResult cancelledByUser(CancelledByUser value),
-    TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    TResult invalidEmailAndPasswordCombination(
-        InvalidEmailAndPasswordCombination value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AuthFailure value)? $default, {
+    TResult Function(ServerError value)? serverError,
+    TResult Function(ProviderException value)? providerException,
+    TResult Function(UserException value)? userException,
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidEmailAndPasswordCombination value)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if ($default != null) {
       return $default(this);
     }
@@ -281,11 +264,12 @@ class _$_AuthFailure implements _AuthFailure {
 }
 
 abstract class _AuthFailure implements AuthFailure {
-  const factory _AuthFailure({Exception originalException}) = _$_AuthFailure;
+  const factory _AuthFailure({Exception? originalException}) = _$_AuthFailure;
 
-  Exception get originalException;
+  Exception? get originalException => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  _$AuthFailureCopyWith<_AuthFailure> get copyWith;
+  _$AuthFailureCopyWith<_AuthFailure> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -293,7 +277,7 @@ abstract class $ServerErrorCopyWith<$Res> {
   factory $ServerErrorCopyWith(
           ServerError value, $Res Function(ServerError) then) =
       _$ServerErrorCopyWithImpl<$Res>;
-  $Res call({Exception originalError});
+  $Res call({Exception? originalError});
 }
 
 /// @nodoc
@@ -308,12 +292,12 @@ class _$ServerErrorCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object originalError = freezed,
+    Object? originalError = freezed,
   }) {
     return _then(ServerError(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception,
+          : originalError as Exception?,
     ));
   }
 }
@@ -323,7 +307,7 @@ class _$ServerError implements ServerError {
   const _$ServerError({this.originalError});
 
   @override
-  final Exception originalError;
+  final Exception? originalError;
 
   @override
   String toString() {
@@ -350,39 +334,32 @@ class _$ServerError implements ServerError {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    @required TResult serverError(Exception originalError),
-    @required TResult providerException(Exception originalError),
-    @required TResult userException(Exception originalError),
-    @required TResult cancelledByUser(Exception originalError),
-    @required TResult emailAlreadyInUse(Exception originalError),
-    @required
-        TResult invalidEmailAndPasswordCombination(Exception originalError),
+  TResult when<TResult extends Object?>(
+    TResult Function(Exception? originalException) $default, {
+    required TResult Function(Exception? originalError) serverError,
+    required TResult Function(Exception? originalError) providerException,
+    required TResult Function(Exception? originalError) userException,
+    required TResult Function(Exception? originalError) cancelledByUser,
+    required TResult Function(Exception? originalError) emailAlreadyInUse,
+    required TResult Function(Exception? originalError)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return serverError(originalError);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    TResult serverError(Exception originalError),
-    TResult providerException(Exception originalError),
-    TResult userException(Exception originalError),
-    TResult cancelledByUser(Exception originalError),
-    TResult emailAlreadyInUse(Exception originalError),
-    TResult invalidEmailAndPasswordCombination(Exception originalError),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Exception? originalException)? $default, {
+    TResult Function(Exception? originalError)? serverError,
+    TResult Function(Exception? originalError)? providerException,
+    TResult Function(Exception? originalError)? userException,
+    TResult Function(Exception? originalError)? cancelledByUser,
+    TResult Function(Exception? originalError)? emailAlreadyInUse,
+    TResult Function(Exception? originalError)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (serverError != null) {
       return serverError(originalError);
     }
@@ -391,41 +368,32 @@ class _$ServerError implements ServerError {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    @required TResult serverError(ServerError value),
-    @required TResult providerException(ProviderException value),
-    @required TResult userException(UserException value),
-    @required TResult cancelledByUser(CancelledByUser value),
-    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    @required
-        TResult invalidEmailAndPasswordCombination(
-            InvalidEmailAndPasswordCombination value),
+  TResult map<TResult extends Object?>(
+    TResult Function(_AuthFailure value) $default, {
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(ProviderException value) providerException,
+    required TResult Function(UserException value) userException,
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidEmailAndPasswordCombination value)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return serverError(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    TResult serverError(ServerError value),
-    TResult providerException(ProviderException value),
-    TResult userException(UserException value),
-    TResult cancelledByUser(CancelledByUser value),
-    TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    TResult invalidEmailAndPasswordCombination(
-        InvalidEmailAndPasswordCombination value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AuthFailure value)? $default, {
+    TResult Function(ServerError value)? serverError,
+    TResult Function(ProviderException value)? providerException,
+    TResult Function(UserException value)? userException,
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidEmailAndPasswordCombination value)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (serverError != null) {
       return serverError(this);
     }
@@ -434,11 +402,12 @@ class _$ServerError implements ServerError {
 }
 
 abstract class ServerError implements AuthFailure {
-  const factory ServerError({Exception originalError}) = _$ServerError;
+  const factory ServerError({Exception? originalError}) = _$ServerError;
 
-  Exception get originalError;
+  Exception? get originalError => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerErrorCopyWith<ServerError> get copyWith;
+  $ServerErrorCopyWith<ServerError> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -446,7 +415,7 @@ abstract class $ProviderExceptionCopyWith<$Res> {
   factory $ProviderExceptionCopyWith(
           ProviderException value, $Res Function(ProviderException) then) =
       _$ProviderExceptionCopyWithImpl<$Res>;
-  $Res call({Exception originalError});
+  $Res call({Exception? originalError});
 }
 
 /// @nodoc
@@ -462,12 +431,12 @@ class _$ProviderExceptionCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object originalError = freezed,
+    Object? originalError = freezed,
   }) {
     return _then(ProviderException(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception,
+          : originalError as Exception?,
     ));
   }
 }
@@ -477,7 +446,7 @@ class _$ProviderException implements ProviderException {
   const _$ProviderException({this.originalError});
 
   @override
-  final Exception originalError;
+  final Exception? originalError;
 
   @override
   String toString() {
@@ -504,39 +473,32 @@ class _$ProviderException implements ProviderException {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    @required TResult serverError(Exception originalError),
-    @required TResult providerException(Exception originalError),
-    @required TResult userException(Exception originalError),
-    @required TResult cancelledByUser(Exception originalError),
-    @required TResult emailAlreadyInUse(Exception originalError),
-    @required
-        TResult invalidEmailAndPasswordCombination(Exception originalError),
+  TResult when<TResult extends Object?>(
+    TResult Function(Exception? originalException) $default, {
+    required TResult Function(Exception? originalError) serverError,
+    required TResult Function(Exception? originalError) providerException,
+    required TResult Function(Exception? originalError) userException,
+    required TResult Function(Exception? originalError) cancelledByUser,
+    required TResult Function(Exception? originalError) emailAlreadyInUse,
+    required TResult Function(Exception? originalError)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return providerException(originalError);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    TResult serverError(Exception originalError),
-    TResult providerException(Exception originalError),
-    TResult userException(Exception originalError),
-    TResult cancelledByUser(Exception originalError),
-    TResult emailAlreadyInUse(Exception originalError),
-    TResult invalidEmailAndPasswordCombination(Exception originalError),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Exception? originalException)? $default, {
+    TResult Function(Exception? originalError)? serverError,
+    TResult Function(Exception? originalError)? providerException,
+    TResult Function(Exception? originalError)? userException,
+    TResult Function(Exception? originalError)? cancelledByUser,
+    TResult Function(Exception? originalError)? emailAlreadyInUse,
+    TResult Function(Exception? originalError)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (providerException != null) {
       return providerException(originalError);
     }
@@ -545,41 +507,32 @@ class _$ProviderException implements ProviderException {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    @required TResult serverError(ServerError value),
-    @required TResult providerException(ProviderException value),
-    @required TResult userException(UserException value),
-    @required TResult cancelledByUser(CancelledByUser value),
-    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    @required
-        TResult invalidEmailAndPasswordCombination(
-            InvalidEmailAndPasswordCombination value),
+  TResult map<TResult extends Object?>(
+    TResult Function(_AuthFailure value) $default, {
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(ProviderException value) providerException,
+    required TResult Function(UserException value) userException,
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidEmailAndPasswordCombination value)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return providerException(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    TResult serverError(ServerError value),
-    TResult providerException(ProviderException value),
-    TResult userException(UserException value),
-    TResult cancelledByUser(CancelledByUser value),
-    TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    TResult invalidEmailAndPasswordCombination(
-        InvalidEmailAndPasswordCombination value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AuthFailure value)? $default, {
+    TResult Function(ServerError value)? serverError,
+    TResult Function(ProviderException value)? providerException,
+    TResult Function(UserException value)? userException,
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidEmailAndPasswordCombination value)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (providerException != null) {
       return providerException(this);
     }
@@ -588,12 +541,13 @@ class _$ProviderException implements ProviderException {
 }
 
 abstract class ProviderException implements AuthFailure {
-  const factory ProviderException({Exception originalError}) =
+  const factory ProviderException({Exception? originalError}) =
       _$ProviderException;
 
-  Exception get originalError;
+  Exception? get originalError => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ProviderExceptionCopyWith<ProviderException> get copyWith;
+  $ProviderExceptionCopyWith<ProviderException> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -601,7 +555,7 @@ abstract class $UserExceptionCopyWith<$Res> {
   factory $UserExceptionCopyWith(
           UserException value, $Res Function(UserException) then) =
       _$UserExceptionCopyWithImpl<$Res>;
-  $Res call({Exception originalError});
+  $Res call({Exception? originalError});
 }
 
 /// @nodoc
@@ -616,12 +570,12 @@ class _$UserExceptionCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object originalError = freezed,
+    Object? originalError = freezed,
   }) {
     return _then(UserException(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception,
+          : originalError as Exception?,
     ));
   }
 }
@@ -631,7 +585,7 @@ class _$UserException implements UserException {
   const _$UserException({this.originalError});
 
   @override
-  final Exception originalError;
+  final Exception? originalError;
 
   @override
   String toString() {
@@ -658,39 +612,32 @@ class _$UserException implements UserException {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    @required TResult serverError(Exception originalError),
-    @required TResult providerException(Exception originalError),
-    @required TResult userException(Exception originalError),
-    @required TResult cancelledByUser(Exception originalError),
-    @required TResult emailAlreadyInUse(Exception originalError),
-    @required
-        TResult invalidEmailAndPasswordCombination(Exception originalError),
+  TResult when<TResult extends Object?>(
+    TResult Function(Exception? originalException) $default, {
+    required TResult Function(Exception? originalError) serverError,
+    required TResult Function(Exception? originalError) providerException,
+    required TResult Function(Exception? originalError) userException,
+    required TResult Function(Exception? originalError) cancelledByUser,
+    required TResult Function(Exception? originalError) emailAlreadyInUse,
+    required TResult Function(Exception? originalError)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return userException(originalError);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    TResult serverError(Exception originalError),
-    TResult providerException(Exception originalError),
-    TResult userException(Exception originalError),
-    TResult cancelledByUser(Exception originalError),
-    TResult emailAlreadyInUse(Exception originalError),
-    TResult invalidEmailAndPasswordCombination(Exception originalError),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Exception? originalException)? $default, {
+    TResult Function(Exception? originalError)? serverError,
+    TResult Function(Exception? originalError)? providerException,
+    TResult Function(Exception? originalError)? userException,
+    TResult Function(Exception? originalError)? cancelledByUser,
+    TResult Function(Exception? originalError)? emailAlreadyInUse,
+    TResult Function(Exception? originalError)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (userException != null) {
       return userException(originalError);
     }
@@ -699,41 +646,32 @@ class _$UserException implements UserException {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    @required TResult serverError(ServerError value),
-    @required TResult providerException(ProviderException value),
-    @required TResult userException(UserException value),
-    @required TResult cancelledByUser(CancelledByUser value),
-    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    @required
-        TResult invalidEmailAndPasswordCombination(
-            InvalidEmailAndPasswordCombination value),
+  TResult map<TResult extends Object?>(
+    TResult Function(_AuthFailure value) $default, {
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(ProviderException value) providerException,
+    required TResult Function(UserException value) userException,
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidEmailAndPasswordCombination value)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return userException(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    TResult serverError(ServerError value),
-    TResult providerException(ProviderException value),
-    TResult userException(UserException value),
-    TResult cancelledByUser(CancelledByUser value),
-    TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    TResult invalidEmailAndPasswordCombination(
-        InvalidEmailAndPasswordCombination value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AuthFailure value)? $default, {
+    TResult Function(ServerError value)? serverError,
+    TResult Function(ProviderException value)? providerException,
+    TResult Function(UserException value)? userException,
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidEmailAndPasswordCombination value)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (userException != null) {
       return userException(this);
     }
@@ -742,11 +680,12 @@ class _$UserException implements UserException {
 }
 
 abstract class UserException implements AuthFailure {
-  const factory UserException({Exception originalError}) = _$UserException;
+  const factory UserException({Exception? originalError}) = _$UserException;
 
-  Exception get originalError;
+  Exception? get originalError => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UserExceptionCopyWith<UserException> get copyWith;
+  $UserExceptionCopyWith<UserException> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -754,7 +693,7 @@ abstract class $CancelledByUserCopyWith<$Res> {
   factory $CancelledByUserCopyWith(
           CancelledByUser value, $Res Function(CancelledByUser) then) =
       _$CancelledByUserCopyWithImpl<$Res>;
-  $Res call({Exception originalError});
+  $Res call({Exception? originalError});
 }
 
 /// @nodoc
@@ -770,12 +709,12 @@ class _$CancelledByUserCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object originalError = freezed,
+    Object? originalError = freezed,
   }) {
     return _then(CancelledByUser(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception,
+          : originalError as Exception?,
     ));
   }
 }
@@ -785,7 +724,7 @@ class _$CancelledByUser implements CancelledByUser {
   const _$CancelledByUser({this.originalError});
 
   @override
-  final Exception originalError;
+  final Exception? originalError;
 
   @override
   String toString() {
@@ -812,39 +751,32 @@ class _$CancelledByUser implements CancelledByUser {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    @required TResult serverError(Exception originalError),
-    @required TResult providerException(Exception originalError),
-    @required TResult userException(Exception originalError),
-    @required TResult cancelledByUser(Exception originalError),
-    @required TResult emailAlreadyInUse(Exception originalError),
-    @required
-        TResult invalidEmailAndPasswordCombination(Exception originalError),
+  TResult when<TResult extends Object?>(
+    TResult Function(Exception? originalException) $default, {
+    required TResult Function(Exception? originalError) serverError,
+    required TResult Function(Exception? originalError) providerException,
+    required TResult Function(Exception? originalError) userException,
+    required TResult Function(Exception? originalError) cancelledByUser,
+    required TResult Function(Exception? originalError) emailAlreadyInUse,
+    required TResult Function(Exception? originalError)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return cancelledByUser(originalError);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    TResult serverError(Exception originalError),
-    TResult providerException(Exception originalError),
-    TResult userException(Exception originalError),
-    TResult cancelledByUser(Exception originalError),
-    TResult emailAlreadyInUse(Exception originalError),
-    TResult invalidEmailAndPasswordCombination(Exception originalError),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Exception? originalException)? $default, {
+    TResult Function(Exception? originalError)? serverError,
+    TResult Function(Exception? originalError)? providerException,
+    TResult Function(Exception? originalError)? userException,
+    TResult Function(Exception? originalError)? cancelledByUser,
+    TResult Function(Exception? originalError)? emailAlreadyInUse,
+    TResult Function(Exception? originalError)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (cancelledByUser != null) {
       return cancelledByUser(originalError);
     }
@@ -853,41 +785,32 @@ class _$CancelledByUser implements CancelledByUser {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    @required TResult serverError(ServerError value),
-    @required TResult providerException(ProviderException value),
-    @required TResult userException(UserException value),
-    @required TResult cancelledByUser(CancelledByUser value),
-    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    @required
-        TResult invalidEmailAndPasswordCombination(
-            InvalidEmailAndPasswordCombination value),
+  TResult map<TResult extends Object?>(
+    TResult Function(_AuthFailure value) $default, {
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(ProviderException value) providerException,
+    required TResult Function(UserException value) userException,
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidEmailAndPasswordCombination value)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return cancelledByUser(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    TResult serverError(ServerError value),
-    TResult providerException(ProviderException value),
-    TResult userException(UserException value),
-    TResult cancelledByUser(CancelledByUser value),
-    TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    TResult invalidEmailAndPasswordCombination(
-        InvalidEmailAndPasswordCombination value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AuthFailure value)? $default, {
+    TResult Function(ServerError value)? serverError,
+    TResult Function(ProviderException value)? providerException,
+    TResult Function(UserException value)? userException,
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidEmailAndPasswordCombination value)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (cancelledByUser != null) {
       return cancelledByUser(this);
     }
@@ -896,11 +819,12 @@ class _$CancelledByUser implements CancelledByUser {
 }
 
 abstract class CancelledByUser implements AuthFailure {
-  const factory CancelledByUser({Exception originalError}) = _$CancelledByUser;
+  const factory CancelledByUser({Exception? originalError}) = _$CancelledByUser;
 
-  Exception get originalError;
+  Exception? get originalError => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CancelledByUserCopyWith<CancelledByUser> get copyWith;
+  $CancelledByUserCopyWith<CancelledByUser> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -908,7 +832,7 @@ abstract class $EmailAlreadyInUseCopyWith<$Res> {
   factory $EmailAlreadyInUseCopyWith(
           EmailAlreadyInUse value, $Res Function(EmailAlreadyInUse) then) =
       _$EmailAlreadyInUseCopyWithImpl<$Res>;
-  $Res call({Exception originalError});
+  $Res call({Exception? originalError});
 }
 
 /// @nodoc
@@ -924,12 +848,12 @@ class _$EmailAlreadyInUseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object originalError = freezed,
+    Object? originalError = freezed,
   }) {
     return _then(EmailAlreadyInUse(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception,
+          : originalError as Exception?,
     ));
   }
 }
@@ -939,7 +863,7 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
   const _$EmailAlreadyInUse({this.originalError});
 
   @override
-  final Exception originalError;
+  final Exception? originalError;
 
   @override
   String toString() {
@@ -966,39 +890,32 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    @required TResult serverError(Exception originalError),
-    @required TResult providerException(Exception originalError),
-    @required TResult userException(Exception originalError),
-    @required TResult cancelledByUser(Exception originalError),
-    @required TResult emailAlreadyInUse(Exception originalError),
-    @required
-        TResult invalidEmailAndPasswordCombination(Exception originalError),
+  TResult when<TResult extends Object?>(
+    TResult Function(Exception? originalException) $default, {
+    required TResult Function(Exception? originalError) serverError,
+    required TResult Function(Exception? originalError) providerException,
+    required TResult Function(Exception? originalError) userException,
+    required TResult Function(Exception? originalError) cancelledByUser,
+    required TResult Function(Exception? originalError) emailAlreadyInUse,
+    required TResult Function(Exception? originalError)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return emailAlreadyInUse(originalError);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    TResult serverError(Exception originalError),
-    TResult providerException(Exception originalError),
-    TResult userException(Exception originalError),
-    TResult cancelledByUser(Exception originalError),
-    TResult emailAlreadyInUse(Exception originalError),
-    TResult invalidEmailAndPasswordCombination(Exception originalError),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Exception? originalException)? $default, {
+    TResult Function(Exception? originalError)? serverError,
+    TResult Function(Exception? originalError)? providerException,
+    TResult Function(Exception? originalError)? userException,
+    TResult Function(Exception? originalError)? cancelledByUser,
+    TResult Function(Exception? originalError)? emailAlreadyInUse,
+    TResult Function(Exception? originalError)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (emailAlreadyInUse != null) {
       return emailAlreadyInUse(originalError);
     }
@@ -1007,41 +924,32 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    @required TResult serverError(ServerError value),
-    @required TResult providerException(ProviderException value),
-    @required TResult userException(UserException value),
-    @required TResult cancelledByUser(CancelledByUser value),
-    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    @required
-        TResult invalidEmailAndPasswordCombination(
-            InvalidEmailAndPasswordCombination value),
+  TResult map<TResult extends Object?>(
+    TResult Function(_AuthFailure value) $default, {
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(ProviderException value) providerException,
+    required TResult Function(UserException value) userException,
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidEmailAndPasswordCombination value)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return emailAlreadyInUse(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    TResult serverError(ServerError value),
-    TResult providerException(ProviderException value),
-    TResult userException(UserException value),
-    TResult cancelledByUser(CancelledByUser value),
-    TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    TResult invalidEmailAndPasswordCombination(
-        InvalidEmailAndPasswordCombination value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AuthFailure value)? $default, {
+    TResult Function(ServerError value)? serverError,
+    TResult Function(ProviderException value)? providerException,
+    TResult Function(UserException value)? userException,
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidEmailAndPasswordCombination value)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (emailAlreadyInUse != null) {
       return emailAlreadyInUse(this);
     }
@@ -1050,12 +958,13 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
 }
 
 abstract class EmailAlreadyInUse implements AuthFailure {
-  const factory EmailAlreadyInUse({Exception originalError}) =
+  const factory EmailAlreadyInUse({Exception? originalError}) =
       _$EmailAlreadyInUse;
 
-  Exception get originalError;
+  Exception? get originalError => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $EmailAlreadyInUseCopyWith<EmailAlreadyInUse> get copyWith;
+  $EmailAlreadyInUseCopyWith<EmailAlreadyInUse> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -1064,7 +973,7 @@ abstract class $InvalidEmailAndPasswordCombinationCopyWith<$Res> {
           InvalidEmailAndPasswordCombination value,
           $Res Function(InvalidEmailAndPasswordCombination) then) =
       _$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>;
-  $Res call({Exception originalError});
+  $Res call({Exception? originalError});
 }
 
 /// @nodoc
@@ -1082,12 +991,12 @@ class _$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object originalError = freezed,
+    Object? originalError = freezed,
   }) {
     return _then(InvalidEmailAndPasswordCombination(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception,
+          : originalError as Exception?,
     ));
   }
 }
@@ -1098,7 +1007,7 @@ class _$InvalidEmailAndPasswordCombination
   const _$InvalidEmailAndPasswordCombination({this.originalError});
 
   @override
-  final Exception originalError;
+  final Exception? originalError;
 
   @override
   String toString() {
@@ -1127,39 +1036,32 @@ class _$InvalidEmailAndPasswordCombination
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    @required TResult serverError(Exception originalError),
-    @required TResult providerException(Exception originalError),
-    @required TResult userException(Exception originalError),
-    @required TResult cancelledByUser(Exception originalError),
-    @required TResult emailAlreadyInUse(Exception originalError),
-    @required
-        TResult invalidEmailAndPasswordCombination(Exception originalError),
+  TResult when<TResult extends Object?>(
+    TResult Function(Exception? originalException) $default, {
+    required TResult Function(Exception? originalError) serverError,
+    required TResult Function(Exception? originalError) providerException,
+    required TResult Function(Exception? originalError) userException,
+    required TResult Function(Exception? originalError) cancelledByUser,
+    required TResult Function(Exception? originalError) emailAlreadyInUse,
+    required TResult Function(Exception? originalError)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return invalidEmailAndPasswordCombination(originalError);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>(
-    TResult $default(Exception originalException), {
-    TResult serverError(Exception originalError),
-    TResult providerException(Exception originalError),
-    TResult userException(Exception originalError),
-    TResult cancelledByUser(Exception originalError),
-    TResult emailAlreadyInUse(Exception originalError),
-    TResult invalidEmailAndPasswordCombination(Exception originalError),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Exception? originalException)? $default, {
+    TResult Function(Exception? originalError)? serverError,
+    TResult Function(Exception? originalError)? providerException,
+    TResult Function(Exception? originalError)? userException,
+    TResult Function(Exception? originalError)? cancelledByUser,
+    TResult Function(Exception? originalError)? emailAlreadyInUse,
+    TResult Function(Exception? originalError)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (invalidEmailAndPasswordCombination != null) {
       return invalidEmailAndPasswordCombination(originalError);
     }
@@ -1168,41 +1070,32 @@ class _$InvalidEmailAndPasswordCombination
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    @required TResult serverError(ServerError value),
-    @required TResult providerException(ProviderException value),
-    @required TResult userException(UserException value),
-    @required TResult cancelledByUser(CancelledByUser value),
-    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    @required
-        TResult invalidEmailAndPasswordCombination(
-            InvalidEmailAndPasswordCombination value),
+  TResult map<TResult extends Object?>(
+    TResult Function(_AuthFailure value) $default, {
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(ProviderException value) providerException,
+    required TResult Function(UserException value) userException,
+    required TResult Function(CancelledByUser value) cancelledByUser,
+    required TResult Function(EmailAlreadyInUse value) emailAlreadyInUse,
+    required TResult Function(InvalidEmailAndPasswordCombination value)
+        invalidEmailAndPasswordCombination,
   }) {
-    assert($default != null);
-    assert(serverError != null);
-    assert(providerException != null);
-    assert(userException != null);
-    assert(cancelledByUser != null);
-    assert(emailAlreadyInUse != null);
-    assert(invalidEmailAndPasswordCombination != null);
     return invalidEmailAndPasswordCombination(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>(
-    TResult $default(_AuthFailure value), {
-    TResult serverError(ServerError value),
-    TResult providerException(ProviderException value),
-    TResult userException(UserException value),
-    TResult cancelledByUser(CancelledByUser value),
-    TResult emailAlreadyInUse(EmailAlreadyInUse value),
-    TResult invalidEmailAndPasswordCombination(
-        InvalidEmailAndPasswordCombination value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AuthFailure value)? $default, {
+    TResult Function(ServerError value)? serverError,
+    TResult Function(ProviderException value)? providerException,
+    TResult Function(UserException value)? userException,
+    TResult Function(CancelledByUser value)? cancelledByUser,
+    TResult Function(EmailAlreadyInUse value)? emailAlreadyInUse,
+    TResult Function(InvalidEmailAndPasswordCombination value)?
+        invalidEmailAndPasswordCombination,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (invalidEmailAndPasswordCombination != null) {
       return invalidEmailAndPasswordCombination(this);
     }
@@ -1211,11 +1104,12 @@ class _$InvalidEmailAndPasswordCombination
 }
 
 abstract class InvalidEmailAndPasswordCombination implements AuthFailure {
-  const factory InvalidEmailAndPasswordCombination({Exception originalError}) =
+  const factory InvalidEmailAndPasswordCombination({Exception? originalError}) =
       _$InvalidEmailAndPasswordCombination;
 
-  Exception get originalError;
+  Exception? get originalError => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $InvalidEmailAndPasswordCombinationCopyWith<
-      InvalidEmailAndPasswordCombination> get copyWith;
+          InvalidEmailAndPasswordCombination>
+      get copyWith => throw _privateConstructorUsedError;
 }

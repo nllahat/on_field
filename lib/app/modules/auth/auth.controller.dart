@@ -11,12 +11,12 @@ import '../../data/services/auth/i_auth.service.dart';
 class AuthController extends GetxController {
   final IAuthService authService;
 
-  AuthController({@required this.authService}) : assert(authService != null);
+  AuthController({required this.authService});
 
   Rx<AuthState> _authStateStream = AuthState.initial().obs;
   Rx<Option<User>> _currentUser = none<User>().obs;
 
-  AuthState get state => _authStateStream.value;
+  AuthState? get state => _authStateStream.value;
   User get currentUser {
     var option = _foldUser(authService.currentUser);
 
@@ -39,7 +39,7 @@ class AuthController extends GetxController {
   }
 
   Future<void> signInWithEmailAndPassword(
-      {String email, String password}) async {
+      {required String email, required String password}) async {
     Either<AuthFailure, Unit> authFailureOrSuccess = await authService
         .signInWithEmailAndPassword(emailAddress: email, password: password);
 
@@ -54,16 +54,16 @@ class AuthController extends GetxController {
     await authService.signOut();
   }
 
-  void _handleUserChanged(Option<User> user) async {
-    user.fold(() {
+  void _handleUserChanged(Option<User>? user) async {
+    user?.fold(() {
       _authStateStream.value = AuthState.unauthenticated();
     }, (_) {
       _authStateStream.value = AuthState.authenticated();
     });
   }
 
-  void _handleAuthStateChanged(AuthState authState) async {
-    authState.map(
+  void _handleAuthStateChanged(AuthState? authState) async {
+    authState?.map(
         initial: (_) {},
         loading: (_) {},
         authenticated: (_) {

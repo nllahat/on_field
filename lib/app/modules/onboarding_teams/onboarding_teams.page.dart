@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/modules/onboarding/onboarding.controller.dart';
+import '../onboarding/onboarding.controller.dart';
 
 import 'onboarding_teams.controller.dart';
 
@@ -43,8 +43,8 @@ class OnboardingTeamsPage extends StatelessWidget {
                       },
                     ),
                     Container(
-                      child:
-                          onboardingLeaguesController.teamsMap[league].fold(() {
+                      child: onboardingLeaguesController.teamsMap[league]!.fold(
+                          () {
                         return Text('Missing teams');
                       }, (teams) {
                         return Column(
@@ -55,9 +55,9 @@ class OnboardingTeamsPage extends StatelessWidget {
                               if (onboardingController.selectedTeams[league] !=
                                   null) {
                                 isTeamSelected = onboardingController
-                                            .selectedTeams[league].value !=
+                                            .selectedTeams[league]!.value !=
                                         null &&
-                                    onboardingController.selectedTeams[league]
+                                    onboardingController.selectedTeams[league]!
                                             .value[team] ==
                                         true;
                               }

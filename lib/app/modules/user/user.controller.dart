@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import '../../data/entities/failure/failure.entity.dart';
 import '../../data/entities/user/user.entity.dart';
@@ -9,7 +8,7 @@ import '../auth/auth.controller.dart';
 class UserController extends GetxController {
   final IUsersRepository repository;
 
-  UserController({@required this.repository}) : assert(repository != null);
+  UserController({required this.repository});
 
   Future<Either<Failure, Unit>> setUserFinishedOnboarding() async {
     final User currentUser = Get.find<AuthController>().currentUser;

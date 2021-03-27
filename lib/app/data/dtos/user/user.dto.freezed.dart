@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'user.dto.dart';
 
@@ -8,6 +8,10 @@ part of 'user.dto.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 UserDto _$UserDtoFromJson(Map<String, dynamic> json) {
   return _UserDto.fromJson(json);
 }
@@ -16,12 +20,11 @@ UserDto _$UserDtoFromJson(Map<String, dynamic> json) {
 class _$UserDtoTearOff {
   const _$UserDtoTearOff();
 
-// ignore: unused_element
   _UserDto call(
-      {@JsonKey(ignore: true) String id,
-      @required String emailAddress,
-      @required String fullName,
-      bool finishedOnboarding}) {
+      {required String id,
+      required String emailAddress,
+      required String fullName,
+      bool? finishedOnboarding}) {
     return _UserDto(
       id: id,
       emailAddress: emailAddress,
@@ -30,27 +33,24 @@ class _$UserDtoTearOff {
     );
   }
 
-// ignore: unused_element
   UserDto fromJson(Map<String, Object> json) {
     return UserDto.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $UserDto = _$UserDtoTearOff();
 
 /// @nodoc
 mixin _$UserDto {
-  @JsonKey(ignore: true)
-  String get id;
-  String get emailAddress;
-  String get fullName;
-  bool get finishedOnboarding;
+  String get id => throw _privateConstructorUsedError;
+  String get emailAddress => throw _privateConstructorUsedError;
+  String get fullName => throw _privateConstructorUsedError;
+  bool? get finishedOnboarding => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UserDtoCopyWith<UserDto> get copyWith;
+  $UserDtoCopyWith<UserDto> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -58,10 +58,10 @@ abstract class $UserDtoCopyWith<$Res> {
   factory $UserDtoCopyWith(UserDto value, $Res Function(UserDto) then) =
       _$UserDtoCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(ignore: true) String id,
+      {String id,
       String emailAddress,
       String fullName,
-      bool finishedOnboarding});
+      bool? finishedOnboarding});
 }
 
 /// @nodoc
@@ -74,10 +74,10 @@ class _$UserDtoCopyWithImpl<$Res> implements $UserDtoCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object emailAddress = freezed,
-    Object fullName = freezed,
-    Object finishedOnboarding = freezed,
+    Object? id = freezed,
+    Object? emailAddress = freezed,
+    Object? fullName = freezed,
+    Object? finishedOnboarding = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as String,
@@ -87,7 +87,7 @@ class _$UserDtoCopyWithImpl<$Res> implements $UserDtoCopyWith<$Res> {
       fullName: fullName == freezed ? _value.fullName : fullName as String,
       finishedOnboarding: finishedOnboarding == freezed
           ? _value.finishedOnboarding
-          : finishedOnboarding as bool,
+          : finishedOnboarding as bool?,
     ));
   }
 }
@@ -98,10 +98,10 @@ abstract class _$UserDtoCopyWith<$Res> implements $UserDtoCopyWith<$Res> {
       __$UserDtoCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(ignore: true) String id,
+      {String id,
       String emailAddress,
       String fullName,
-      bool finishedOnboarding});
+      bool? finishedOnboarding});
 }
 
 /// @nodoc
@@ -115,10 +115,10 @@ class __$UserDtoCopyWithImpl<$Res> extends _$UserDtoCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object emailAddress = freezed,
-    Object fullName = freezed,
-    Object finishedOnboarding = freezed,
+    Object? id = freezed,
+    Object? emailAddress = freezed,
+    Object? fullName = freezed,
+    Object? finishedOnboarding = freezed,
   }) {
     return _then(_UserDto(
       id: id == freezed ? _value.id : id as String,
@@ -128,7 +128,7 @@ class __$UserDtoCopyWithImpl<$Res> extends _$UserDtoCopyWithImpl<$Res>
       fullName: fullName == freezed ? _value.fullName : fullName as String,
       finishedOnboarding: finishedOnboarding == freezed
           ? _value.finishedOnboarding
-          : finishedOnboarding as bool,
+          : finishedOnboarding as bool?,
     ));
   }
 }
@@ -138,26 +138,23 @@ class __$UserDtoCopyWithImpl<$Res> extends _$UserDtoCopyWithImpl<$Res>
 /// @nodoc
 class _$_UserDto extends _UserDto {
   const _$_UserDto(
-      {@JsonKey(ignore: true) this.id,
-      @required this.emailAddress,
-      @required this.fullName,
+      {required this.id,
+      required this.emailAddress,
+      required this.fullName,
       this.finishedOnboarding})
-      : assert(emailAddress != null),
-        assert(fullName != null),
-        super._();
+      : super._();
 
   factory _$_UserDto.fromJson(Map<String, dynamic> json) =>
       _$_$_UserDtoFromJson(json);
 
   @override
-  @JsonKey(ignore: true)
   final String id;
   @override
   final String emailAddress;
   @override
   final String fullName;
   @override
-  final bool finishedOnboarding;
+  final bool? finishedOnboarding;
 
   @override
   String toString() {
@@ -203,23 +200,23 @@ class _$_UserDto extends _UserDto {
 abstract class _UserDto extends UserDto {
   const _UserDto._() : super._();
   const factory _UserDto(
-      {@JsonKey(ignore: true) String id,
-      @required String emailAddress,
-      @required String fullName,
-      bool finishedOnboarding}) = _$_UserDto;
+      {required String id,
+      required String emailAddress,
+      required String fullName,
+      bool? finishedOnboarding}) = _$_UserDto;
 
   factory _UserDto.fromJson(Map<String, dynamic> json) = _$_UserDto.fromJson;
 
   @override
+  String get id => throw _privateConstructorUsedError;
+  @override
+  String get emailAddress => throw _privateConstructorUsedError;
+  @override
+  String get fullName => throw _privateConstructorUsedError;
+  @override
+  bool? get finishedOnboarding => throw _privateConstructorUsedError;
+  @override
   @JsonKey(ignore: true)
-  String get id;
-  @override
-  String get emailAddress;
-  @override
-  String get fullName;
-  @override
-  bool get finishedOnboarding;
-  @override
-  @JsonKey(ignore: true)
-  _$UserDtoCopyWith<_UserDto> get copyWith;
+  _$UserDtoCopyWith<_UserDto> get copyWith =>
+      throw _privateConstructorUsedError;
 }

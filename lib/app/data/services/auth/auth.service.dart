@@ -1,8 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide User;
-import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:on_field/app/data/repositories/users/i_users.repository.dart';
+import '../../repositories/users/i_users.repository.dart';
 import '../../entities/failure/failure.entity.dart';
 import '../../entities/auth_failure/auth_failure.entity.dart';
 import '../../entities/user/user.entity.dart';
@@ -14,14 +13,11 @@ class FirebaseAuthService extends IAuthService {
   IUsersRepository usersRepository;
 
   FirebaseAuthService(
-      {@required this.firebaseAuth,
-      @required this.googleSignIn,
-      @required this.usersRepository})
-      : assert(firebaseAuth != null),
-        assert(googleSignIn != null),
-        assert(usersRepository != null);
+      {required this.firebaseAuth,
+      required this.googleSignIn,
+      required this.usersRepository});
 
-  Either<Failure, User> _currentUser;
+  late Either<Failure, User> _currentUser;
 
   // User one time fetch
   Either<Failure, User> get currentUser => _currentUser;
@@ -30,7 +26,7 @@ class FirebaseAuthService extends IAuthService {
   Stream<Either<Failure, User>> get userStream {
     return firebaseAuth.authStateChanges().asyncMap((firebaseUser) async {
       final Either<Failure, User> userOption =
-          await usersRepository.getById(firebaseUser?.uid);
+          await usersRepository.getById(firebaseUser!.uid);
 
       _populateCurrentUser(userOption);
 
@@ -41,7 +37,7 @@ class FirebaseAuthService extends IAuthService {
   @override
   Future<Either<Failure, User>> getSignedInUser() async {
     final Either<Failure, User> userOption =
-        await usersRepository.getById(firebaseAuth.currentUser?.uid);
+        await usersRepository.getById(firebaseAuth.currentUser!.uid);
 
     _populateCurrentUser(userOption);
 
@@ -50,8 +46,8 @@ class FirebaseAuthService extends IAuthService {
 
   @override
   Future<Either<AuthFailure, Unit>> registerWithEmailAndPassword({
-    @required String emailAddress,
-    @required String password,
+    required String emailAddress,
+    required String password,
   }) async {
     try {
       await firebaseAuth.createUserWithEmailAndPassword(
@@ -70,8 +66,8 @@ class FirebaseAuthService extends IAuthService {
 
   @override
   Future<Either<AuthFailure, Unit>> signInWithEmailAndPassword({
-    @required String emailAddress,
-    @required String password,
+    required String emailAddress,
+    required String password,
   }) async {
     try {
       await firebaseAuth.signInWithEmailAndPassword(

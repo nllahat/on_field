@@ -1,15 +1,13 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/data/entities/failure/failure.entity.dart';
-import 'package:on_field/app/data/entities/league/league.entity.dart';
+import '../../data/entities/failure/failure.entity.dart';
+import '../../data/entities/league/league.entity.dart';
 import '../../data/repositories/leagues/i_leagues.repository.dart';
 
 class OnboardingLeaguesController extends GetxController {
   final ILeaguesRepository repository;
 
-  OnboardingLeaguesController({@required this.repository})
-      : assert(repository != null);
+  OnboardingLeaguesController({required this.repository});
 
   final Rx<Option<List<League>>> _leauges = none<List<League>>().obs;
   Option<List<League>> get leagues => _leauges.value;

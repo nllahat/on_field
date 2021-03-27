@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'user.entity.dart';
 
@@ -9,16 +9,18 @@ part of 'user.entity.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$UserTearOff {
   const _$UserTearOff();
 
-// ignore: unused_element
   _User call(
-      {@required String id,
-      @required String emailAddress,
-      @required String fullName,
-      bool finishedOnboarding}) {
+      {required String id,
+      required String emailAddress,
+      required String fullName,
+      bool? finishedOnboarding}) {
     return _User(
       id: id,
       emailAddress: emailAddress,
@@ -29,18 +31,17 @@ class _$UserTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $User = _$UserTearOff();
 
 /// @nodoc
 mixin _$User {
-  String get id;
-  String get emailAddress;
-  String get fullName;
-  bool get finishedOnboarding;
+  String get id => throw _privateConstructorUsedError;
+  String get emailAddress => throw _privateConstructorUsedError;
+  String get fullName => throw _privateConstructorUsedError;
+  bool? get finishedOnboarding => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $UserCopyWith<User> get copyWith;
+  $UserCopyWith<User> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -51,7 +52,7 @@ abstract class $UserCopyWith<$Res> {
       {String id,
       String emailAddress,
       String fullName,
-      bool finishedOnboarding});
+      bool? finishedOnboarding});
 }
 
 /// @nodoc
@@ -64,10 +65,10 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object emailAddress = freezed,
-    Object fullName = freezed,
-    Object finishedOnboarding = freezed,
+    Object? id = freezed,
+    Object? emailAddress = freezed,
+    Object? fullName = freezed,
+    Object? finishedOnboarding = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as String,
@@ -77,7 +78,7 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
       fullName: fullName == freezed ? _value.fullName : fullName as String,
       finishedOnboarding: finishedOnboarding == freezed
           ? _value.finishedOnboarding
-          : finishedOnboarding as bool,
+          : finishedOnboarding as bool?,
     ));
   }
 }
@@ -91,7 +92,7 @@ abstract class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
       {String id,
       String emailAddress,
       String fullName,
-      bool finishedOnboarding});
+      bool? finishedOnboarding});
 }
 
 /// @nodoc
@@ -105,10 +106,10 @@ class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object emailAddress = freezed,
-    Object fullName = freezed,
-    Object finishedOnboarding = freezed,
+    Object? id = freezed,
+    Object? emailAddress = freezed,
+    Object? fullName = freezed,
+    Object? finishedOnboarding = freezed,
   }) {
     return _then(_User(
       id: id == freezed ? _value.id : id as String,
@@ -118,21 +119,18 @@ class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
       fullName: fullName == freezed ? _value.fullName : fullName as String,
       finishedOnboarding: finishedOnboarding == freezed
           ? _value.finishedOnboarding
-          : finishedOnboarding as bool,
+          : finishedOnboarding as bool?,
     ));
   }
 }
 
 /// @nodoc
-class _$_User with DiagnosticableTreeMixin implements _User {
+class _$_User implements _User {
   const _$_User(
-      {@required this.id,
-      @required this.emailAddress,
-      @required this.fullName,
-      this.finishedOnboarding})
-      : assert(id != null),
-        assert(emailAddress != null),
-        assert(fullName != null);
+      {required this.id,
+      required this.emailAddress,
+      required this.fullName,
+      this.finishedOnboarding});
 
   @override
   final String id;
@@ -141,22 +139,11 @@ class _$_User with DiagnosticableTreeMixin implements _User {
   @override
   final String fullName;
   @override
-  final bool finishedOnboarding;
+  final bool? finishedOnboarding;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'User(id: $id, emailAddress: $emailAddress, fullName: $fullName, finishedOnboarding: $finishedOnboarding)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'User'))
-      ..add(DiagnosticsProperty('id', id))
-      ..add(DiagnosticsProperty('emailAddress', emailAddress))
-      ..add(DiagnosticsProperty('fullName', fullName))
-      ..add(DiagnosticsProperty('finishedOnboarding', finishedOnboarding));
   }
 
   @override
@@ -192,20 +179,20 @@ class _$_User with DiagnosticableTreeMixin implements _User {
 
 abstract class _User implements User {
   const factory _User(
-      {@required String id,
-      @required String emailAddress,
-      @required String fullName,
-      bool finishedOnboarding}) = _$_User;
+      {required String id,
+      required String emailAddress,
+      required String fullName,
+      bool? finishedOnboarding}) = _$_User;
 
   @override
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
-  String get emailAddress;
+  String get emailAddress => throw _privateConstructorUsedError;
   @override
-  String get fullName;
+  String get fullName => throw _privateConstructorUsedError;
   @override
-  bool get finishedOnboarding;
+  bool? get finishedOnboarding => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UserCopyWith<_User> get copyWith;
+  _$UserCopyWith<_User> get copyWith => throw _privateConstructorUsedError;
 }

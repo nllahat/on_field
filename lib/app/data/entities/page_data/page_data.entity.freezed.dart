@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'page_data.entity.dart';
 
@@ -9,16 +9,18 @@ part of 'page_data.entity.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$PageDataTearOff {
   const _$PageDataTearOff();
 
-// ignore: unused_element
   _PageData call(
-      {@required String name,
-      @required int navKey,
-      @required Icon icon,
-      @required Widget page}) {
+      {required String name,
+      required int navKey,
+      required Icon icon,
+      required Widget page}) {
     return _PageData(
       name: name,
       navKey: navKey,
@@ -29,18 +31,18 @@ class _$PageDataTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $PageData = _$PageDataTearOff();
 
 /// @nodoc
 mixin _$PageData {
-  String get name;
-  int get navKey;
-  Icon get icon;
-  Widget get page;
+  String get name => throw _privateConstructorUsedError;
+  int get navKey => throw _privateConstructorUsedError;
+  Icon get icon => throw _privateConstructorUsedError;
+  Widget get page => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $PageDataCopyWith<PageData> get copyWith;
+  $PageDataCopyWith<PageData> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -60,10 +62,10 @@ class _$PageDataCopyWithImpl<$Res> implements $PageDataCopyWith<$Res> {
 
   @override
   $Res call({
-    Object name = freezed,
-    Object navKey = freezed,
-    Object icon = freezed,
-    Object page = freezed,
+    Object? name = freezed,
+    Object? navKey = freezed,
+    Object? icon = freezed,
+    Object? page = freezed,
   }) {
     return _then(_value.copyWith(
       name: name == freezed ? _value.name : name as String,
@@ -93,10 +95,10 @@ class __$PageDataCopyWithImpl<$Res> extends _$PageDataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object name = freezed,
-    Object navKey = freezed,
-    Object icon = freezed,
-    Object page = freezed,
+    Object? name = freezed,
+    Object? navKey = freezed,
+    Object? icon = freezed,
+    Object? page = freezed,
   }) {
     return _then(_PageData(
       name: name == freezed ? _value.name : name as String,
@@ -110,14 +112,10 @@ class __$PageDataCopyWithImpl<$Res> extends _$PageDataCopyWithImpl<$Res>
 /// @nodoc
 class _$_PageData implements _PageData {
   const _$_PageData(
-      {@required this.name,
-      @required this.navKey,
-      @required this.icon,
-      @required this.page})
-      : assert(name != null),
-        assert(navKey != null),
-        assert(icon != null),
-        assert(page != null);
+      {required this.name,
+      required this.navKey,
+      required this.icon,
+      required this.page});
 
   @override
   final String name;
@@ -163,20 +161,21 @@ class _$_PageData implements _PageData {
 
 abstract class _PageData implements PageData {
   const factory _PageData(
-      {@required String name,
-      @required int navKey,
-      @required Icon icon,
-      @required Widget page}) = _$_PageData;
+      {required String name,
+      required int navKey,
+      required Icon icon,
+      required Widget page}) = _$_PageData;
 
   @override
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
-  int get navKey;
+  int get navKey => throw _privateConstructorUsedError;
   @override
-  Icon get icon;
+  Icon get icon => throw _privateConstructorUsedError;
   @override
-  Widget get page;
+  Widget get page => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$PageDataCopyWith<_PageData> get copyWith;
+  _$PageDataCopyWith<_PageData> get copyWith =>
+      throw _privateConstructorUsedError;
 }

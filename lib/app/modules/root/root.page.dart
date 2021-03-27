@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/modules/root/root.controller.dart';
+import 'root.controller.dart';
 
 class RootPage extends GetView<RootController> {
   @override
