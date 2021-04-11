@@ -8,9 +8,9 @@ class Team with _$Team {
   const factory Team({
     required String id,
     required String name,
-    required String shortName,
     required String logo,
+    String? shortName,
   }) = _Team;
 
-  factory Team.empty() => Team(id: '', name: '', shortName: '', logo: '');
+  factory Team.empty() => Team(id: '', name: '', logo: '');
 }

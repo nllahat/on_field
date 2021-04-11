@@ -11,21 +11,25 @@ class StandingsTableDto with _$StandingsTableDto {
   const StandingsTableDto._();
 
   const factory StandingsTableDto({
-    required List<StandingsTableRowDto> standingsTableRows,
+    required String stage,
+    required String type,
+    required List<StandingsTableRowDto> table,
   }) = _StandingsTableDto;
 
   factory StandingsTableDto.fromDomain(
       List<StandingsTableRow> standingsTableRows) {
     return StandingsTableDto(
-        standingsTableRows: standingsTableRows
+        table: standingsTableRows
             .map((standingsTableRow) =>
                 StandingsTableRowDto.fromDomain(standingsTableRow))
-            .toList());
+            .toList(),
+        stage: '',
+        type: '');
   }
 
   StandingsTable toDomain() {
     return StandingsTable(
-        standingsTableRows: standingsTableRows
+        standingsTableRows: table
             .map((standingsTableRow) => standingsTableRow.toDomain())
             .toList());
   }

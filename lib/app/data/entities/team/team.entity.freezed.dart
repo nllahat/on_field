@@ -19,13 +19,13 @@ class _$TeamTearOff {
   _Team call(
       {required String id,
       required String name,
-      required String shortName,
-      required String logo}) {
+      required String logo,
+      String? shortName}) {
     return _Team(
       id: id,
       name: name,
-      shortName: shortName,
       logo: logo,
+      shortName: shortName,
     );
   }
 }
@@ -37,8 +37,8 @@ const $Team = _$TeamTearOff();
 mixin _$Team {
   String get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  String get shortName => throw _privateConstructorUsedError;
   String get logo => throw _privateConstructorUsedError;
+  String? get shortName => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $TeamCopyWith<Team> get copyWith => throw _privateConstructorUsedError;
@@ -48,7 +48,7 @@ mixin _$Team {
 abstract class $TeamCopyWith<$Res> {
   factory $TeamCopyWith(Team value, $Res Function(Team) then) =
       _$TeamCopyWithImpl<$Res>;
-  $Res call({String id, String name, String shortName, String logo});
+  $Res call({String id, String name, String logo, String? shortName});
 }
 
 /// @nodoc
@@ -63,14 +63,14 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
   $Res call({
     Object? id = freezed,
     Object? name = freezed,
-    Object? shortName = freezed,
     Object? logo = freezed,
+    Object? shortName = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as String,
       name: name == freezed ? _value.name : name as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String,
       logo: logo == freezed ? _value.logo : logo as String,
+      shortName: shortName == freezed ? _value.shortName : shortName as String?,
     ));
   }
 }
@@ -80,7 +80,7 @@ abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
   factory _$TeamCopyWith(_Team value, $Res Function(_Team) then) =
       __$TeamCopyWithImpl<$Res>;
   @override
-  $Res call({String id, String name, String shortName, String logo});
+  $Res call({String id, String name, String logo, String? shortName});
 }
 
 /// @nodoc
@@ -96,14 +96,14 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
   $Res call({
     Object? id = freezed,
     Object? name = freezed,
-    Object? shortName = freezed,
     Object? logo = freezed,
+    Object? shortName = freezed,
   }) {
     return _then(_Team(
       id: id == freezed ? _value.id : id as String,
       name: name == freezed ? _value.name : name as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String,
       logo: logo == freezed ? _value.logo : logo as String,
+      shortName: shortName == freezed ? _value.shortName : shortName as String?,
     ));
   }
 }
@@ -113,21 +113,21 @@ class _$_Team with DiagnosticableTreeMixin implements _Team {
   const _$_Team(
       {required this.id,
       required this.name,
-      required this.shortName,
-      required this.logo});
+      required this.logo,
+      this.shortName});
 
   @override
   final String id;
   @override
   final String name;
   @override
-  final String shortName;
-  @override
   final String logo;
+  @override
+  final String? shortName;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'Team(id: $id, name: $name, shortName: $shortName, logo: $logo)';
+    return 'Team(id: $id, name: $name, logo: $logo, shortName: $shortName)';
   }
 
   @override
@@ -137,8 +137,8 @@ class _$_Team with DiagnosticableTreeMixin implements _Team {
       ..add(DiagnosticsProperty('type', 'Team'))
       ..add(DiagnosticsProperty('id', id))
       ..add(DiagnosticsProperty('name', name))
-      ..add(DiagnosticsProperty('shortName', shortName))
-      ..add(DiagnosticsProperty('logo', logo));
+      ..add(DiagnosticsProperty('logo', logo))
+      ..add(DiagnosticsProperty('shortName', shortName));
   }
 
   @override
@@ -149,11 +149,11 @@ class _$_Team with DiagnosticableTreeMixin implements _Team {
                 const DeepCollectionEquality().equals(other.id, id)) &&
             (identical(other.name, name) ||
                 const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.logo, logo) ||
+                const DeepCollectionEquality().equals(other.logo, logo)) &&
             (identical(other.shortName, shortName) ||
                 const DeepCollectionEquality()
-                    .equals(other.shortName, shortName)) &&
-            (identical(other.logo, logo) ||
-                const DeepCollectionEquality().equals(other.logo, logo)));
+                    .equals(other.shortName, shortName)));
   }
 
   @override
@@ -161,8 +161,8 @@ class _$_Team with DiagnosticableTreeMixin implements _Team {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(id) ^
       const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(shortName) ^
-      const DeepCollectionEquality().hash(logo);
+      const DeepCollectionEquality().hash(logo) ^
+      const DeepCollectionEquality().hash(shortName);
 
   @JsonKey(ignore: true)
   @override
@@ -174,17 +174,17 @@ abstract class _Team implements Team {
   const factory _Team(
       {required String id,
       required String name,
-      required String shortName,
-      required String logo}) = _$_Team;
+      required String logo,
+      String? shortName}) = _$_Team;
 
   @override
   String get id => throw _privateConstructorUsedError;
   @override
   String get name => throw _privateConstructorUsedError;
   @override
-  String get shortName => throw _privateConstructorUsedError;
-  @override
   String get logo => throw _privateConstructorUsedError;
+  @override
+  String? get shortName => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$TeamCopyWith<_Team> get copyWith => throw _privateConstructorUsedError;

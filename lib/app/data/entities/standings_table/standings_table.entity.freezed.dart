@@ -99,25 +99,15 @@ class __$StandingsTableCopyWithImpl<$Res>
 }
 
 /// @nodoc
-class _$_StandingsTable
-    with DiagnosticableTreeMixin
-    implements _StandingsTable {
+class _$_StandingsTable implements _StandingsTable {
   const _$_StandingsTable({required this.standingsTableRows});
 
   @override
   final List<StandingsTableRow> standingsTableRows;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'StandingsTable(standingsTableRows: $standingsTableRows)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'StandingsTable'))
-      ..add(DiagnosticsProperty('standingsTableRows', standingsTableRows));
   }
 
   @override

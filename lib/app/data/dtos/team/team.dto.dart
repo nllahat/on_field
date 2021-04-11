@@ -12,8 +12,8 @@ class TeamDto with _$TeamDto {
   const factory TeamDto({
     required int id,
     required String name,
-    required String shortName,
     required String crestUrl,
+    String? shortName,
   }) = _TeamDto;
 
   factory TeamDto.fromDomain(Team team) {
@@ -27,7 +27,7 @@ class TeamDto with _$TeamDto {
 
   Team toDomain() {
     return Team(
-        id: id.toString(), name: name, shortName: shortName, logo: crestUrl);
+        id: id.toString(), name: name, logo: crestUrl, shortName: shortName);
   }
 
   factory TeamDto.fromJson(Map<String, dynamic> json) =>

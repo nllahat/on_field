@@ -136,7 +136,8 @@ class _MatchTeam extends StatelessWidget {
           SizedBox(
             height: 8.0,
           ),
-          Text(team.shortName, style: Theme.of(context).textTheme.bodyText1),
+          Text(team.shortName ?? team.name,
+              style: Theme.of(context).textTheme.bodyText1),
           Text(this.isHome == true ? 'home' : 'away',
               style: Theme.of(context).textTheme.bodyText2)
         ],

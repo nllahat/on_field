@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:on_field/app/modules/leage_standings/league_standings.page.dart';
 import '../../data/entities/team/team.entity.dart';
 import '../../global_widgets/app_title.dart';
 import '../../global_widgets/match.card.dart';
 import '../../global_widgets/match_card_carousel.dart';
 import '../../global_widgets/page_title.dart';
-import 'widgets/league_stats.dart';
 import '../auth/auth.controller.dart';
-
-import 'home.controller.dart';
 
 List<MatchCard> list = [
   MatchCard(
@@ -50,13 +48,11 @@ List<MatchCard> list = [
 ];
 
 class HomePage extends StatelessWidget {
-  final HomeController controller = Get.put<HomeController>(HomeController());
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
-      child: Container(
+      child: SingleChildScrollView(
           child: Center(
               child: Column(
         children: [
@@ -70,12 +66,12 @@ class HomePage extends StatelessWidget {
           MatchCardCarousel(
             matchCardList: list,
           ),
-          LeagueStandings(),
-          RaisedButton(
+          LeagueStandingsPage(),
+          ElevatedButton(
               onPressed: () {
                 Get.find<AuthController>().signOut();
               },
-              child: Text(controller.obj + ' Sign Out')),
+              child: Text('Sign Out')),
         ],
       ))),
     ));

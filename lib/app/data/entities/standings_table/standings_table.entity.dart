@@ -1,5 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:flutter/foundation.dart';
 import '../standings_table_row/standings_table_row.entity.dart';
 
 part 'standings_table.entity.freezed.dart';

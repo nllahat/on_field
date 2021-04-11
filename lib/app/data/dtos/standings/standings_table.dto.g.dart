@@ -8,7 +8,9 @@ part of 'standings_table.dto.dart';
 
 _$_StandingsTableDto _$_$_StandingsTableDtoFromJson(Map<String, dynamic> json) {
   return _$_StandingsTableDto(
-    standingsTableRows: (json['standingsTableRows'] as List<dynamic>)
+    stage: json['stage'] as String,
+    type: json['type'] as String,
+    table: (json['table'] as List<dynamic>)
         .map((e) => StandingsTableRowDto.fromJson(e as Map<String, dynamic>))
         .toList(),
   );
@@ -17,5 +19,7 @@ _$_StandingsTableDto _$_$_StandingsTableDtoFromJson(Map<String, dynamic> json) {
 Map<String, dynamic> _$_$_StandingsTableDtoToJson(
         _$_StandingsTableDto instance) =>
     <String, dynamic>{
-      'standingsTableRows': instance.standingsTableRows,
+      'stage': instance.stage,
+      'type': instance.type,
+      'table': instance.table,
     };

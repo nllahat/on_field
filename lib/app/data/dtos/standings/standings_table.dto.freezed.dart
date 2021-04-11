@@ -21,9 +21,13 @@ class _$StandingsTableDtoTearOff {
   const _$StandingsTableDtoTearOff();
 
   _StandingsTableDto call(
-      {required List<StandingsTableRowDto> standingsTableRows}) {
+      {required String stage,
+      required String type,
+      required List<StandingsTableRowDto> table}) {
     return _StandingsTableDto(
-      standingsTableRows: standingsTableRows,
+      stage: stage,
+      type: type,
+      table: table,
     );
   }
 
@@ -37,8 +41,9 @@ const $StandingsTableDto = _$StandingsTableDtoTearOff();
 
 /// @nodoc
 mixin _$StandingsTableDto {
-  List<StandingsTableRowDto> get standingsTableRows =>
-      throw _privateConstructorUsedError;
+  String get stage => throw _privateConstructorUsedError;
+  String get type => throw _privateConstructorUsedError;
+  List<StandingsTableRowDto> get table => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -51,7 +56,7 @@ abstract class $StandingsTableDtoCopyWith<$Res> {
   factory $StandingsTableDtoCopyWith(
           StandingsTableDto value, $Res Function(StandingsTableDto) then) =
       _$StandingsTableDtoCopyWithImpl<$Res>;
-  $Res call({List<StandingsTableRowDto> standingsTableRows});
+  $Res call({String stage, String type, List<StandingsTableRowDto> table});
 }
 
 /// @nodoc
@@ -65,12 +70,15 @@ class _$StandingsTableDtoCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? standingsTableRows = freezed,
+    Object? stage = freezed,
+    Object? type = freezed,
+    Object? table = freezed,
   }) {
     return _then(_value.copyWith(
-      standingsTableRows: standingsTableRows == freezed
-          ? _value.standingsTableRows
-          : standingsTableRows as List<StandingsTableRowDto>,
+      stage: stage == freezed ? _value.stage : stage as String,
+      type: type == freezed ? _value.type : type as String,
+      table:
+          table == freezed ? _value.table : table as List<StandingsTableRowDto>,
     ));
   }
 }
@@ -82,7 +90,7 @@ abstract class _$StandingsTableDtoCopyWith<$Res>
           _StandingsTableDto value, $Res Function(_StandingsTableDto) then) =
       __$StandingsTableDtoCopyWithImpl<$Res>;
   @override
-  $Res call({List<StandingsTableRowDto> standingsTableRows});
+  $Res call({String stage, String type, List<StandingsTableRowDto> table});
 }
 
 /// @nodoc
@@ -98,12 +106,15 @@ class __$StandingsTableDtoCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? standingsTableRows = freezed,
+    Object? stage = freezed,
+    Object? type = freezed,
+    Object? table = freezed,
   }) {
     return _then(_StandingsTableDto(
-      standingsTableRows: standingsTableRows == freezed
-          ? _value.standingsTableRows
-          : standingsTableRows as List<StandingsTableRowDto>,
+      stage: stage == freezed ? _value.stage : stage as String,
+      type: type == freezed ? _value.type : type as String,
+      table:
+          table == freezed ? _value.table : table as List<StandingsTableRowDto>,
     ));
   }
 }
@@ -112,32 +123,43 @@ class __$StandingsTableDtoCopyWithImpl<$Res>
 
 /// @nodoc
 class _$_StandingsTableDto extends _StandingsTableDto {
-  const _$_StandingsTableDto({required this.standingsTableRows}) : super._();
+  const _$_StandingsTableDto(
+      {required this.stage, required this.type, required this.table})
+      : super._();
 
   factory _$_StandingsTableDto.fromJson(Map<String, dynamic> json) =>
       _$_$_StandingsTableDtoFromJson(json);
 
   @override
-  final List<StandingsTableRowDto> standingsTableRows;
+  final String stage;
+  @override
+  final String type;
+  @override
+  final List<StandingsTableRowDto> table;
 
   @override
   String toString() {
-    return 'StandingsTableDto(standingsTableRows: $standingsTableRows)';
+    return 'StandingsTableDto(stage: $stage, type: $type, table: $table)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _StandingsTableDto &&
-            (identical(other.standingsTableRows, standingsTableRows) ||
-                const DeepCollectionEquality()
-                    .equals(other.standingsTableRows, standingsTableRows)));
+            (identical(other.stage, stage) ||
+                const DeepCollectionEquality().equals(other.stage, stage)) &&
+            (identical(other.type, type) ||
+                const DeepCollectionEquality().equals(other.type, type)) &&
+            (identical(other.table, table) ||
+                const DeepCollectionEquality().equals(other.table, table)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(standingsTableRows);
+      const DeepCollectionEquality().hash(stage) ^
+      const DeepCollectionEquality().hash(type) ^
+      const DeepCollectionEquality().hash(table);
 
   @JsonKey(ignore: true)
   @override
@@ -153,15 +175,19 @@ class _$_StandingsTableDto extends _StandingsTableDto {
 abstract class _StandingsTableDto extends StandingsTableDto {
   const _StandingsTableDto._() : super._();
   const factory _StandingsTableDto(
-          {required List<StandingsTableRowDto> standingsTableRows}) =
-      _$_StandingsTableDto;
+      {required String stage,
+      required String type,
+      required List<StandingsTableRowDto> table}) = _$_StandingsTableDto;
 
   factory _StandingsTableDto.fromJson(Map<String, dynamic> json) =
       _$_StandingsTableDto.fromJson;
 
   @override
-  List<StandingsTableRowDto> get standingsTableRows =>
-      throw _privateConstructorUsedError;
+  String get stage => throw _privateConstructorUsedError;
+  @override
+  String get type => throw _privateConstructorUsedError;
+  @override
+  List<StandingsTableRowDto> get table => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$StandingsTableDtoCopyWith<_StandingsTableDto> get copyWith =>

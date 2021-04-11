@@ -1,7 +1,6 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import '../modules/root/root.binding.dart';
 import '../modules/root/root.page.dart';
-import '../modules/home/home.binding.dart';
 import '../modules/login/login.binding.dart';
 import '../modules/onboarding/onboarding.binding.dart';
 import '../modules/onboarding/onboarding.page.dart';
@@ -17,11 +16,6 @@ class AppPages {
       name: Routes.INITIAL,
       page: () => SplashPage(),
     ),
-    /* GetPage(
-      name: Routes.HOME,
-      page: () => HomePage(),
-      binding: HomeBinding(),
-    ), */
     GetPage(
       name: Routes.ROOT,
       page: () => RootPage(),

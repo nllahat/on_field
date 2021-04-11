@@ -23,13 +23,13 @@ class _$TeamDtoTearOff {
   _TeamDto call(
       {required int id,
       required String name,
-      required String shortName,
-      required String crestUrl}) {
+      required String crestUrl,
+      String? shortName}) {
     return _TeamDto(
       id: id,
       name: name,
-      shortName: shortName,
       crestUrl: crestUrl,
+      shortName: shortName,
     );
   }
 
@@ -45,8 +45,8 @@ const $TeamDto = _$TeamDtoTearOff();
 mixin _$TeamDto {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  String get shortName => throw _privateConstructorUsedError;
   String get crestUrl => throw _privateConstructorUsedError;
+  String? get shortName => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -57,7 +57,7 @@ mixin _$TeamDto {
 abstract class $TeamDtoCopyWith<$Res> {
   factory $TeamDtoCopyWith(TeamDto value, $Res Function(TeamDto) then) =
       _$TeamDtoCopyWithImpl<$Res>;
-  $Res call({int id, String name, String shortName, String crestUrl});
+  $Res call({int id, String name, String crestUrl, String? shortName});
 }
 
 /// @nodoc
@@ -72,14 +72,14 @@ class _$TeamDtoCopyWithImpl<$Res> implements $TeamDtoCopyWith<$Res> {
   $Res call({
     Object? id = freezed,
     Object? name = freezed,
-    Object? shortName = freezed,
     Object? crestUrl = freezed,
+    Object? shortName = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as int,
       name: name == freezed ? _value.name : name as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String,
       crestUrl: crestUrl == freezed ? _value.crestUrl : crestUrl as String,
+      shortName: shortName == freezed ? _value.shortName : shortName as String?,
     ));
   }
 }
@@ -89,7 +89,7 @@ abstract class _$TeamDtoCopyWith<$Res> implements $TeamDtoCopyWith<$Res> {
   factory _$TeamDtoCopyWith(_TeamDto value, $Res Function(_TeamDto) then) =
       __$TeamDtoCopyWithImpl<$Res>;
   @override
-  $Res call({int id, String name, String shortName, String crestUrl});
+  $Res call({int id, String name, String crestUrl, String? shortName});
 }
 
 /// @nodoc
@@ -105,14 +105,14 @@ class __$TeamDtoCopyWithImpl<$Res> extends _$TeamDtoCopyWithImpl<$Res>
   $Res call({
     Object? id = freezed,
     Object? name = freezed,
-    Object? shortName = freezed,
     Object? crestUrl = freezed,
+    Object? shortName = freezed,
   }) {
     return _then(_TeamDto(
       id: id == freezed ? _value.id : id as int,
       name: name == freezed ? _value.name : name as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String,
       crestUrl: crestUrl == freezed ? _value.crestUrl : crestUrl as String,
+      shortName: shortName == freezed ? _value.shortName : shortName as String?,
     ));
   }
 }
@@ -124,8 +124,8 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
   const _$_TeamDto(
       {required this.id,
       required this.name,
-      required this.shortName,
-      required this.crestUrl})
+      required this.crestUrl,
+      this.shortName})
       : super._();
 
   factory _$_TeamDto.fromJson(Map<String, dynamic> json) =>
@@ -136,13 +136,13 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
   @override
   final String name;
   @override
-  final String shortName;
-  @override
   final String crestUrl;
+  @override
+  final String? shortName;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'TeamDto(id: $id, name: $name, shortName: $shortName, crestUrl: $crestUrl)';
+    return 'TeamDto(id: $id, name: $name, crestUrl: $crestUrl, shortName: $shortName)';
   }
 
   @override
@@ -152,8 +152,8 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
       ..add(DiagnosticsProperty('type', 'TeamDto'))
       ..add(DiagnosticsProperty('id', id))
       ..add(DiagnosticsProperty('name', name))
-      ..add(DiagnosticsProperty('shortName', shortName))
-      ..add(DiagnosticsProperty('crestUrl', crestUrl));
+      ..add(DiagnosticsProperty('crestUrl', crestUrl))
+      ..add(DiagnosticsProperty('shortName', shortName));
   }
 
   @override
@@ -164,12 +164,12 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
                 const DeepCollectionEquality().equals(other.id, id)) &&
             (identical(other.name, name) ||
                 const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.shortName, shortName) ||
-                const DeepCollectionEquality()
-                    .equals(other.shortName, shortName)) &&
             (identical(other.crestUrl, crestUrl) ||
                 const DeepCollectionEquality()
-                    .equals(other.crestUrl, crestUrl)));
+                    .equals(other.crestUrl, crestUrl)) &&
+            (identical(other.shortName, shortName) ||
+                const DeepCollectionEquality()
+                    .equals(other.shortName, shortName)));
   }
 
   @override
@@ -177,8 +177,8 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(id) ^
       const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(shortName) ^
-      const DeepCollectionEquality().hash(crestUrl);
+      const DeepCollectionEquality().hash(crestUrl) ^
+      const DeepCollectionEquality().hash(shortName);
 
   @JsonKey(ignore: true)
   @override
@@ -196,8 +196,8 @@ abstract class _TeamDto extends TeamDto {
   const factory _TeamDto(
       {required int id,
       required String name,
-      required String shortName,
-      required String crestUrl}) = _$_TeamDto;
+      required String crestUrl,
+      String? shortName}) = _$_TeamDto;
 
   factory _TeamDto.fromJson(Map<String, dynamic> json) = _$_TeamDto.fromJson;
 
@@ -206,9 +206,9 @@ abstract class _TeamDto extends TeamDto {
   @override
   String get name => throw _privateConstructorUsedError;
   @override
-  String get shortName => throw _privateConstructorUsedError;
-  @override
   String get crestUrl => throw _privateConstructorUsedError;
+  @override
+  String? get shortName => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$TeamDtoCopyWith<_TeamDto> get copyWith =>
