@@ -2,14 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:on_field/app/data/entities/standings_table_row/standings_table_row.entity.dart';
 import '../../../data/entities/standings_table/standings_table.entity.dart';
 
-class LeagueStandings extends StatelessWidget {
+class LeagueStandings extends StatefulWidget {
   final StandingsTable standingsTable;
   const LeagueStandings({required this.standingsTable});
 
   @override
+  _LeagueStandingsState createState() => _LeagueStandingsState();
+}
+
+class _LeagueStandingsState extends State<LeagueStandings> {
+  double _containerHeight = 200;
+
+  @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
       padding: const EdgeInsets.symmetric(horizontal: 40.0),
+      duration: Duration(
+        milliseconds: 400,
+      ),
+      height: _containerHeight,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
@@ -19,9 +30,30 @@ class LeagueStandings extends StatelessWidget {
             color: Colors.white,
             height: 15,
           ),
-          LeagueStandingsRows(
-            rows: this.standingsTable.standingsTableRows,
-          )
+          Expanded(
+            child: ShaderMask(
+              shaderCallback: (rect) {
+                return LinearGradient(
+                  begin: Alignment.center,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.black, Colors.transparent],
+                ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
+              },
+              blendMode: BlendMode.dstIn,
+              child: LeagueStandingsRows(
+                rows: this.widget.standingsTable.standingsTableRows,
+              ),
+            ),
+          ),
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  shape: CircleBorder(), primary: Colors.red),
+              child: Icon(Icons.add),
+              onPressed: () {
+                setState(() {
+                  _containerHeight = _containerHeight == 200 ? 300 : 200;
+                });
+              }),
         ],
       ),
     );

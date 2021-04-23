@@ -67,11 +67,11 @@ class HomePage extends StatelessWidget {
             matchCardList: list,
           ),
           LeagueStandingsPage(),
-          ElevatedButton(
+          /* ElevatedButton(
               onPressed: () {
                 Get.find<AuthController>().signOut();
               },
-              child: Text('Sign Out')),
+              child: Text('Sign Out')), */
         ],
       ))),
     ));
