@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:on_field/app/data/entities/game_match/game_match.entity.dart';
-import 'package:on_field/app/data/providers/game_matches/i_game_matches.provider.dart';
+import '../../entities/game_match/game_match.entity.dart';
+import '../../providers/game_matches/i_game_matches.provider.dart';
 import '../../entities/failure/failure.entity.dart';
 
 import 'i_game_matches.repository.dart';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/data/entities/standings_table/standings_table.entity.dart';
-import 'package:on_field/app/data/entities/standings_table_row/standings_table_row.entity.dart';
-import 'package:on_field/app/data/providers/standings/standings_remote.provider.dart';
-import 'package:on_field/app/data/repositories/standings/standings.repository.dart';
-import 'package:on_field/app/modules/home/widgets/league_stats.dart';
+import '../../data/entities/standings_table/standings_table.entity.dart';
+import '../../data/entities/standings_table_row/standings_table_row.entity.dart';
+import '../../data/providers/standings/standings_remote.provider.dart';
+import '../../data/repositories/standings/standings.repository.dart';
+import '../home/widgets/league_stats.dart';
 import '../../data/entities/team/team.entity.dart';
 
 import 'league_standings.controller.dart';

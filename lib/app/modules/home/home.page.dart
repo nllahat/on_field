@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/modules/leage_standings/league_standings.page.dart';
+import '../leage_standings/league_standings.page.dart';
 import '../../data/entities/team/team.entity.dart';
 import '../../global_widgets/app_title.dart';
 import '../../global_widgets/match.card.dart';

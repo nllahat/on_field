@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:on_field/app/data/entities/result/result.entity.dart';
+import '../../entities/result/result.entity.dart';
 
 part 'result.dto.freezed.dart';
 part 'result.dto.g.dart';

@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:on_field/app/data/entities/score/score.entity.dart';
+import '../score/score.entity.dart';
 import '../team/team.entity.dart';
 
 part 'game_match.entity.freezed.dart';

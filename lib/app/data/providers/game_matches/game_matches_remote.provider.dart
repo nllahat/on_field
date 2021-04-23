@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:on_field/app/data/dtos/game_match/game_match.dto.dart';
+import '../../dtos/game_match/game_match.dto.dart';
 import '../../dtos/standings/standings_table.dto.dart';
 
 import '../../entities/failure/failure.entity.dart';

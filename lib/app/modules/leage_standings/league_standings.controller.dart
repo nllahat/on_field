@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:get/get.dart';
-import 'package:on_field/app/data/entities/failure/failure.entity.dart';
-import 'package:on_field/app/data/entities/standings_table/standings_table.entity.dart';
-import 'package:on_field/app/data/repositories/standings/i_standings.repository.dart';
+import '../../data/entities/failure/failure.entity.dart';
+import '../../data/entities/standings_table/standings_table.entity.dart';
+import '../../data/repositories/standings/i_standings.repository.dart';
 
 class LeagueStandingsController extends GetxController {
   final IStandingsRepository repository;

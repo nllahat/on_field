@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:on_field/app/data/dtos/result/result.dto.dart';
-import 'package:on_field/app/data/entities/score/score.entity.dart';
+import '../result/result.dto.dart';
+import '../../entities/score/score.entity.dart';
 
 part 'score.dto.freezed.dart';
 part 'score.dto.g.dart';

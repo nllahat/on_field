@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_field/app/data/entities/standings_table_row/standings_table_row.entity.dart';
+import '../../../data/entities/standings_table_row/standings_table_row.entity.dart';
 import '../../../data/entities/standings_table/standings_table.entity.dart';
 
 class LeagueStandings extends StatefulWidget {

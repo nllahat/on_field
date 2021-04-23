@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:on_field/app/data/entities/standings_table/standings_table.entity.dart';
-import 'package:on_field/app/data/providers/standings/i_standings.provider.dart';
+import '../../entities/standings_table/standings_table.entity.dart';
+import '../../providers/standings/i_standings.provider.dart';
 import '../../entities/failure/failure.entity.dart';
 
 import 'i_standings.repository.dart';
