@@ -39,4 +39,29 @@ class TeamsRemoteProvider implements ITeamsProvider {
       throw Failure.formatException();
     }
   }
+
+  @override
+  Future<TeamDto> getById(String id) async {
+    try {
+      final response = await http.get(
+        Uri.https(ConfigReader.getFootballDataOrgAPIHost(), '/teams/$id'),
+        headers: {'X-Auth-Token': ConfigReader.getFootballDataOrgAPIToken()},
+      );
+
+      if (response.statusCode == 200) {
+        final decodedJSON = json.decode(response.body);
+        final TeamDto team = TeamDto.fromJson(decodedJSON);
+
+        return team;
+      } else {
+        throw HttpException(response.statusCode.toString());
+      }
+    } on SocketException {
+      throw Failure.noInternetConnection();
+    } on HttpException {
+      throw Failure.httpException();
+    } on FormatException {
+      throw Failure.formatException();
+    }
+  }
 }

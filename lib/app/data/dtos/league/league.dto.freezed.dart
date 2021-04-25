@@ -71,9 +71,18 @@ class _$LeagueDtoCopyWithImpl<$Res> implements $LeagueDtoCopyWith<$Res> {
     Object? logo = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as int,
-      name: name == freezed ? _value.name : name as String,
-      logo: logo == freezed ? _value.logo : logo as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -103,16 +112,24 @@ class __$LeagueDtoCopyWithImpl<$Res> extends _$LeagueDtoCopyWithImpl<$Res>
     Object? logo = freezed,
   }) {
     return _then(_LeagueDto(
-      id: id == freezed ? _value.id : id as int,
-      name: name == freezed ? _value.name : name as String,
-      logo: logo == freezed ? _value.logo : logo as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_LeagueDto extends _LeagueDto with DiagnosticableTreeMixin {
   const _$_LeagueDto({required this.id, required this.name, required this.logo})
       : super._();
@@ -173,11 +190,11 @@ class _$_LeagueDto extends _LeagueDto with DiagnosticableTreeMixin {
 }
 
 abstract class _LeagueDto extends LeagueDto {
-  const _LeagueDto._() : super._();
   const factory _LeagueDto(
       {required int id,
       required String name,
       required String logo}) = _$_LeagueDto;
+  const _LeagueDto._() : super._();
 
   factory _LeagueDto.fromJson(Map<String, dynamic> json) =
       _$_LeagueDto.fromJson;

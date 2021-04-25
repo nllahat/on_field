@@ -68,10 +68,22 @@ class _$PageDataCopyWithImpl<$Res> implements $PageDataCopyWith<$Res> {
     Object? page = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
-      navKey: navKey == freezed ? _value.navKey : navKey as int,
-      icon: icon == freezed ? _value.icon : icon as Icon,
-      page: page == freezed ? _value.page : page as Widget,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      navKey: navKey == freezed
+          ? _value.navKey
+          : navKey // ignore: cast_nullable_to_non_nullable
+              as int,
+      icon: icon == freezed
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as Icon,
+      page: page == freezed
+          ? _value.page
+          : page // ignore: cast_nullable_to_non_nullable
+              as Widget,
     ));
   }
 }
@@ -101,15 +113,28 @@ class __$PageDataCopyWithImpl<$Res> extends _$PageDataCopyWithImpl<$Res>
     Object? page = freezed,
   }) {
     return _then(_PageData(
-      name: name == freezed ? _value.name : name as String,
-      navKey: navKey == freezed ? _value.navKey : navKey as int,
-      icon: icon == freezed ? _value.icon : icon as Icon,
-      page: page == freezed ? _value.page : page as Widget,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      navKey: navKey == freezed
+          ? _value.navKey
+          : navKey // ignore: cast_nullable_to_non_nullable
+              as int,
+      icon: icon == freezed
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as Icon,
+      page: page == freezed
+          ? _value.page
+          : page // ignore: cast_nullable_to_non_nullable
+              as Widget,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_PageData implements _PageData {
   const _$_PageData(
       {required this.name,

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:on_field/app/data/entities/game_match/game_match.entity.dart';
 
 import '../data/entities/team/team.entity.dart';
 
 class MatchCard extends StatelessWidget {
   final Team homeTeam;
   final Team awayTeam;
-  final dynamic match;
+  final GameMatch match;
   const MatchCard(
       {required this.homeTeam, required this.awayTeam, required this.match});
 
@@ -39,9 +40,9 @@ class MatchCard extends StatelessWidget {
                         team: homeTeam,
                       ),
                       _MatchResult(
-                          isLive: match['isLive'],
-                          homeTeamScore: match['homeTeamScore'],
-                          awayTeamScore: match['awayTeamScore']),
+                          isLive: match.status == 'LIVE',
+                          homeTeamScore: match.score.fullTime.homeTeamScore,
+                          awayTeamScore: match.score.fullTime.awayTeamScore),
                       _MatchTeamAway(
                         team: awayTeam,
                       )
@@ -50,7 +51,7 @@ class MatchCard extends StatelessWidget {
                 ),
               ),
               _MatchProgressBar(
-                minute: match['minute'],
+                minute: 20,
               )
             ],
           ),

@@ -86,12 +86,30 @@ class _$ScoreCopyWithImpl<$Res> implements $ScoreCopyWith<$Res> {
     Object? penalties = freezed,
   }) {
     return _then(_value.copyWith(
-      winner: winner == freezed ? _value.winner : winner as String,
-      duration: duration == freezed ? _value.duration : duration as String,
-      fullTime: fullTime == freezed ? _value.fullTime : fullTime as Result,
-      halfTime: halfTime == freezed ? _value.halfTime : halfTime as Result,
-      extraTime: extraTime == freezed ? _value.extraTime : extraTime as Result,
-      penalties: penalties == freezed ? _value.penalties : penalties as Result,
+      winner: winner == freezed
+          ? _value.winner
+          : winner // ignore: cast_nullable_to_non_nullable
+              as String,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as String,
+      fullTime: fullTime == freezed
+          ? _value.fullTime
+          : fullTime // ignore: cast_nullable_to_non_nullable
+              as Result,
+      halfTime: halfTime == freezed
+          ? _value.halfTime
+          : halfTime // ignore: cast_nullable_to_non_nullable
+              as Result,
+      extraTime: extraTime == freezed
+          ? _value.extraTime
+          : extraTime // ignore: cast_nullable_to_non_nullable
+              as Result,
+      penalties: penalties == freezed
+          ? _value.penalties
+          : penalties // ignore: cast_nullable_to_non_nullable
+              as Result,
     ));
   }
 
@@ -166,17 +184,36 @@ class __$ScoreCopyWithImpl<$Res> extends _$ScoreCopyWithImpl<$Res>
     Object? penalties = freezed,
   }) {
     return _then(_Score(
-      winner: winner == freezed ? _value.winner : winner as String,
-      duration: duration == freezed ? _value.duration : duration as String,
-      fullTime: fullTime == freezed ? _value.fullTime : fullTime as Result,
-      halfTime: halfTime == freezed ? _value.halfTime : halfTime as Result,
-      extraTime: extraTime == freezed ? _value.extraTime : extraTime as Result,
-      penalties: penalties == freezed ? _value.penalties : penalties as Result,
+      winner: winner == freezed
+          ? _value.winner
+          : winner // ignore: cast_nullable_to_non_nullable
+              as String,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as String,
+      fullTime: fullTime == freezed
+          ? _value.fullTime
+          : fullTime // ignore: cast_nullable_to_non_nullable
+              as Result,
+      halfTime: halfTime == freezed
+          ? _value.halfTime
+          : halfTime // ignore: cast_nullable_to_non_nullable
+              as Result,
+      extraTime: extraTime == freezed
+          ? _value.extraTime
+          : extraTime // ignore: cast_nullable_to_non_nullable
+              as Result,
+      penalties: penalties == freezed
+          ? _value.penalties
+          : penalties // ignore: cast_nullable_to_non_nullable
+              as Result,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_Score implements _Score {
   const _$_Score(
       {required this.winner,

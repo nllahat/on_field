@@ -15,14 +15,13 @@ class ResultDto with _$ResultDto {
 
   factory ResultDto.fromDomain(Result result) {
     return ResultDto(
-      homeTeam: int.parse(result.homeTeamId),
-      awayTeam: int.parse(result.awayTeamId),
+      homeTeam: result.homeTeamScore,
+      awayTeam: result.awayTeamScore,
     );
   }
 
   Result toDomain() {
-    return Result(
-        homeTeamId: homeTeam.toString(), awayTeamId: awayTeam.toString());
+    return Result(homeTeamScore: homeTeam, awayTeamScore: awayTeam);
   }
 
   factory ResultDto.fromJson(Map<String, dynamic> json) =>

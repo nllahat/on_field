@@ -19,6 +19,6 @@ class OnboardingBinding implements Bindings {
         repository:
             LeaguesRepository(leaguesProvider: LeaguesLocalProvider())));
     Get.lazyPut<OnboardingTeamsController>(() => OnboardingTeamsController(
-        repository: TeamsRepository(teamsProvider: TeamsRemoteProvider())));
+        repository: Get.find<TeamsRepository>()));
   }
 }

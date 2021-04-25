@@ -137,26 +137,62 @@ class _$GameMatchDtoCopyWithImpl<$Res> implements $GameMatchDtoCopyWith<$Res> {
     Object? season = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as int,
-      utcDate: utcDate == freezed ? _value.utcDate : utcDate as String,
-      status: status == freezed ? _value.status : status as String,
-      matchday: matchday == freezed ? _value.matchday : matchday as int,
-      stage: stage == freezed ? _value.stage : stage as String,
-      group: group == freezed ? _value.group : group as String,
-      lastUpdated:
-          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as String,
-      score: score == freezed ? _value.score : score as ScoreDto,
-      homeTeam: homeTeam == freezed ? _value.homeTeam : homeTeam as TeamDto,
-      awayTeam: awayTeam == freezed ? _value.awayTeam : awayTeam as TeamDto,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      utcDate: utcDate == freezed
+          ? _value.utcDate
+          : utcDate // ignore: cast_nullable_to_non_nullable
+              as String,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      matchday: matchday == freezed
+          ? _value.matchday
+          : matchday // ignore: cast_nullable_to_non_nullable
+              as int,
+      stage: stage == freezed
+          ? _value.stage
+          : stage // ignore: cast_nullable_to_non_nullable
+              as String,
+      group: group == freezed
+          ? _value.group
+          : group // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastUpdated: lastUpdated == freezed
+          ? _value.lastUpdated
+          : lastUpdated // ignore: cast_nullable_to_non_nullable
+              as String,
+      score: score == freezed
+          ? _value.score
+          : score // ignore: cast_nullable_to_non_nullable
+              as ScoreDto,
+      homeTeam: homeTeam == freezed
+          ? _value.homeTeam
+          : homeTeam // ignore: cast_nullable_to_non_nullable
+              as TeamDto,
+      awayTeam: awayTeam == freezed
+          ? _value.awayTeam
+          : awayTeam // ignore: cast_nullable_to_non_nullable
+              as TeamDto,
       referees: referees == freezed
           ? _value.referees
-          : referees as List<Map<String, dynamic>>?,
-      odds: odds == freezed ? _value.odds : odds as Map<String, dynamic>?,
+          : referees // ignore: cast_nullable_to_non_nullable
+              as List<Map<String, dynamic>>?,
+      odds: odds == freezed
+          ? _value.odds
+          : odds // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
       competition: competition == freezed
           ? _value.competition
-          : competition as Map<String, dynamic>?,
-      season:
-          season == freezed ? _value.season : season as Map<String, dynamic>?,
+          : competition // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
+      season: season == freezed
+          ? _value.season
+          : season // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
     ));
   }
 
@@ -241,33 +277,68 @@ class __$GameMatchDtoCopyWithImpl<$Res> extends _$GameMatchDtoCopyWithImpl<$Res>
     Object? season = freezed,
   }) {
     return _then(_GameMatchDto(
-      id: id == freezed ? _value.id : id as int,
-      utcDate: utcDate == freezed ? _value.utcDate : utcDate as String,
-      status: status == freezed ? _value.status : status as String,
-      matchday: matchday == freezed ? _value.matchday : matchday as int,
-      stage: stage == freezed ? _value.stage : stage as String,
-      group: group == freezed ? _value.group : group as String,
-      lastUpdated:
-          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as String,
-      score: score == freezed ? _value.score : score as ScoreDto,
-      homeTeam: homeTeam == freezed ? _value.homeTeam : homeTeam as TeamDto,
-      awayTeam: awayTeam == freezed ? _value.awayTeam : awayTeam as TeamDto,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      utcDate: utcDate == freezed
+          ? _value.utcDate
+          : utcDate // ignore: cast_nullable_to_non_nullable
+              as String,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      matchday: matchday == freezed
+          ? _value.matchday
+          : matchday // ignore: cast_nullable_to_non_nullable
+              as int,
+      stage: stage == freezed
+          ? _value.stage
+          : stage // ignore: cast_nullable_to_non_nullable
+              as String,
+      group: group == freezed
+          ? _value.group
+          : group // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastUpdated: lastUpdated == freezed
+          ? _value.lastUpdated
+          : lastUpdated // ignore: cast_nullable_to_non_nullable
+              as String,
+      score: score == freezed
+          ? _value.score
+          : score // ignore: cast_nullable_to_non_nullable
+              as ScoreDto,
+      homeTeam: homeTeam == freezed
+          ? _value.homeTeam
+          : homeTeam // ignore: cast_nullable_to_non_nullable
+              as TeamDto,
+      awayTeam: awayTeam == freezed
+          ? _value.awayTeam
+          : awayTeam // ignore: cast_nullable_to_non_nullable
+              as TeamDto,
       referees: referees == freezed
           ? _value.referees
-          : referees as List<Map<String, dynamic>>?,
-      odds: odds == freezed ? _value.odds : odds as Map<String, dynamic>?,
+          : referees // ignore: cast_nullable_to_non_nullable
+              as List<Map<String, dynamic>>?,
+      odds: odds == freezed
+          ? _value.odds
+          : odds // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
       competition: competition == freezed
           ? _value.competition
-          : competition as Map<String, dynamic>?,
-      season:
-          season == freezed ? _value.season : season as Map<String, dynamic>?,
+          : competition // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
+      season: season == freezed
+          ? _value.season
+          : season // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_GameMatchDto extends _GameMatchDto {
   const _$_GameMatchDto(
       {required this.id,
@@ -394,7 +465,6 @@ class _$_GameMatchDto extends _GameMatchDto {
 }
 
 abstract class _GameMatchDto extends GameMatchDto {
-  const _GameMatchDto._() : super._();
   const factory _GameMatchDto(
       {required int id,
       required String utcDate,
@@ -410,6 +480,7 @@ abstract class _GameMatchDto extends GameMatchDto {
       Map<String, dynamic>? odds,
       Map<String, dynamic>? competition,
       Map<String, dynamic>? season}) = _$_GameMatchDto;
+  const _GameMatchDto._() : super._();
 
   factory _GameMatchDto.fromJson(Map<String, dynamic> json) =
       _$_GameMatchDto.fromJson;

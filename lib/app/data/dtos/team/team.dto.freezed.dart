@@ -76,10 +76,22 @@ class _$TeamDtoCopyWithImpl<$Res> implements $TeamDtoCopyWith<$Res> {
     Object? shortName = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as int,
-      name: name == freezed ? _value.name : name as String,
-      crestUrl: crestUrl == freezed ? _value.crestUrl : crestUrl as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String?,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      crestUrl: crestUrl == freezed
+          ? _value.crestUrl
+          : crestUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      shortName: shortName == freezed
+          ? _value.shortName
+          : shortName // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -109,17 +121,28 @@ class __$TeamDtoCopyWithImpl<$Res> extends _$TeamDtoCopyWithImpl<$Res>
     Object? shortName = freezed,
   }) {
     return _then(_TeamDto(
-      id: id == freezed ? _value.id : id as int,
-      name: name == freezed ? _value.name : name as String,
-      crestUrl: crestUrl == freezed ? _value.crestUrl : crestUrl as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String?,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      crestUrl: crestUrl == freezed
+          ? _value.crestUrl
+          : crestUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      shortName: shortName == freezed
+          ? _value.shortName
+          : shortName // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
   const _$_TeamDto(
       {required this.id,
@@ -192,12 +215,12 @@ class _$_TeamDto extends _TeamDto with DiagnosticableTreeMixin {
 }
 
 abstract class _TeamDto extends TeamDto {
-  const _TeamDto._() : super._();
   const factory _TeamDto(
       {required int id,
       required String name,
       required String crestUrl,
       String? shortName}) = _$_TeamDto;
+  const _TeamDto._() : super._();
 
   factory _TeamDto.fromJson(Map<String, dynamic> json) = _$_TeamDto.fromJson;
 

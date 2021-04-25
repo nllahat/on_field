@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../leage_standings/league_standings.page.dart';
 import '../../data/entities/team/team.entity.dart';
 import '../../global_widgets/app_title.dart';
 import '../../global_widgets/match.card.dart';
 import '../../global_widgets/match_card_carousel.dart';
 import '../../global_widgets/page_title.dart';
-import '../auth/auth.controller.dart';
 
 List<MatchCard> list = [
   MatchCard(

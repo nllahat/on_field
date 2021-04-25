@@ -61,9 +61,18 @@ class _$LeagueCopyWithImpl<$Res> implements $LeagueCopyWith<$Res> {
     Object? logo = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as String,
-      name: name == freezed ? _value.name : name as String,
-      logo: logo == freezed ? _value.logo : logo as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -92,14 +101,24 @@ class __$LeagueCopyWithImpl<$Res> extends _$LeagueCopyWithImpl<$Res>
     Object? logo = freezed,
   }) {
     return _then(_League(
-      id: id == freezed ? _value.id : id as String,
-      name: name == freezed ? _value.name : name as String,
-      logo: logo == freezed ? _value.logo : logo as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_League implements _League {
   const _$_League({required this.id, required this.name, required this.logo});
 

@@ -115,7 +115,8 @@ class _$FirestoreFailureCopyWithImpl<$Res>
     return _then(_value.copyWith(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception?,
+          : originalException // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
@@ -147,12 +148,14 @@ class _$UnexpectedCopyWithImpl<$Res>
     return _then(Unexpected(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception?,
+          : originalException // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$Unexpected implements Unexpected {
   const _$Unexpected({this.originalException});
 
@@ -274,12 +277,14 @@ class _$NotFoundCopyWithImpl<$Res> extends _$FirestoreFailureCopyWithImpl<$Res>
     return _then(NotFound(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception?,
+          : originalException // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$NotFound implements NotFound {
   const _$NotFound({this.originalException});
 
@@ -404,12 +409,14 @@ class _$UnableToUpdateCopyWithImpl<$Res>
     return _then(UnableToUpdate(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception?,
+          : originalException // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$UnableToUpdate implements UnableToUpdate {
   const _$UnableToUpdate({this.originalException});
 
@@ -535,12 +542,14 @@ class _$InsufficientPermissionCopyWithImpl<$Res>
     return _then(InsufficientPermission(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception?,
+          : originalException // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$InsufficientPermission implements InsufficientPermission {
   const _$InsufficientPermission({this.originalException});
 

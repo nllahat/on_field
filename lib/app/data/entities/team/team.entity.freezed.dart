@@ -17,9 +17,9 @@ class _$TeamTearOff {
   const _$TeamTearOff();
 
   _Team call(
-      {required String id,
-      required String name,
-      required String logo,
+      {@HiveField(0) required String id,
+      @HiveField(1) required String name,
+      @HiveField(2) required String logo,
       String? shortName}) {
     return _Team(
       id: id,
@@ -35,8 +35,11 @@ const $Team = _$TeamTearOff();
 
 /// @nodoc
 mixin _$Team {
+  @HiveField(0)
   String get id => throw _privateConstructorUsedError;
+  @HiveField(1)
   String get name => throw _privateConstructorUsedError;
+  @HiveField(2)
   String get logo => throw _privateConstructorUsedError;
   String? get shortName => throw _privateConstructorUsedError;
 
@@ -48,7 +51,11 @@ mixin _$Team {
 abstract class $TeamCopyWith<$Res> {
   factory $TeamCopyWith(Team value, $Res Function(Team) then) =
       _$TeamCopyWithImpl<$Res>;
-  $Res call({String id, String name, String logo, String? shortName});
+  $Res call(
+      {@HiveField(0) String id,
+      @HiveField(1) String name,
+      @HiveField(2) String logo,
+      String? shortName});
 }
 
 /// @nodoc
@@ -67,10 +74,22 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
     Object? shortName = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as String,
-      name: name == freezed ? _value.name : name as String,
-      logo: logo == freezed ? _value.logo : logo as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String?,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as String,
+      shortName: shortName == freezed
+          ? _value.shortName
+          : shortName // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -80,7 +99,11 @@ abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
   factory _$TeamCopyWith(_Team value, $Res Function(_Team) then) =
       __$TeamCopyWithImpl<$Res>;
   @override
-  $Res call({String id, String name, String logo, String? shortName});
+  $Res call(
+      {@HiveField(0) String id,
+      @HiveField(1) String name,
+      @HiveField(2) String logo,
+      String? shortName});
 }
 
 /// @nodoc
@@ -100,27 +123,43 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
     Object? shortName = freezed,
   }) {
     return _then(_Team(
-      id: id == freezed ? _value.id : id as String,
-      name: name == freezed ? _value.name : name as String,
-      logo: logo == freezed ? _value.logo : logo as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String?,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      logo: logo == freezed
+          ? _value.logo
+          : logo // ignore: cast_nullable_to_non_nullable
+              as String,
+      shortName: shortName == freezed
+          ? _value.shortName
+          : shortName // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_Team with DiagnosticableTreeMixin implements _Team {
   const _$_Team(
-      {required this.id,
-      required this.name,
-      required this.logo,
+      {@HiveField(0) required this.id,
+      @HiveField(1) required this.name,
+      @HiveField(2) required this.logo,
       this.shortName});
 
   @override
+  @HiveField(0)
   final String id;
   @override
+  @HiveField(1)
   final String name;
   @override
+  @HiveField(2)
   final String logo;
   @override
   final String? shortName;
@@ -172,16 +211,19 @@ class _$_Team with DiagnosticableTreeMixin implements _Team {
 
 abstract class _Team implements Team {
   const factory _Team(
-      {required String id,
-      required String name,
-      required String logo,
+      {@HiveField(0) required String id,
+      @HiveField(1) required String name,
+      @HiveField(2) required String logo,
       String? shortName}) = _$_Team;
 
   @override
+  @HiveField(0)
   String get id => throw _privateConstructorUsedError;
   @override
+  @HiveField(1)
   String get name => throw _privateConstructorUsedError;
   @override
+  @HiveField(2)
   String get logo => throw _privateConstructorUsedError;
   @override
   String? get shortName => throw _privateConstructorUsedError;

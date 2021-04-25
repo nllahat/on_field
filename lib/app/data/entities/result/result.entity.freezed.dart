@@ -16,10 +16,10 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$ResultTearOff {
   const _$ResultTearOff();
 
-  _Result call({required String homeTeamId, required String awayTeamId}) {
+  _Result call({required int homeTeamScore, required int awayTeamScore}) {
     return _Result(
-      homeTeamId: homeTeamId,
-      awayTeamId: awayTeamId,
+      homeTeamScore: homeTeamScore,
+      awayTeamScore: awayTeamScore,
     );
   }
 }
@@ -29,8 +29,8 @@ const $Result = _$ResultTearOff();
 
 /// @nodoc
 mixin _$Result {
-  String get homeTeamId => throw _privateConstructorUsedError;
-  String get awayTeamId => throw _privateConstructorUsedError;
+  int get homeTeamScore => throw _privateConstructorUsedError;
+  int get awayTeamScore => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ResultCopyWith<Result> get copyWith => throw _privateConstructorUsedError;
@@ -40,7 +40,7 @@ mixin _$Result {
 abstract class $ResultCopyWith<$Res> {
   factory $ResultCopyWith(Result value, $Res Function(Result) then) =
       _$ResultCopyWithImpl<$Res>;
-  $Res call({String homeTeamId, String awayTeamId});
+  $Res call({int homeTeamScore, int awayTeamScore});
 }
 
 /// @nodoc
@@ -53,14 +53,18 @@ class _$ResultCopyWithImpl<$Res> implements $ResultCopyWith<$Res> {
 
   @override
   $Res call({
-    Object? homeTeamId = freezed,
-    Object? awayTeamId = freezed,
+    Object? homeTeamScore = freezed,
+    Object? awayTeamScore = freezed,
   }) {
     return _then(_value.copyWith(
-      homeTeamId:
-          homeTeamId == freezed ? _value.homeTeamId : homeTeamId as String,
-      awayTeamId:
-          awayTeamId == freezed ? _value.awayTeamId : awayTeamId as String,
+      homeTeamScore: homeTeamScore == freezed
+          ? _value.homeTeamScore
+          : homeTeamScore // ignore: cast_nullable_to_non_nullable
+              as int,
+      awayTeamScore: awayTeamScore == freezed
+          ? _value.awayTeamScore
+          : awayTeamScore // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -70,7 +74,7 @@ abstract class _$ResultCopyWith<$Res> implements $ResultCopyWith<$Res> {
   factory _$ResultCopyWith(_Result value, $Res Function(_Result) then) =
       __$ResultCopyWithImpl<$Res>;
   @override
-  $Res call({String homeTeamId, String awayTeamId});
+  $Res call({int homeTeamScore, int awayTeamScore});
 }
 
 /// @nodoc
@@ -84,49 +88,54 @@ class __$ResultCopyWithImpl<$Res> extends _$ResultCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? homeTeamId = freezed,
-    Object? awayTeamId = freezed,
+    Object? homeTeamScore = freezed,
+    Object? awayTeamScore = freezed,
   }) {
     return _then(_Result(
-      homeTeamId:
-          homeTeamId == freezed ? _value.homeTeamId : homeTeamId as String,
-      awayTeamId:
-          awayTeamId == freezed ? _value.awayTeamId : awayTeamId as String,
+      homeTeamScore: homeTeamScore == freezed
+          ? _value.homeTeamScore
+          : homeTeamScore // ignore: cast_nullable_to_non_nullable
+              as int,
+      awayTeamScore: awayTeamScore == freezed
+          ? _value.awayTeamScore
+          : awayTeamScore // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_Result implements _Result {
-  const _$_Result({required this.homeTeamId, required this.awayTeamId});
+  const _$_Result({required this.homeTeamScore, required this.awayTeamScore});
 
   @override
-  final String homeTeamId;
+  final int homeTeamScore;
   @override
-  final String awayTeamId;
+  final int awayTeamScore;
 
   @override
   String toString() {
-    return 'Result(homeTeamId: $homeTeamId, awayTeamId: $awayTeamId)';
+    return 'Result(homeTeamScore: $homeTeamScore, awayTeamScore: $awayTeamScore)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Result &&
-            (identical(other.homeTeamId, homeTeamId) ||
+            (identical(other.homeTeamScore, homeTeamScore) ||
                 const DeepCollectionEquality()
-                    .equals(other.homeTeamId, homeTeamId)) &&
-            (identical(other.awayTeamId, awayTeamId) ||
+                    .equals(other.homeTeamScore, homeTeamScore)) &&
+            (identical(other.awayTeamScore, awayTeamScore) ||
                 const DeepCollectionEquality()
-                    .equals(other.awayTeamId, awayTeamId)));
+                    .equals(other.awayTeamScore, awayTeamScore)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(homeTeamId) ^
-      const DeepCollectionEquality().hash(awayTeamId);
+      const DeepCollectionEquality().hash(homeTeamScore) ^
+      const DeepCollectionEquality().hash(awayTeamScore);
 
   @JsonKey(ignore: true)
   @override
@@ -136,12 +145,12 @@ class _$_Result implements _Result {
 
 abstract class _Result implements Result {
   const factory _Result(
-      {required String homeTeamId, required String awayTeamId}) = _$_Result;
+      {required int homeTeamScore, required int awayTeamScore}) = _$_Result;
 
   @override
-  String get homeTeamId => throw _privateConstructorUsedError;
+  int get homeTeamScore => throw _privateConstructorUsedError;
   @override
-  String get awayTeamId => throw _privateConstructorUsedError;
+  int get awayTeamScore => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ResultCopyWith<_Result> get copyWith => throw _privateConstructorUsedError;

@@ -96,14 +96,30 @@ class _$ScoreDtoCopyWithImpl<$Res> implements $ScoreDtoCopyWith<$Res> {
     Object? penalties = freezed,
   }) {
     return _then(_value.copyWith(
-      winner: winner == freezed ? _value.winner : winner as String,
-      duration: duration == freezed ? _value.duration : duration as String,
-      fullTime: fullTime == freezed ? _value.fullTime : fullTime as ResultDto,
-      halfTime: halfTime == freezed ? _value.halfTime : halfTime as ResultDto,
-      extraTime:
-          extraTime == freezed ? _value.extraTime : extraTime as ResultDto,
-      penalties:
-          penalties == freezed ? _value.penalties : penalties as ResultDto,
+      winner: winner == freezed
+          ? _value.winner
+          : winner // ignore: cast_nullable_to_non_nullable
+              as String,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as String,
+      fullTime: fullTime == freezed
+          ? _value.fullTime
+          : fullTime // ignore: cast_nullable_to_non_nullable
+              as ResultDto,
+      halfTime: halfTime == freezed
+          ? _value.halfTime
+          : halfTime // ignore: cast_nullable_to_non_nullable
+              as ResultDto,
+      extraTime: extraTime == freezed
+          ? _value.extraTime
+          : extraTime // ignore: cast_nullable_to_non_nullable
+              as ResultDto,
+      penalties: penalties == freezed
+          ? _value.penalties
+          : penalties // ignore: cast_nullable_to_non_nullable
+              as ResultDto,
     ));
   }
 
@@ -178,21 +194,36 @@ class __$ScoreDtoCopyWithImpl<$Res> extends _$ScoreDtoCopyWithImpl<$Res>
     Object? penalties = freezed,
   }) {
     return _then(_ScoreDto(
-      winner: winner == freezed ? _value.winner : winner as String,
-      duration: duration == freezed ? _value.duration : duration as String,
-      fullTime: fullTime == freezed ? _value.fullTime : fullTime as ResultDto,
-      halfTime: halfTime == freezed ? _value.halfTime : halfTime as ResultDto,
-      extraTime:
-          extraTime == freezed ? _value.extraTime : extraTime as ResultDto,
-      penalties:
-          penalties == freezed ? _value.penalties : penalties as ResultDto,
+      winner: winner == freezed
+          ? _value.winner
+          : winner // ignore: cast_nullable_to_non_nullable
+              as String,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as String,
+      fullTime: fullTime == freezed
+          ? _value.fullTime
+          : fullTime // ignore: cast_nullable_to_non_nullable
+              as ResultDto,
+      halfTime: halfTime == freezed
+          ? _value.halfTime
+          : halfTime // ignore: cast_nullable_to_non_nullable
+              as ResultDto,
+      extraTime: extraTime == freezed
+          ? _value.extraTime
+          : extraTime // ignore: cast_nullable_to_non_nullable
+              as ResultDto,
+      penalties: penalties == freezed
+          ? _value.penalties
+          : penalties // ignore: cast_nullable_to_non_nullable
+              as ResultDto,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ScoreDto extends _ScoreDto {
   const _$_ScoreDto(
       {required this.winner,
@@ -269,7 +300,6 @@ class _$_ScoreDto extends _ScoreDto {
 }
 
 abstract class _ScoreDto extends ScoreDto {
-  const _ScoreDto._() : super._();
   const factory _ScoreDto(
       {required String winner,
       required String duration,
@@ -277,6 +307,7 @@ abstract class _ScoreDto extends ScoreDto {
       required ResultDto halfTime,
       required ResultDto extraTime,
       required ResultDto penalties}) = _$_ScoreDto;
+  const _ScoreDto._() : super._();
 
   factory _ScoreDto.fromJson(Map<String, dynamic> json) = _$_ScoreDto.fromJson;
 

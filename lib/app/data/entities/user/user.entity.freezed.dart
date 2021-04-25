@@ -71,14 +71,22 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
     Object? finishedOnboarding = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
       emailAddress: emailAddress == freezed
           ? _value.emailAddress
-          : emailAddress as String,
-      fullName: fullName == freezed ? _value.fullName : fullName as String,
+          : emailAddress // ignore: cast_nullable_to_non_nullable
+              as String,
+      fullName: fullName == freezed
+          ? _value.fullName
+          : fullName // ignore: cast_nullable_to_non_nullable
+              as String,
       finishedOnboarding: finishedOnboarding == freezed
           ? _value.finishedOnboarding
-          : finishedOnboarding as bool?,
+          : finishedOnboarding // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -112,19 +120,28 @@ class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
     Object? finishedOnboarding = freezed,
   }) {
     return _then(_User(
-      id: id == freezed ? _value.id : id as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
       emailAddress: emailAddress == freezed
           ? _value.emailAddress
-          : emailAddress as String,
-      fullName: fullName == freezed ? _value.fullName : fullName as String,
+          : emailAddress // ignore: cast_nullable_to_non_nullable
+              as String,
+      fullName: fullName == freezed
+          ? _value.fullName
+          : fullName // ignore: cast_nullable_to_non_nullable
+              as String,
       finishedOnboarding: finishedOnboarding == freezed
           ? _value.finishedOnboarding
-          : finishedOnboarding as bool?,
+          : finishedOnboarding // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_User implements _User {
   const _$_User(
       {required this.id,

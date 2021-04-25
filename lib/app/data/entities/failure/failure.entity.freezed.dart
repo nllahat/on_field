@@ -132,12 +132,14 @@ class _$UnexpectedCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
     return _then(Unexpected(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception?,
+          : originalException // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$Unexpected implements Unexpected {
   const _$Unexpected({this.originalException});
 
@@ -256,6 +258,7 @@ class _$NotFoundCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$NotFound implements NotFound {
   const _$NotFound();
 
@@ -358,6 +361,7 @@ class _$NoInternetConnectionCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$NoInternetConnection implements NoInternetConnection {
   const _$NoInternetConnection();
 
@@ -459,6 +463,7 @@ class _$HttpExeptionCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$HttpExeption implements HttpExeption {
   const _$HttpExeption();
 
@@ -560,6 +565,7 @@ class _$FormatExceptionCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$FormatException implements FormatException {
   const _$FormatException();
 
@@ -662,6 +668,7 @@ class _$InsufficientPermissionCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$InsufficientPermission implements InsufficientPermission {
   const _$InsufficientPermission();
 

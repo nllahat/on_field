@@ -99,6 +99,7 @@ class _$InitialCopyWithImpl<$Res> extends _$LoginStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -185,6 +186,7 @@ class _$LoadingCopyWithImpl<$Res> extends _$LoginStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -271,6 +273,7 @@ class _$FailureCopyWithImpl<$Res> extends _$LoginStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Failure implements Failure {
   const _$Failure();
 

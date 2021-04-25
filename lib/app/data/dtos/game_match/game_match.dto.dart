@@ -54,8 +54,8 @@ class GameMatchDto with _$GameMatchDto {
         group: group,
         lastUpdated: DateTime.parse(lastUpdated),
         score: score.toDomain(),
-        homeTeam: homeTeam.toDomain(),
-        awayTeam: awayTeam.toDomain());
+        homeTeamId: homeTeam.id.toString(),
+        awayTeamId: awayTeam.id.toString());
   }
 
   factory GameMatchDto.fromJson(Map<String, dynamic> json) =>

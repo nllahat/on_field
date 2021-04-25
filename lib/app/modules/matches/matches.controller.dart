@@ -1,37 +1,37 @@
 import 'package:dartz/dartz.dart';
 import 'package:get/get.dart';
+import 'package:on_field/app/data/entities/game_match/game_match.entity.dart';
+import 'package:on_field/app/data/repositories/matches/i_game_matches.repository.dart';
 import '../../data/entities/failure/failure.entity.dart';
-import '../../data/entities/standings_table/standings_table.entity.dart';
-import '../../data/repositories/standings/i_standings.repository.dart';
 
 class MatchesController extends GetxController {
-  final IStandingsRepository repository;
+  final IGameMatchesRepository repository;
 
   MatchesController({required this.repository});
 
-  final Rx<Option<StandingsTable>> _standingsTable = none<StandingsTable>().obs;
-  Option<StandingsTable> get standingsTable => _standingsTable.value;
+  final Rx<Option<List<GameMatch>>> _gameMatches = none<List<GameMatch>>().obs;
+  Option<List<GameMatch>> get gameMatches => _gameMatches.value;
 
   @override
   void onReady() async {
-    _standingsTable.value =
-        _foldStandingsTable(await repository.getByLeagueId('2021'));
+    _gameMatches.value = _foldStandingsTable(
+        await repository.getLiveByLeagueIds(['2015', '2021', '2019']));
     super.onReady();
   }
 
-  Option<StandingsTable> _foldStandingsTable(
-      Either<Failure, StandingsTable> standingsResult) {
-    return standingsResult.fold((err) {
+  Option<List<GameMatch>> _foldStandingsTable(
+      Either<Failure, List<GameMatch>> gameMatchesResult) {
+    return gameMatchesResult.fold((err) {
       print(err);
       Get.snackbar(
-        "Error get standings table",
+        "Error get game matches",
         err.toString(),
         snackPosition: SnackPosition.BOTTOM,
       );
 
       return none();
-    }, (standingsTable) {
-      return some(standingsTable);
+    }, (gameMatches) {
+      return some(gameMatches);
     });
   }
 }

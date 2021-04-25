@@ -15,7 +15,7 @@ class GameMatch with _$GameMatch {
     required String group,
     required DateTime lastUpdated,
     required Score score,
-    required Team homeTeam,
-    required Team awayTeam,
+    required String homeTeamId,
+    required String awayTeamId,
   }) = _GameMatch;
 }

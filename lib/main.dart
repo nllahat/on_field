@@ -1,4 +1,6 @@
-import 'dart:developer';
+import 'package:hive/hive.dart';
+import 'package:on_field/app/data/entities/team/team.entity.dart';
+import 'package:path_provider/path_provider.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -11,10 +13,18 @@ import 'config_reader.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  final appDocumentDir = await getApplicationDocumentsDirectory();
+  Hive.init(appDocumentDir.path);
+  Hive.registerAdapter(TeamAdapter());
+
   await ConfigReader.initialize();
   await Firebase.initializeApp();
 
   runApp(GetMaterialApp(
+    onDispose: () {
+      Hive.close();
+    },
     debugShowCheckedModeBanner: false,
     initialBinding: AuthBinding(),
     initialRoute: Routes.INITIAL,

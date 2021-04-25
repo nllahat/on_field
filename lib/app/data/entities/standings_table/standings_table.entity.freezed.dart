@@ -60,7 +60,8 @@ class _$StandingsTableCopyWithImpl<$Res>
     return _then(_value.copyWith(
       standingsTableRows: standingsTableRows == freezed
           ? _value.standingsTableRows
-          : standingsTableRows as List<StandingsTableRow>,
+          : standingsTableRows // ignore: cast_nullable_to_non_nullable
+              as List<StandingsTableRow>,
     ));
   }
 }
@@ -93,12 +94,14 @@ class __$StandingsTableCopyWithImpl<$Res>
     return _then(_StandingsTable(
       standingsTableRows: standingsTableRows == freezed
           ? _value.standingsTableRows
-          : standingsTableRows as List<StandingsTableRow>,
+          : standingsTableRows // ignore: cast_nullable_to_non_nullable
+              as List<StandingsTableRow>,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_StandingsTable implements _StandingsTable {
   const _$_StandingsTable({required this.standingsTableRows});
 

@@ -67,8 +67,14 @@ class _$ResultDtoCopyWithImpl<$Res> implements $ResultDtoCopyWith<$Res> {
     Object? awayTeam = freezed,
   }) {
     return _then(_value.copyWith(
-      homeTeam: homeTeam == freezed ? _value.homeTeam : homeTeam as int,
-      awayTeam: awayTeam == freezed ? _value.awayTeam : awayTeam as int,
+      homeTeam: homeTeam == freezed
+          ? _value.homeTeam
+          : homeTeam // ignore: cast_nullable_to_non_nullable
+              as int,
+      awayTeam: awayTeam == freezed
+          ? _value.awayTeam
+          : awayTeam // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -97,15 +103,20 @@ class __$ResultDtoCopyWithImpl<$Res> extends _$ResultDtoCopyWithImpl<$Res>
     Object? awayTeam = freezed,
   }) {
     return _then(_ResultDto(
-      homeTeam: homeTeam == freezed ? _value.homeTeam : homeTeam as int,
-      awayTeam: awayTeam == freezed ? _value.awayTeam : awayTeam as int,
+      homeTeam: homeTeam == freezed
+          ? _value.homeTeam
+          : homeTeam // ignore: cast_nullable_to_non_nullable
+              as int,
+      awayTeam: awayTeam == freezed
+          ? _value.awayTeam
+          : awayTeam // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ResultDto extends _ResultDto {
   const _$_ResultDto({required this.homeTeam, required this.awayTeam})
       : super._();
@@ -153,9 +164,9 @@ class _$_ResultDto extends _ResultDto {
 }
 
 abstract class _ResultDto extends ResultDto {
-  const _ResultDto._() : super._();
   const factory _ResultDto({required int homeTeam, required int awayTeam}) =
       _$_ResultDto;
+  const _ResultDto._() : super._();
 
   factory _ResultDto.fromJson(Map<String, dynamic> json) =
       _$_ResultDto.fromJson;

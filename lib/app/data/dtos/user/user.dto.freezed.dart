@@ -80,14 +80,22 @@ class _$UserDtoCopyWithImpl<$Res> implements $UserDtoCopyWith<$Res> {
     Object? finishedOnboarding = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
       emailAddress: emailAddress == freezed
           ? _value.emailAddress
-          : emailAddress as String,
-      fullName: fullName == freezed ? _value.fullName : fullName as String,
+          : emailAddress // ignore: cast_nullable_to_non_nullable
+              as String,
+      fullName: fullName == freezed
+          ? _value.fullName
+          : fullName // ignore: cast_nullable_to_non_nullable
+              as String,
       finishedOnboarding: finishedOnboarding == freezed
           ? _value.finishedOnboarding
-          : finishedOnboarding as bool?,
+          : finishedOnboarding // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -121,21 +129,28 @@ class __$UserDtoCopyWithImpl<$Res> extends _$UserDtoCopyWithImpl<$Res>
     Object? finishedOnboarding = freezed,
   }) {
     return _then(_UserDto(
-      id: id == freezed ? _value.id : id as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
       emailAddress: emailAddress == freezed
           ? _value.emailAddress
-          : emailAddress as String,
-      fullName: fullName == freezed ? _value.fullName : fullName as String,
+          : emailAddress // ignore: cast_nullable_to_non_nullable
+              as String,
+      fullName: fullName == freezed
+          ? _value.fullName
+          : fullName // ignore: cast_nullable_to_non_nullable
+              as String,
       finishedOnboarding: finishedOnboarding == freezed
           ? _value.finishedOnboarding
-          : finishedOnboarding as bool?,
+          : finishedOnboarding // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_UserDto extends _UserDto {
   const _$_UserDto(
       {required this.id,
@@ -198,12 +213,12 @@ class _$_UserDto extends _UserDto {
 }
 
 abstract class _UserDto extends UserDto {
-  const _UserDto._() : super._();
   const factory _UserDto(
       {required String id,
       required String emailAddress,
       required String fullName,
       bool? finishedOnboarding}) = _$_UserDto;
+  const _UserDto._() : super._();
 
   factory _UserDto.fromJson(Map<String, dynamic> json) = _$_UserDto.fromJson;
 

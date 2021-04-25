@@ -120,21 +120,50 @@ class _$StandingsTableRowDtoCopyWithImpl<$Res>
     Object? goalDifference = freezed,
   }) {
     return _then(_value.copyWith(
-      position: position == freezed ? _value.position : position as int,
-      team: team == freezed ? _value.team : team as TeamDto,
-      playedGames:
-          playedGames == freezed ? _value.playedGames : playedGames as int,
-      form: form == freezed ? _value.form : form as String,
-      won: won == freezed ? _value.won : won as int,
-      draw: draw == freezed ? _value.draw : draw as int,
-      lost: lost == freezed ? _value.lost : lost as int,
-      points: points == freezed ? _value.points : points as int,
-      goalsFor: goalsFor == freezed ? _value.goalsFor : goalsFor as int,
-      goalsAgainst:
-          goalsAgainst == freezed ? _value.goalsAgainst : goalsAgainst as int,
+      position: position == freezed
+          ? _value.position
+          : position // ignore: cast_nullable_to_non_nullable
+              as int,
+      team: team == freezed
+          ? _value.team
+          : team // ignore: cast_nullable_to_non_nullable
+              as TeamDto,
+      playedGames: playedGames == freezed
+          ? _value.playedGames
+          : playedGames // ignore: cast_nullable_to_non_nullable
+              as int,
+      form: form == freezed
+          ? _value.form
+          : form // ignore: cast_nullable_to_non_nullable
+              as String,
+      won: won == freezed
+          ? _value.won
+          : won // ignore: cast_nullable_to_non_nullable
+              as int,
+      draw: draw == freezed
+          ? _value.draw
+          : draw // ignore: cast_nullable_to_non_nullable
+              as int,
+      lost: lost == freezed
+          ? _value.lost
+          : lost // ignore: cast_nullable_to_non_nullable
+              as int,
+      points: points == freezed
+          ? _value.points
+          : points // ignore: cast_nullable_to_non_nullable
+              as int,
+      goalsFor: goalsFor == freezed
+          ? _value.goalsFor
+          : goalsFor // ignore: cast_nullable_to_non_nullable
+              as int,
+      goalsAgainst: goalsAgainst == freezed
+          ? _value.goalsAgainst
+          : goalsAgainst // ignore: cast_nullable_to_non_nullable
+              as int,
       goalDifference: goalDifference == freezed
           ? _value.goalDifference
-          : goalDifference as int,
+          : goalDifference // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 
@@ -196,28 +225,56 @@ class __$StandingsTableRowCopyWithImpl<$Res>
     Object? goalDifference = freezed,
   }) {
     return _then(_StandingsTableRow(
-      position: position == freezed ? _value.position : position as int,
-      team: team == freezed ? _value.team : team as TeamDto,
-      playedGames:
-          playedGames == freezed ? _value.playedGames : playedGames as int,
-      form: form == freezed ? _value.form : form as String,
-      won: won == freezed ? _value.won : won as int,
-      draw: draw == freezed ? _value.draw : draw as int,
-      lost: lost == freezed ? _value.lost : lost as int,
-      points: points == freezed ? _value.points : points as int,
-      goalsFor: goalsFor == freezed ? _value.goalsFor : goalsFor as int,
-      goalsAgainst:
-          goalsAgainst == freezed ? _value.goalsAgainst : goalsAgainst as int,
+      position: position == freezed
+          ? _value.position
+          : position // ignore: cast_nullable_to_non_nullable
+              as int,
+      team: team == freezed
+          ? _value.team
+          : team // ignore: cast_nullable_to_non_nullable
+              as TeamDto,
+      playedGames: playedGames == freezed
+          ? _value.playedGames
+          : playedGames // ignore: cast_nullable_to_non_nullable
+              as int,
+      form: form == freezed
+          ? _value.form
+          : form // ignore: cast_nullable_to_non_nullable
+              as String,
+      won: won == freezed
+          ? _value.won
+          : won // ignore: cast_nullable_to_non_nullable
+              as int,
+      draw: draw == freezed
+          ? _value.draw
+          : draw // ignore: cast_nullable_to_non_nullable
+              as int,
+      lost: lost == freezed
+          ? _value.lost
+          : lost // ignore: cast_nullable_to_non_nullable
+              as int,
+      points: points == freezed
+          ? _value.points
+          : points // ignore: cast_nullable_to_non_nullable
+              as int,
+      goalsFor: goalsFor == freezed
+          ? _value.goalsFor
+          : goalsFor // ignore: cast_nullable_to_non_nullable
+              as int,
+      goalsAgainst: goalsAgainst == freezed
+          ? _value.goalsAgainst
+          : goalsAgainst // ignore: cast_nullable_to_non_nullable
+              as int,
       goalDifference: goalDifference == freezed
           ? _value.goalDifference
-          : goalDifference as int,
+          : goalDifference // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_StandingsTableRow extends _StandingsTableRow {
   const _$_StandingsTableRow(
       {required this.position,
@@ -324,7 +381,6 @@ class _$_StandingsTableRow extends _StandingsTableRow {
 }
 
 abstract class _StandingsTableRow extends StandingsTableRowDto {
-  const _StandingsTableRow._() : super._();
   const factory _StandingsTableRow(
       {required int position,
       required TeamDto team,
@@ -337,6 +393,7 @@ abstract class _StandingsTableRow extends StandingsTableRowDto {
       required int goalsFor,
       required int goalsAgainst,
       required int goalDifference}) = _$_StandingsTableRow;
+  const _StandingsTableRow._() : super._();
 
   factory _StandingsTableRow.fromJson(Map<String, dynamic> json) =
       _$_StandingsTableRow.fromJson;

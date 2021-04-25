@@ -1,14 +1,17 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter/foundation.dart';
+import 'package:hive/hive.dart';
 
 part 'team.entity.freezed.dart';
+part 'team.entity.g.dart';
 
 @freezed
+@HiveType(typeId: 1, adapterName: 'TeamAdapter')
 class Team with _$Team {
   const factory Team({
-    required String id,
-    required String name,
-    required String logo,
+    @HiveField(0) required String id,
+    @HiveField(1) required String name,
+    @HiveField(2) required String logo,
     String? shortName,
   }) = _Team;
 

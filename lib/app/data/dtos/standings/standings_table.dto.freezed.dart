@@ -75,10 +75,18 @@ class _$StandingsTableDtoCopyWithImpl<$Res>
     Object? table = freezed,
   }) {
     return _then(_value.copyWith(
-      stage: stage == freezed ? _value.stage : stage as String,
-      type: type == freezed ? _value.type : type as String,
-      table:
-          table == freezed ? _value.table : table as List<StandingsTableRowDto>,
+      stage: stage == freezed
+          ? _value.stage
+          : stage // ignore: cast_nullable_to_non_nullable
+              as String,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
+      table: table == freezed
+          ? _value.table
+          : table // ignore: cast_nullable_to_non_nullable
+              as List<StandingsTableRowDto>,
     ));
   }
 }
@@ -111,17 +119,24 @@ class __$StandingsTableDtoCopyWithImpl<$Res>
     Object? table = freezed,
   }) {
     return _then(_StandingsTableDto(
-      stage: stage == freezed ? _value.stage : stage as String,
-      type: type == freezed ? _value.type : type as String,
-      table:
-          table == freezed ? _value.table : table as List<StandingsTableRowDto>,
+      stage: stage == freezed
+          ? _value.stage
+          : stage // ignore: cast_nullable_to_non_nullable
+              as String,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
+      table: table == freezed
+          ? _value.table
+          : table // ignore: cast_nullable_to_non_nullable
+              as List<StandingsTableRowDto>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_StandingsTableDto extends _StandingsTableDto {
   const _$_StandingsTableDto(
       {required this.stage, required this.type, required this.table})
@@ -173,11 +188,11 @@ class _$_StandingsTableDto extends _StandingsTableDto {
 }
 
 abstract class _StandingsTableDto extends StandingsTableDto {
-  const _StandingsTableDto._() : super._();
   const factory _StandingsTableDto(
       {required String stage,
       required String type,
       required List<StandingsTableRowDto> table}) = _$_StandingsTableDto;
+  const _StandingsTableDto._() : super._();
 
   factory _StandingsTableDto.fromJson(Map<String, dynamic> json) =
       _$_StandingsTableDto.fromJson;

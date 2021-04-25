@@ -5,7 +5,7 @@ part 'result.entity.freezed.dart';
 @freezed
 class Result with _$Result {
   const factory Result({
-    required String homeTeamId,
-    required String awayTeamId,
+    required int homeTeamScore,
+    required int awayTeamScore,
   }) = _Result;
 }

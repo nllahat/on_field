@@ -25,8 +25,8 @@ class _$GameMatchTearOff {
       required String group,
       required DateTime lastUpdated,
       required Score score,
-      required Team homeTeam,
-      required Team awayTeam}) {
+      required String homeTeamId,
+      required String awayTeamId}) {
     return _GameMatch(
       id: id,
       date: date,
@@ -36,8 +36,8 @@ class _$GameMatchTearOff {
       group: group,
       lastUpdated: lastUpdated,
       score: score,
-      homeTeam: homeTeam,
-      awayTeam: awayTeam,
+      homeTeamId: homeTeamId,
+      awayTeamId: awayTeamId,
     );
   }
 }
@@ -55,8 +55,8 @@ mixin _$GameMatch {
   String get group => throw _privateConstructorUsedError;
   DateTime get lastUpdated => throw _privateConstructorUsedError;
   Score get score => throw _privateConstructorUsedError;
-  Team get homeTeam => throw _privateConstructorUsedError;
-  Team get awayTeam => throw _privateConstructorUsedError;
+  String get homeTeamId => throw _privateConstructorUsedError;
+  String get awayTeamId => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $GameMatchCopyWith<GameMatch> get copyWith =>
@@ -76,12 +76,10 @@ abstract class $GameMatchCopyWith<$Res> {
       String group,
       DateTime lastUpdated,
       Score score,
-      Team homeTeam,
-      Team awayTeam});
+      String homeTeamId,
+      String awayTeamId});
 
   $ScoreCopyWith<$Res> get score;
-  $TeamCopyWith<$Res> get homeTeam;
-  $TeamCopyWith<$Res> get awayTeam;
 }
 
 /// @nodoc
@@ -102,21 +100,50 @@ class _$GameMatchCopyWithImpl<$Res> implements $GameMatchCopyWith<$Res> {
     Object? group = freezed,
     Object? lastUpdated = freezed,
     Object? score = freezed,
-    Object? homeTeam = freezed,
-    Object? awayTeam = freezed,
+    Object? homeTeamId = freezed,
+    Object? awayTeamId = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as String,
-      date: date == freezed ? _value.date : date as DateTime,
-      status: status == freezed ? _value.status : status as String,
-      matchday: matchday == freezed ? _value.matchday : matchday as int,
-      stage: stage == freezed ? _value.stage : stage as String,
-      group: group == freezed ? _value.group : group as String,
-      lastUpdated:
-          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
-      score: score == freezed ? _value.score : score as Score,
-      homeTeam: homeTeam == freezed ? _value.homeTeam : homeTeam as Team,
-      awayTeam: awayTeam == freezed ? _value.awayTeam : awayTeam as Team,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      date: date == freezed
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      matchday: matchday == freezed
+          ? _value.matchday
+          : matchday // ignore: cast_nullable_to_non_nullable
+              as int,
+      stage: stage == freezed
+          ? _value.stage
+          : stage // ignore: cast_nullable_to_non_nullable
+              as String,
+      group: group == freezed
+          ? _value.group
+          : group // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastUpdated: lastUpdated == freezed
+          ? _value.lastUpdated
+          : lastUpdated // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      score: score == freezed
+          ? _value.score
+          : score // ignore: cast_nullable_to_non_nullable
+              as Score,
+      homeTeamId: homeTeamId == freezed
+          ? _value.homeTeamId
+          : homeTeamId // ignore: cast_nullable_to_non_nullable
+              as String,
+      awayTeamId: awayTeamId == freezed
+          ? _value.awayTeamId
+          : awayTeamId // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 
@@ -124,20 +151,6 @@ class _$GameMatchCopyWithImpl<$Res> implements $GameMatchCopyWith<$Res> {
   $ScoreCopyWith<$Res> get score {
     return $ScoreCopyWith<$Res>(_value.score, (value) {
       return _then(_value.copyWith(score: value));
-    });
-  }
-
-  @override
-  $TeamCopyWith<$Res> get homeTeam {
-    return $TeamCopyWith<$Res>(_value.homeTeam, (value) {
-      return _then(_value.copyWith(homeTeam: value));
-    });
-  }
-
-  @override
-  $TeamCopyWith<$Res> get awayTeam {
-    return $TeamCopyWith<$Res>(_value.awayTeam, (value) {
-      return _then(_value.copyWith(awayTeam: value));
     });
   }
 }
@@ -157,15 +170,11 @@ abstract class _$GameMatchCopyWith<$Res> implements $GameMatchCopyWith<$Res> {
       String group,
       DateTime lastUpdated,
       Score score,
-      Team homeTeam,
-      Team awayTeam});
+      String homeTeamId,
+      String awayTeamId});
 
   @override
   $ScoreCopyWith<$Res> get score;
-  @override
-  $TeamCopyWith<$Res> get homeTeam;
-  @override
-  $TeamCopyWith<$Res> get awayTeam;
 }
 
 /// @nodoc
@@ -187,26 +196,56 @@ class __$GameMatchCopyWithImpl<$Res> extends _$GameMatchCopyWithImpl<$Res>
     Object? group = freezed,
     Object? lastUpdated = freezed,
     Object? score = freezed,
-    Object? homeTeam = freezed,
-    Object? awayTeam = freezed,
+    Object? homeTeamId = freezed,
+    Object? awayTeamId = freezed,
   }) {
     return _then(_GameMatch(
-      id: id == freezed ? _value.id : id as String,
-      date: date == freezed ? _value.date : date as DateTime,
-      status: status == freezed ? _value.status : status as String,
-      matchday: matchday == freezed ? _value.matchday : matchday as int,
-      stage: stage == freezed ? _value.stage : stage as String,
-      group: group == freezed ? _value.group : group as String,
-      lastUpdated:
-          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
-      score: score == freezed ? _value.score : score as Score,
-      homeTeam: homeTeam == freezed ? _value.homeTeam : homeTeam as Team,
-      awayTeam: awayTeam == freezed ? _value.awayTeam : awayTeam as Team,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      date: date == freezed
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      matchday: matchday == freezed
+          ? _value.matchday
+          : matchday // ignore: cast_nullable_to_non_nullable
+              as int,
+      stage: stage == freezed
+          ? _value.stage
+          : stage // ignore: cast_nullable_to_non_nullable
+              as String,
+      group: group == freezed
+          ? _value.group
+          : group // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastUpdated: lastUpdated == freezed
+          ? _value.lastUpdated
+          : lastUpdated // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      score: score == freezed
+          ? _value.score
+          : score // ignore: cast_nullable_to_non_nullable
+              as Score,
+      homeTeamId: homeTeamId == freezed
+          ? _value.homeTeamId
+          : homeTeamId // ignore: cast_nullable_to_non_nullable
+              as String,
+      awayTeamId: awayTeamId == freezed
+          ? _value.awayTeamId
+          : awayTeamId // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_GameMatch implements _GameMatch {
   const _$_GameMatch(
       {required this.id,
@@ -217,8 +256,8 @@ class _$_GameMatch implements _GameMatch {
       required this.group,
       required this.lastUpdated,
       required this.score,
-      required this.homeTeam,
-      required this.awayTeam});
+      required this.homeTeamId,
+      required this.awayTeamId});
 
   @override
   final String id;
@@ -237,13 +276,13 @@ class _$_GameMatch implements _GameMatch {
   @override
   final Score score;
   @override
-  final Team homeTeam;
+  final String homeTeamId;
   @override
-  final Team awayTeam;
+  final String awayTeamId;
 
   @override
   String toString() {
-    return 'GameMatch(id: $id, date: $date, status: $status, matchday: $matchday, stage: $stage, group: $group, lastUpdated: $lastUpdated, score: $score, homeTeam: $homeTeam, awayTeam: $awayTeam)';
+    return 'GameMatch(id: $id, date: $date, status: $status, matchday: $matchday, stage: $stage, group: $group, lastUpdated: $lastUpdated, score: $score, homeTeamId: $homeTeamId, awayTeamId: $awayTeamId)';
   }
 
   @override
@@ -268,12 +307,12 @@ class _$_GameMatch implements _GameMatch {
                     .equals(other.lastUpdated, lastUpdated)) &&
             (identical(other.score, score) ||
                 const DeepCollectionEquality().equals(other.score, score)) &&
-            (identical(other.homeTeam, homeTeam) ||
+            (identical(other.homeTeamId, homeTeamId) ||
                 const DeepCollectionEquality()
-                    .equals(other.homeTeam, homeTeam)) &&
-            (identical(other.awayTeam, awayTeam) ||
+                    .equals(other.homeTeamId, homeTeamId)) &&
+            (identical(other.awayTeamId, awayTeamId) ||
                 const DeepCollectionEquality()
-                    .equals(other.awayTeam, awayTeam)));
+                    .equals(other.awayTeamId, awayTeamId)));
   }
 
   @override
@@ -287,8 +326,8 @@ class _$_GameMatch implements _GameMatch {
       const DeepCollectionEquality().hash(group) ^
       const DeepCollectionEquality().hash(lastUpdated) ^
       const DeepCollectionEquality().hash(score) ^
-      const DeepCollectionEquality().hash(homeTeam) ^
-      const DeepCollectionEquality().hash(awayTeam);
+      const DeepCollectionEquality().hash(homeTeamId) ^
+      const DeepCollectionEquality().hash(awayTeamId);
 
   @JsonKey(ignore: true)
   @override
@@ -306,8 +345,8 @@ abstract class _GameMatch implements GameMatch {
       required String group,
       required DateTime lastUpdated,
       required Score score,
-      required Team homeTeam,
-      required Team awayTeam}) = _$_GameMatch;
+      required String homeTeamId,
+      required String awayTeamId}) = _$_GameMatch;
 
   @override
   String get id => throw _privateConstructorUsedError;
@@ -326,9 +365,9 @@ abstract class _GameMatch implements GameMatch {
   @override
   Score get score => throw _privateConstructorUsedError;
   @override
-  Team get homeTeam => throw _privateConstructorUsedError;
+  String get homeTeamId => throw _privateConstructorUsedError;
   @override
-  Team get awayTeam => throw _privateConstructorUsedError;
+  String get awayTeamId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$GameMatchCopyWith<_GameMatch> get copyWith =>

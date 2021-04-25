@@ -84,15 +84,30 @@ class _$OnboardingInfoCopyWithImpl<$Res>
     Object? list = freezed,
   }) {
     return _then(_value.copyWith(
-      imageAsset:
-          imageAsset == freezed ? _value.imageAsset : imageAsset as String,
-      title: title == freezed ? _value.title : title as String,
-      description:
-          description == freezed ? _value.description : description as String,
-      showList: showList == freezed ? _value.showList : showList as bool?,
-      listType:
-          listType == freezed ? _value.listType : listType as EnumListType?,
-      list: list == freezed ? _value.list : list as List<dynamic>?,
+      imageAsset: imageAsset == freezed
+          ? _value.imageAsset
+          : imageAsset // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      showList: showList == freezed
+          ? _value.showList
+          : showList // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      listType: listType == freezed
+          ? _value.listType
+          : listType // ignore: cast_nullable_to_non_nullable
+              as EnumListType?,
+      list: list == freezed
+          ? _value.list
+          : list // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
     ));
   }
 }
@@ -134,20 +149,36 @@ class __$OnboardingInfoCopyWithImpl<$Res>
     Object? list = freezed,
   }) {
     return _then(_OnboardingInfo(
-      imageAsset:
-          imageAsset == freezed ? _value.imageAsset : imageAsset as String,
-      title: title == freezed ? _value.title : title as String,
-      description:
-          description == freezed ? _value.description : description as String,
-      showList: showList == freezed ? _value.showList : showList as bool?,
-      listType:
-          listType == freezed ? _value.listType : listType as EnumListType?,
-      list: list == freezed ? _value.list : list as List<dynamic>?,
+      imageAsset: imageAsset == freezed
+          ? _value.imageAsset
+          : imageAsset // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      showList: showList == freezed
+          ? _value.showList
+          : showList // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      listType: listType == freezed
+          ? _value.listType
+          : listType // ignore: cast_nullable_to_non_nullable
+              as EnumListType?,
+      list: list == freezed
+          ? _value.list
+          : list // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_OnboardingInfo implements _OnboardingInfo {
   const _$_OnboardingInfo(
       {required this.imageAsset,

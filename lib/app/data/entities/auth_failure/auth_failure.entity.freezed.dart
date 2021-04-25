@@ -158,12 +158,14 @@ class __$AuthFailureCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
     return _then(_AuthFailure(
       originalException: originalException == freezed
           ? _value.originalException
-          : originalException as Exception?,
+          : originalException // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_AuthFailure implements _AuthFailure {
   const _$_AuthFailure({this.originalException});
 
@@ -297,12 +299,14 @@ class _$ServerErrorCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
     return _then(ServerError(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception?,
+          : originalError // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$ServerError implements ServerError {
   const _$ServerError({this.originalError});
 
@@ -436,12 +440,14 @@ class _$ProviderExceptionCopyWithImpl<$Res>
     return _then(ProviderException(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception?,
+          : originalError // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$ProviderException implements ProviderException {
   const _$ProviderException({this.originalError});
 
@@ -575,12 +581,14 @@ class _$UserExceptionCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
     return _then(UserException(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception?,
+          : originalError // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$UserException implements UserException {
   const _$UserException({this.originalError});
 
@@ -714,12 +722,14 @@ class _$CancelledByUserCopyWithImpl<$Res>
     return _then(CancelledByUser(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception?,
+          : originalError // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$CancelledByUser implements CancelledByUser {
   const _$CancelledByUser({this.originalError});
 
@@ -853,12 +863,14 @@ class _$EmailAlreadyInUseCopyWithImpl<$Res>
     return _then(EmailAlreadyInUse(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception?,
+          : originalError // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$EmailAlreadyInUse implements EmailAlreadyInUse {
   const _$EmailAlreadyInUse({this.originalError});
 
@@ -996,12 +1008,14 @@ class _$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>
     return _then(InvalidEmailAndPasswordCombination(
       originalError: originalError == freezed
           ? _value.originalError
-          : originalError as Exception?,
+          : originalError // ignore: cast_nullable_to_non_nullable
+              as Exception?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$InvalidEmailAndPasswordCombination
     implements InvalidEmailAndPasswordCombination {
   const _$InvalidEmailAndPasswordCombination({this.originalError});
